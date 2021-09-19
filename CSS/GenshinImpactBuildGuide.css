@@ -132,13 +132,15 @@ ol {
 }
 
 .GIBG_Table_Talents {
-    width: 200px;
+    width: 175px;
+    min-width: 400px;
     border-top: 2px solid black;
     border-right: 1px solid RGBA(0,0,0,0.15);
     border-bottom: 2px solid black;
 }
 
 .GIBG_Table_Tips {
+    width: 275px;
     border-top: 2px solid black;
     border-right: 2px solid black;
     border-bottom: 2px solid black;
