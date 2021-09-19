@@ -1,0 +1,72 @@
+/* ------ HTML ------ */
+body {
+	background-color: #222;
+	background-attachment: fixed;
+}
+
+/* ------ HEADER ------ */
+header {
+	position: fixed;
+	top: 0;
+	height: 70px;
+	background-image: linear-gradient(RGBA(51,51,51,1),RGBA(27,27,27,0.5));
+	backdrop-filter: blur(5px);
+	color: white;
+	font-family: 'Poppins', sans-serif;
+}
+
+.header_item {
+	vertical-align: middle;
+	line-height: 70px;
+	font-size: 12px;
+	color: #BBB;
+}
+
+#my_name {
+	font-size: 18px;
+	color: #EEE;
+	text-shadow: 2px 2px 1px RGBA(0,0,0,0.8);
+}
+
+#avatar {
+	border-radius: 50px;
+	height: 50px;
+	margin-right: 10px;
+	margin-top: -4px;
+}
+
+#header_spacer {
+	width: 20%;
+	display: inline-block;
+}
+
+#backToHome {
+	height: 30px;
+	margin: auto 0 auto 3.5%;
+	font-size: 12px;
+	vertical-align: middle;
+}
+
+/* ------ SECTION ------ */
+
+
+/* ------ FOOTER ------ */
+footer {
+	position: fixed;
+	bottom: 0;
+	background-image: linear-gradient(RGBA(0,0,0,0),#111);
+	vertical-align: middle;
+	color: white;
+}
+
+#footerContent {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	margin: 12px 1px 0;
+	height: 100%;
+}
+
+footer img {
+	height: 30px;
+	margin: 2px 4px 0;
+}

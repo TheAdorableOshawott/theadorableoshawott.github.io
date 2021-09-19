@@ -1,0 +1,248 @@
+@import url("auxCSS/fonts.css");
+
+#GenshinImpactBuildGuide {
+    margin: 90px auto 0;
+    width: 95%;
+    color: white;
+}
+
+#PyroPage, #ElectroPage, #HydroPage, #CryoPage, #AnemoPage, #GeoPage {
+    transition-duration: 0.15s;
+    transition-timing-function: ease-in-out;
+}
+
+.GIBG_Header, .GIBG_CharacterRarity {
+    border-radius: 8px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.GIBG_Header_Element, .GIBG_Table_CharacterName {
+    font-family: "HYWenHei-85W";
+    text-shadow: 2px 2px 1px RGBA(0,0,0,0.8);
+}
+
+.GIBG_Header_Element {
+    font-size: 24px;
+    height: 40px;
+    padding-top: 5px;
+}
+
+.GIBG_Header_Discl {
+    font-size: 16px;
+    padding-bottom: 3px;
+}
+
+.GIBG_CharacterRarity {
+    font-size: 22px;
+    margin-bottom: 40px;
+}
+
+.GIBG_Header_Discl, .GIBG_CharacterRarity span {
+    font-family: 'ABeeZee', sans-serif;
+    text-shadow: 2px 2px 1px RGBA(0,0,0,0.8);
+}
+
+/* --- TABLE --- */
+.GIBG_Table {
+    border-radius: 8px;
+    table-layout: fixed;
+    margin-bottom: 50px;
+}
+
+ol {
+    margin-left: -13px;
+}
+
+.GIBG_Table_CharacterName, .GIBG_Table_Role, .GIBG_Table_Equip, .GIBG_Table_ArtifactStats, .GIBG_Table_Talents, .GIBG_Table_Tips, .GIBG_Table_CharacterImg, .GIBG_Table_Notes {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.GIBG_Table_Role, .GIBG_Table_Equip, .GIBG_Table_ArtifactStats, .GIBG_Table_Talents, .GIBG_Table_Tips, .GIBG_Table_Notes {
+    font-family: Arial;
+    font-weight: bold;
+}
+
+.GIBG_Table_Role_VAL {
+    text-align: center;
+    border-right: 1px solid RGBA(0,0,0,0.15);
+    border-bottom: 1px solid RGBA(0,0,0,0.15);
+}
+
+.GIBG_Table_Equip_WeaponVAL, .GIBG_Table_Equip_ArtifactsVAL, .GIBG_Table_ArtifactStatsVAL, .GIBG_Table_ArtifactStats_SubstatsVAL, .GIBG_Table_TalentsVAL, .GIBG_Table_TipsVAL {
+    font-family: 'ABeeZee', sans-serif;
+    font-size: 13px;
+    vertical-align: top;
+    border-right: 1px solid RGBA(0,0,0,0.15);
+    border-bottom: 1px solid RGBA(0,0,0,0.15);
+}
+
+.Rol_VAL_Ind {
+    font-weight: bold;
+}
+
+.GIBG_Table_ArtifactStats_MainStatsVAL {
+    vertical-align: top;
+    text-align: center;
+    border-bottom: 1px solid RGBA(0,0,0,0.15);
+}
+
+.GIBG_Table_ArtifactStats_MainStats_Item {
+    font-family: Arial;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 14px;
+}
+
+.GIBG_Table_ArtifactStats_MainStats_ItemVAL {
+    font-family: 'ABeeZee', sans-serif;
+    font-size: 13px;
+}
+
+/* --- COLUMN SIZES --- */
+.GIBG_Table_CharacterName {
+    font-size: 18px;
+    width: 240px;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 1px solid RGBA(0,0,0,0.15);
+    border-bottom: 2px solid black;
+}
+
+.GIBG_Table_Role {
+    width: 80px;
+    border-top: 2px solid black;
+    border-right: 1px solid RGBA(0,0,0,0.15);
+    border-bottom: 2px solid black;
+}
+
+.GIBG_Table_Equip {
+    width: 700px;
+    border-top: 2px solid black;
+    border-right: 1px solid RGBA(0,0,0,0.15);
+    border-left: none;
+}
+
+.GIBG_Table_ArtifactStats {
+    width: 300px;
+    border-top: 2px solid black;
+    border-right: 1px solid RGBA(0,0,0,0.15);
+    border-left: none;
+}
+
+.GIBG_Table_Talents {
+    width: 200px;
+    border-top: 2px solid black;
+    border-right: 1px solid RGBA(0,0,0,0.15);
+    border-bottom: 2px solid black;
+}
+
+.GIBG_Table_Tips {
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.GIBG_Table_Notes {
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+
+/* --- BORDERS --- */
+.GIBG_Table_EquipWeapon, .GIBG_Table_EquipArtifacts, .GIBG_Table_ArtifactStats_MainStats, .GIBG_Table_ArtifactStats_Substats {
+    border-top: 1px solid RGBA(0,0,0,0.15);
+    border-right: 1px solid RGBA(0,0,0,0.15);
+    border-bottom: 2px solid black;
+}
+
+.GIBG_Table_ArtifactStats_MainStatsVAL {
+    border-left: 1px solid RGBA(0,0,0,0.15);
+    border-right: 1px solid RGBA(0,0,0,0.15);
+}
+
+.GIBG_Table_CharacterImg {
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 1px solid RGBA(0,0,0,0.15);
+}
+
+.GIBG_Table_CharacterImg img {
+    width: 100%;
+}
+
+.GIBG_Table_CharacterContainer {
+    height: 75px;
+}
+
+.GIBG_CharacterNameVAL {
+    width: 170px;
+}
+
+.GIBG_Table_CharacterContainer img {
+    height: 75px;
+    padding-right: 5px;
+}
+
+.GIBG_Table_TipsVAL {
+    border-right: 2px solid black;
+    border-bottom: 1px solid RGBA(0,0,0,0.15);
+}
+
+.GIBG_Table_TipsSectionDiv {
+    padding-left: 5px;
+    height: 270px;
+}
+
+.Tips_XL {
+    overflow-y: scroll;
+}
+
+.GIBG_Table_NotesVAL {
+    padding: 7px;
+    border-right: 2px solid black;
+}
+
+.GIBG_Table_Notes_Role {
+    font-family: "HYWenHei-85W";
+    font-size: 18px;
+    border-bottom: 1px solid RGBA(0,0,0,0.3);
+    width: 375px;
+    margin-bottom: 6px;
+}
+
+.SecondRole {
+    margin-top: 20px;
+}
+
+.GIBG_Table_NotesVAL p {
+    font-family: 'ABeeZee', sans-serif;
+    font-size: 14px;
+}
+
+.GIBG_Table_Notes_Regarding {
+    font-family: Arial;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 14px;
+}
+
+.GIBG_SubTable_Regarding {
+    width: 100%;
+    font-family: 'ABeeZee', sans-serif;
+    font-size: 14px;
+}
+
+.GIBG_SubTable_Regarding .GIBG_SubTable_Regarding_ItemName {
+    vertical-align: top;
+    font-style: italic;
+    width: 15%;
+}
+
+.GIBG_SubTable_Regarding .GIBG_SubTable_Regarding_ItemDesc {
+    width: 85%;
+}
+
+.LastCharacter {
+    border-bottom: 2px solid black;
+}

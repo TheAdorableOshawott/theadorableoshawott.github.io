@@ -1,0 +1,1699 @@
+<!DOCTYPE HTML>
+<HTML lang="es" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+	<head>
+		<!-- Required meta tags -->
+        <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Electro - Guía de builds de Genshin Impact</title>
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+		<link rel="stylesheet" href="CSS/main.css">
+		<link rel="stylesheet" href="CSS/GenshinImpactBuildGuide.css">
+
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,700,700i" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=ABeeZee:400,400i" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i" rel="stylesheet">
+
+		<!-- Colors -->
+		<style>
+			.VAL1 {
+				background-color: #8E7CC3;
+			}
+
+			.VAL2 {
+				background-color: #B4A7D6;
+				color: black;
+			}
+
+			.active, .GIBG_Header, .GIBG_CharacterRarity, .GIBG_Table_CharacterName, .GIBG_Table_Role,
+			.GIBG_Table_Equip, .GIBG_Table_ArtifactStats, .GIBG_Table_Talents, .GIBG_Table_Tips, .GIBG_Table_CharacterImg,
+			.GIBG_Table_Notes, .GIBG_Table_CharacterName {
+				background-color: #674EA7!important;
+			}
+
+			.active {
+				color: white!important;
+			}
+
+			#PyroPage {
+				color: #EA9999;
+			}
+
+			#PyroPage:hover {
+				background-color: #EA9999;
+				color: #C00;
+			}
+
+			#HydroPage {
+				color: #A4C2F4;
+			}
+
+			#HydroPage:hover {
+				background-color: #A4C2F4;
+				color: #3C78D8;
+			}
+		</style>
+    </head>
+
+    <body>
+		<header class="container-fluid d-flex flex-row justify-content-center align-middle">
+			<div id="my_name" class="header_item bd-highlight px-2">
+				<img id="avatar" src="https://pbs.twimg.com/profile_images/1437677631311204354/S5q6owg__400x400.png">
+				TheAdorableOshawott
+			</div>
+			<div id="header_spacer" class="header_item bd-highlight px-2"></div>
+			<div class="header_item bd-highlight px-3">Pokémon</div>
+			<div class="header_item bd-highlight px-3">Kirby</div>
+			<div class="header_item bd-highlight px-3">Animal Crossing</div>
+			<div class="header_item bd-highlight px-3">Genshin Impact</div>
+			<div class="header_item bd-highlight px-3">Other stuff</div>
+			<button type="button" id="backToHome" class="btn btn-outline-light">Back to Home</button>
+		</header>
+
+		<section id="GenshinImpactBuildGuide">
+			<ul class="nav nav-tabs ElementMenu">
+				<li class="nav-item"><a id="PyroPage" class="nav-link" href="Pyro.html">Pyro</a></li>
+				<li class="nav-item"><a id="ElectroPage" class="nav-link active" aria-current="page" href="#">Electro</a></li>
+				<li class="nav-item"><a id="HydroPage" class="nav-link" href="Hydro.html">Hydro</a></li>
+				<li class="nav-item"><a id="CryoPage" class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Cryo</a></li>
+				<li class="nav-item"><a id="AnemoPage" class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Anemo</a></li>
+				<li class="nav-item"><a id="GeoPage" class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Geo</a></li>
+			</ul>
+
+			<div class="GIBG_Header w-100">
+				<div class="GIBG_Header_Element">ELECTRO</div>
+				<div class="GIBG_Header_Discl"><span>El rol en el que el personaje se destaque mejor estará marcado con una ⭐</span></div>
+			</div>
+
+			<div class="GIBG_CharacterRarity w-100">
+				<span>4 ESTRELLAS</span>
+			</div>
+
+			<table class="GIBG_Table w-100">
+<!-- -------------------- FISCHL -------------------- -->
+				<tr>
+					<td class="GIBG_Table_CharacterName" rowspan="2">
+						<div class="GIBG_Table_CharacterContainer d-flex align-items-center justify-content-center">
+							<img src="https://paimon.moe/images/characters/fischl.png">
+							<span class="GIBG_CharacterNameVAL">FISCHL</span>
+						</div>
+					</td>
+					<td class="GIBG_Table_Role" rowspan="2">ROL</td>
+					<td class="GIBG_Table_Equip" colspan="2">EQUIPAMIENTO</td>
+					<td class="GIBG_Table_ArtifactStats" colspan="2">ATRIBUTOS DE ARTEFACTOS</td>
+					<td class="GIBG_Table_Talents" rowspan="2">PRIORIDAD DE TALENTOS</td>
+					<td class="GIBG_Table_Tips" rowspan="2">CONSEJOS</td>
+				</tr>
+				<tr>
+					<td class="GIBG_Table_Equip GIBG_Table_EquipWeapon">ARMA</td>
+					<td class="GIBG_Table_Equip GIBG_Table_EquipArtifacts">CONJUNTO DE ARTEFACTOS</td>
+					<td class="GIBG_Table_ArtifactStats GIBG_Table_ArtifactStats_MainStats">PRINCIPALES</td>
+					<td class="GIBG_Table_ArtifactStats GIBG_Table_ArtifactStats_Substats">SECUNDARIOS</td>
+				</tr>
+				<tr>
+					<!-- CHARACTER IMAGE -->
+					<td class="GIBG_Table_CharacterImg" rowspan="2">
+						<img src="https://paimon.moe/images/characters/full/fischl.png">
+					</td>
+					<!-- ROLE -->
+					<td class="GIBG_Table_Role_VAL VAL1">DPS</td>
+					<!-- WEAPONS -->
+					<td class="GIBG_Table_Equip_WeaponVAL VAL1">
+						<ol>
+							<li>Agitador del Relámpago (5⭐)</li>
+							<li>Alas Celestiales (5⭐)</li>
+							<li>Arco de la Cazadora Esmeralda (4⭐)</li>
+							<li>Arco de Amos (5⭐)</li>
+							<li>Vals Nocturno (4⭐)</li>
+							<li>Prototipo Luz de Luna (4⭐)</li>
+							<li>Herrumbre (4⭐)</li>
+							<li>Arco del Peñasco Oscuro (4⭐)</li>
+							<li>Arco Compuesto (4⭐)</li>
+							<li>Tirachinas (3⭐)</li>
+						</ol>
+					</td>
+					<!-- ARTIFACTS -->
+					<td class="GIBG_Table_Equip_ArtifactsVAL VAL1">
+						<ol>
+							<li>Llamas Albinas (4)</li>
+							<li>Llamas Albinas (2) + Caballería Sanguinaria (2)</li>
+							<li>Domador de Truenos (4)</li>
+							<li>Caballería Sanguinaria (2) + <i>cualquier conj. artf. ATQ+18%</i> (2)</li>
+							<li>Furia del Trueno (2) + Caballería Sanguinaria (2)</li>
+							<li>Furia del Trueno (2) + <i>cualquier conj. artf. ATQ+18%</i> (2)</li>
+							<li>Final del Gladiador (2) + Reminiscencia de la Purificación (2)</li>
+							<li><i>Cualquier conj. artf. ATQ+18</i> (2) + Jugadora (2)</li>
+						</ol>
+					</td>
+					<!-- MAIN STATS -->
+					<td class="GIBG_Table_ArtifactStats_MainStatsVAL VAL1">
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Arenas del Eón</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">ATQ%</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Cáliz de Eonothem</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Bono de Daño Físico / Bono de Daño Electro</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Tiara de Logos</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Prob. CRIT / Daño CRIT</span>
+					</td>
+					<!-- SUBSTATS -->
+					<td class="GIBG_Table_ArtifactStats_SubstatsVAL VAL1">
+						<ol>
+							<li>Prob. CRIT / Daño CRIT</li>
+							<li>ATQ%</li>
+							<li>Recarga de Energía</li>
+							<li>Maestría Elemental</li>
+							<li>ATQ fijo</li>
+						</ol>
+					</td>
+					<!-- TALENT PRIORITY -->
+					<td class="GIBG_Table_TalentsVAL VAL1">
+						<ol>
+							<li>Ataque Normal</li>
+							<li>Habilidad Elemental</li>
+							<li>Habilidad Definitiva</li>
+						</ol>
+					</td>
+					<!-- TIPS -->
+					<td class="GIBG_Table_TipsVAL VAL1">
+						<div class="GIBG_Table_TipsSectionDiv"></div>
+					</td>
+				</tr>
+
+				<tr>
+					<!-- ROLE -->
+					<td class="GIBG_Table_Role_VAL VAL2 Rol_VAL_Ind">DPS FUERA DE CAMPO ⭐</td>
+					<!-- WEAPONS -->
+					<td class="GIBG_Table_Equip_WeaponVAL VAL2">
+						<ol>
+							<li>Agitador del Relámpago (5⭐)</li>
+							<li>Cazador del Callejón <b>[R5]</b> (4⭐)</li>
+							<li>Alas Celestiales (5⭐)</li>
+							<li>Último Acorde <b>[R5]</b> (4⭐)</li>
+							<li>Cazador del Callejón (4⭐)</li>
+							<li>Arco de Amos (5⭐)</li>
+							<li>Elegía del Fin (5⭐)</li>
+							<li>Último Acorde (4⭐)</li>
+							<li>Vals Nocturno <b>[R5]</b>(4⭐)</li>
+							<li>Oda a las Flores de Viento (4⭐)</li>
+							<li>Arco de la Cazadora Esmeralda (4⭐)</li>
+							<li>Prototipo Luz de Luna (4⭐) ~= Herrumbre (4⭐)</li>
+							<li>Vals Noctuno (4⭐)</li>
+						</ol>
+					</td>
+					<!-- ARTIFACTS -->
+					<td class="GIBG_Table_Equip_ArtifactsVAL VAL2">
+						<ol>
+							<li>Furia del Trueno (2) + <i>cualquier conj. artf. ATQ+18</i> (2)</li>
+							<li>Domador de Truenos (4)</li>
+							<li>Jugadora (2) + Furia del Trueno (2)</li>
+							<li><i>Cualquier conj. artf. ATQ+18</i> (2) + Jugadora (2)</li>
+							<li>Tenacidad de la Geoarmada (4)</li>
+						</ol>
+					</td>
+					<!-- MAIN STATS -->
+					<td class="GIBG_Table_ArtifactStats_MainStatsVAL VAL2">
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Arenas del Eón</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">ATQ%</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Cáliz de Eonothem</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Bono de Daño Electro</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Tiara de Logos</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Prob. CRIT / Daño CRIT</span>
+					</td>
+					<!-- SUBSTATS -->
+					<td class="GIBG_Table_ArtifactStats_SubstatsVAL VAL2">
+						<ol>
+							<li>Prob. CRIT / Daño CRIT</li>
+							<li>ATQ%</li>
+							<li>Recarga de Energía</li>
+							<li>Maestría Elemental</li>
+							<li>ATQ fijo</li>
+						</ol>
+					</td>
+					<!-- TALENT PRIORITY -->
+					<td class="GIBG_Table_TalentsVAL VAL2">
+						<ol>
+							<li>Habilidad Elemental</li>
+							<li>Habilidad Definitiva</li>
+						</ol>
+					</td>
+					<!-- TIPS -->
+					<td class="GIBG_Table_TipsVAL VAL2">
+						<div class="GIBG_Table_TipsSectionDiv"></div>
+					</td>
+				</tr>
+
+				<!-- DESCRIPTION -->
+				<tr>
+					<td class="GIBG_Table_Notes">NOTAS</td>
+					<td colspan="7" class="GIBG_Table_NotesVAL VAL2">
+						<div class="GIBG_Table_Notes_Role">DPS</div>
+						<p>
+							Su primera constelación es recomendable para poder comenzar a buildear a un DPS Fischl, con Oz
+							contribuyendo así a ser DPS Físico incluso estando fuera de combate.
+						</p>
+
+						<p>
+							Hay una técnica para cancelar animaciones con una DPS Fischl. Después de 3 o 5 Ataques Normales,
+							realiza un Disparo Preciso para restablecer tu combo de ataque. Entre más rápido lo puedas hacer,
+							mejor será. Sólo utiliza ésta técnica cuando te estés quedando sin Aguante, puesto que sería muy
+							difícil replicarlo de forma constante.
+						</p>
+
+						<span class="GIBG_Table_Notes_Regarding">
+							Con respecto a su sexta constelación:
+						</span>
+						<p>
+							A partir de su sexta constelación, Oz hará el 60% del daño por segundo y estaría mejor invertir
+							en un conjunto de artefactos del <i>Final del Gladiador (2)</i> + <i>Furia del Trueno (2)</i>
+							hasta que consigas el conjunto de <i>Llamas Albinas (4)</i> con un cáliz de Bono de Daño Electro.
+						</p>
+
+						<span class="GIBG_Table_Notes_Regarding">
+							Con respecto a la elección de armas:
+						</span>
+						<table class="GIBG_SubTable_Regarding">
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Arco de la Cazadora Esmeralda:</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									Este arco es una muy buena inversión que, inclusive, sobrepasa al <i>Arco de Amos</i> en
+									situaciones donde te encuentres con hordas de enemigos, aunque éste no es tan eficiente
+									en objetivos individuales, u objetivos rápidos. Ofrece DPS en hordas que suele escasear
+									muchísimo debido a los ataques hacia un solo objetivo de Fischl.
+								</td>
+							</tr>
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Vals Nocturno:</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									Esta arma podría ser priorizada por encima del <i>Arco de Amos</i> si logras refinarlo
+									al máximo para un build de Fischl físico.
+								</td>
+							</tr>
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Prototipo Luz de Luna:</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									Si logras dar entrelazar Ataques Cargados a los puntos débiles de los enemigos cada 9
+									o 10 segundos, esta arma puede tener un gran potencial para ofrecer más daño por segundo.
+									Esta arma puede ser una buena opción para aquellos que estén interesados en un estilo
+									de juego más retador.
+								</td>
+							</tr>
+						</table>
+
+						<div class="GIBG_Table_Notes_Role SecondRole">DPS FUERA DE CAMPO ⭐</div>
+						<p>
+							Tanto su Habilidad Elemental como su Habilidad Definitiva hacen que Oz aparezca, así que
+							asegúrate de usar uno a la vez. Empieza con la Habilidad Elemental, luego la Habilidad
+							Definitiva para una segunda rotación de Oz e intenta alternar. De esa forma, se espera que,
+							cuando tu segunda o tercera ronda de Oz apareciendo termine, hayas obtenido la suficiente
+							energía para repetir el ciclo.
+						</p>
+
+						<span class="GIBG_Table_Notes_Regarding">
+							Con respecto a la elección de armas:
+						</span>
+						<table class="GIBG_SubTable_Regarding">
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Oda a las Flores del Viento:</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									El aumento de ATQ de esta arma puede aplicársele a Oz después de la Habilidad
+									Definitiva al realizar la Habilidad Elemental después de salir de la forma de ave.
+									Esto reposicionará a Oz y reaplicará el aumento que luego será capturado durante el
+									resto de su duración.
+								</td>
+							</tr>
+						</table><br>
+
+						<span class="GIBG_Table_Notes_Regarding">
+							Con respecto a la elección de conjuntos de artefactos:
+						</span>
+						<table class="GIBG_SubTable_Regarding">
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Domador de Truenos (4):</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									Este conjunto sobrepasará al conjunto del <i>Final del Gladiador (2)</i> + <i>Furia
+									del Trueno (2)</i> si se utiliza en una composición donde esté presente un aura de
+									efecto Electro (por ejemplo: composiciones Electrocargados), por lo que es
+									<b>altamente recomendado dentro de este rango</b>.
+								</td>
+							</tr>
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Jugadora (2) + Furia del Trueno (2):</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									Es similar a Albedo con el <i>Corazón del Guardián</i>, ya que el conjunto de la
+									Jugadora no tiene artefactos de 5 estrellas, deberías utilizarlos sólo en las
+									ranuras de la Flor y la Pluma para que no pierdas mucho con los atributos
+									principales.
+								</td>
+							</tr>
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Tenacidad de la Geoarmada (4):</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									Funciona como una inversión baja o normal para un build de Fischl. Este conjunto
+									afecta negativamente al daño de Fischl, pero proporciona un aumento del 20% de ATQ a
+									todos los miembros del equipo. <b>No se recomienda farmear para este conjunto de
+									artefactos para Fischl</b>. Sólo utiliza este conjunto si tienes piezas mientras
+									farmeas por el conjunto de las <i>Llamas Albinas</i> para tus DPS Físicos.
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+
+<!-- -------------------- BEIDOU -------------------- -->
+				<tr>
+					<td class="GIBG_Table_CharacterName" rowspan="2">
+						<div class="GIBG_Table_CharacterContainer d-flex align-items-center justify-content-center">
+							<img src="https://paimon.moe/images/characters/beidou.png">
+							<span class="GIBG_CharacterNameVAL">BEIDOU</span>
+						</div>
+					</td>
+					<td class="GIBG_Table_Role" rowspan="2">ROL</td>
+					<td class="GIBG_Table_Equip" colspan="2">EQUIPAMIENTO</td>
+					<td class="GIBG_Table_ArtifactStats" colspan="2">ATRIBUTOS DE ARTEFACTOS</td>
+					<td class="GIBG_Table_Talents" rowspan="2">PRIORIDAD DE TALENTOS</td>
+					<td class="GIBG_Table_Tips" rowspan="2">CONSEJOS</td>
+				</tr>
+				<tr>
+					<td class="GIBG_Table_Equip GIBG_Table_EquipWeapon">ARMA</td>
+					<td class="GIBG_Table_Equip GIBG_Table_EquipArtifacts">CONJUNTO DE ARTEFACTOS</td>
+					<td class="GIBG_Table_ArtifactStats GIBG_Table_ArtifactStats_MainStats">PRINCIPALES</td>
+					<td class="GIBG_Table_ArtifactStats GIBG_Table_ArtifactStats_Substats">SECUNDARIOS</td>
+				</tr>
+				<tr>
+					<!-- CHARACTER IMAGE -->
+					<td class="GIBG_Table_CharacterImg">
+						<img src="https://paimon.moe/images/characters/full/beidou.png">
+					</td>
+					<!-- ROLE -->
+					<td class="GIBG_Table_Role_VAL VAL1 Rol_VAL_Ind">DPS FUERA DE CAMPO ⭐</td>
+					<!-- WEAPONS -->
+					<td class="GIBG_Table_Equip_WeaponVAL VAL1">
+						<ol>
+							<li>Lápida del Lobo (5⭐)</li>
+							<li>Médula de la Serpiente Marina (4⭐)</li>
+							<li>Espada de la Desidia (5⭐)</li>
+							<li>Orgullo Celestial (5⭐)</li>
+							<li>Espada Lítica (4⭐)</li>
+							<li>Gran Espada de Sacrificio (4⭐)</li>
+							<li>Gran Hoja del Peñasco Oscuro (4⭐)</li>
+							<li>Prototipo Arcaico (4⭐)</li>
+							<li>Gran Espada de Favonius (4⭐)</li>
+						</ol>
+					</td>
+					<!-- ARTIFACTS -->
+					<td class="GIBG_Table_Equip_ArtifactsVAL VAL1">
+						<ol>
+							<li>Emblema del Destino (4)</li>
+							<abbr title="Sólo elegir dos de estos conjuntos de artefactos.">
+								<li>Ritual Antiguo de la Nobleza (2) / Furia del Trueno (2) / <i>cualquier conj.
+									artf. ATQ+18</i> (2) / Emblema del Destino (2)</li>
+							</abbr>
+							<li>Domador de Truenos (4)</li>
+							<li>Ritual Antiguo de la Nobleza (4)</li>
+							<li>Exiliado (2) + Erudita (2)</li>
+						</ol>
+					</td>
+					<!-- MAIN STATS -->
+					<td class="GIBG_Table_ArtifactStats_MainStatsVAL VAL1">
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Arenas del Eón</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">ATQ% / Recarga de Energía</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Cáliz de Eonothem</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Bono de Daño Electro</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Tiara de Logos</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Prob. CRIT / Daño CRIT</span>
+					</td>
+					<!-- SUBSTATS -->
+					<td class="GIBG_Table_ArtifactStats_SubstatsVAL VAL1">
+						<ol>
+							<li>Prob. CRIT / Daño CRIT</li>
+							<li>ATQ%</li>
+							<li>
+								<abbr title="Es recomendable priorizar la Recarga de Energía primero si no puedes utilizar la Habilidad Definitiva fuera del tiempo de espera.">
+									Recarga de Energía
+								</abbr>
+							</li>
+							<li>ATQ fijo</li>
+							<li>Maestría Elemental</li>
+						</ol>
+					</td>
+					<!-- TALENT PRIORITY -->
+					<td class="GIBG_Table_TalentsVAL VAL1">
+						<ol>
+							<li>Habilidad Definitiva</li>
+							<li>Habilidad Elemental</li>
+						</ol>
+					</td>
+					<!-- TIPS -->
+					<td class="GIBG_Table_TipsVAL VAL1">
+						<div class="GIBG_Table_TipsSectionDiv">
+							La Habilidad Elemental de Beidou te proporciona de estado Electro por un corto plazo de
+							tiempo al realizarlo. Esto significa que puede ser utilizado para limpiar estados
+							elementales (no de elementos particulares efectivos). Sólo puede usarse para ella misma.
+						</div>
+					</td>
+				</tr>
+
+				<!-- DESCRIPTION -->
+				<tr>
+					<td class="GIBG_Table_Notes">NOTAS</td>
+					<td colspan="7" class="GIBG_Table_NotesVAL VAL2">
+						<div class="GIBG_Table_Notes_Role">DPS FUERA DE CAMPO ⭐</div>
+						<span class="GIBG_Table_Notes_Regarding">
+							Con respecto a la elección de armas:
+						</span>
+
+						<table class="GIBG_SubTable_Regarding">
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Médula de la Serpiente Marina:</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									Esta arma puede considerarse por encima de la <i>Lápida del Lobo</i> para una Beidou
+									Sub DPS, mientras que la <i>Lápida del Lobo</i> la puede equipar otro personaje DPS
+									que utilice mandobles y que esté más tiempo en combate. Beidou puede hacer uso muy
+									efectivo de sus acumulaciones al máximo, siempre y cuando tengas sus acumulaciones
+									antes de cambiarla, las acumulaciones se mantendrán incluso cuando no esté en
+									combate.
+								</td>
+							</tr>
+						</table><br>
+
+						<span class="GIBG_Table_Notes_Regarding">
+							Con respecto a la elección de conjuntos de artefactos:
+						</span>
+						<table class="GIBG_SubTable_Regarding">
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Emblema del Destino (4):</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									Este conjunto no requiere que tenga una acumulación enorme de Recarga de Energía
+									para un mayor bono de daño posible. Prioriza Prob. CRIT o Daño CRIT dependiendo de
+									lo que necesites.
+								</td>
+							</tr>
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Domador de Truenos (4):</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									Este conjunto busca maximizar el daño de la Habilidad Definitiva en composiciones
+									monoequipo Electro, o de Electrocargado. Toma en cuenta que este conjunto puede
+									resultar inútil cuando estés con enemigos que no estén imbuidos en Electro.
+								</td>
+							</tr>
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Ritual Antiguo de la Nobleza (4):</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									Este conjunto podría considerarse si tu Beidou puede hacer uso de su Habilidad
+									Definitiva durante su tiempo de espera, y si el equipo aún no tiene este conjunto de
+									artefactos.
+								</td>
+							</tr>
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Exiliado (2) + Erudita (2):</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									Este conjunto es una opción fácil para principiantes para mantener su tiempo de
+									actividad con su Habilidad Definitiva, debido al 40% de Recarga de Energía de los
+									conjuntos.
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+
+<!-- -------------------- LISA -------------------- -->
+				<tr>
+					<td class="GIBG_Table_CharacterName" rowspan="2">
+						<div class="GIBG_Table_CharacterContainer d-flex align-items-center justify-content-center">
+							<img src="https://paimon.moe/images/characters/lisa.png">
+							<span class="GIBG_CharacterNameVAL">LISA</span>
+						</div>
+					</td>
+					<td class="GIBG_Table_Role" rowspan="2">ROL</td>
+					<td class="GIBG_Table_Equip" colspan="2">EQUIPAMIENTO</td>
+					<td class="GIBG_Table_ArtifactStats" colspan="2">ATRIBUTOS DE ARTEFACTOS</td>
+					<td class="GIBG_Table_Talents" rowspan="2">PRIORIDAD DE TALENTOS</td>
+					<td class="GIBG_Table_Tips" rowspan="2">CONSEJOS</td>
+				</tr>
+				<tr>
+					<td class="GIBG_Table_Equip GIBG_Table_EquipWeapon">ARMA</td>
+					<td class="GIBG_Table_Equip GIBG_Table_EquipArtifacts">CONJUNTO DE ARTEFACTOS</td>
+					<td class="GIBG_Table_ArtifactStats GIBG_Table_ArtifactStats_MainStats">PRINCIPALES</td>
+					<td class="GIBG_Table_ArtifactStats GIBG_Table_ArtifactStats_Substats">SECUNDARIOS</td>
+				</tr>
+				<tr>
+					<!-- CHARACTER IMAGE -->
+					<td class="GIBG_Table_CharacterImg" rowspan="3">
+						<img src="https://paimon.moe/images/characters/full/lisa.png"
+					</td>
+					<!-- ROLE -->
+					<td class="GIBG_Table_Role_VAL VAL1">DPS ELECTRO</td>
+					<!-- WEAPONS -->
+					<td class="GIBG_Table_Equip_WeaponVAL VAL1">
+						<ol>
+							<li>Pergamino Celestial (5⭐)</li>
+							<li>Candado Terrenal (5⭐)</li>
+							<li>
+								Oración Perdida a los Vientos Sagrados (5⭐) = <br>
+								Sinfonía de los Merodeadores (4⭐)
+							</li>
+							<li>Perla Solar (4⭐)</li>
+							<li>Ágata del Peñasco Oscuro (4⭐)</li>
+							<li>Cuentos de Dodoco (4⭐)</li>
+							<li>Carta Náutica (4⭐)</li>
+							<li>Ojo de la Perspicacia (4⭐)</li>
+							<li>Frío Eterno (4⭐)</li>
+							<li>Guía Mágica (3⭐)</li>
+						</ol>
+					</td>
+					<!-- ARTIFACTS -->
+					<td class="GIBG_Table_Equip_ArtifactsVAL VAL1">
+						<ol>
+							<li>Furia del Trueno (4)</li>
+							<li>Domador de Truenos (4)</li>
+							<li>Furia del Trueno (2) + <i>cualquier conj. artf. ATQ+18</i> (2)</li>
+							<li>Final del Gladiador (2) + Reminiscencia de la Purificación (2)</li>
+						</ol>
+					</td>
+					<!-- MAIN STATS -->
+					<td class="GIBG_Table_ArtifactStats_MainStatsVAL VAL1">
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Arenas del Eón</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">ATQ% / Recarga de Energía / Maestría Elemental</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Cáliz de Eonothem</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Bono de Daño Electro</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Tiara de Logos</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Prob. CRIT / Daño CRIT</span>
+					</td>
+					<!-- SUBSTATS -->
+					<td class="GIBG_Table_ArtifactStats_SubstatsVAL VAL1">
+						<ol>
+							<li>Prob. CRIT / Daño CRIT</li>
+							<li>ATQ%</li>
+							<li>Recarga de Energía</li>
+							<li>Maestría Elemental</li>
+							<li>ATQ fijo</li>
+						</ol>
+					</td>
+					<!-- TALENT PRIORITY -->
+					<td class="GIBG_Table_TalentsVAL VAL1">
+						<ol>
+							<li>Habilidad Elemental</li>
+							<li>Ataque Normal</li>
+							<li>Habilidad Definitiva</li>
+						</ol>
+					</td>
+					<!-- TIPS -->
+					<td class="GIBG_Table_TipsVAL VAL1">
+						<div class="GIBG_Table_TipsSectionDiv"></div>
+					</td>
+				</tr>
+
+				<tr>
+					<!-- ROLE -->
+					<td class="GIBG_Table_Role_VAL VAL2">DPS MAEST. ELEM.</td>
+					<!-- WEAPONS -->
+					<td class="GIBG_Table_Equip_WeaponVAL VAL2">
+						<ol>
+							<li>Memorias de Sacrificios (4⭐)</li>
+							<li>Guía Mágica (3⭐)</li>
+							<li>Carta Mágica (4⭐)</li>
+							<li>Sinfonía de los Merodeadores (4⭐)</li>
+							<li>Cuentos de Cazadores de Dragones (3⭐)</li>
+							<li>Códice de Favonius (4⭐)</li>
+						</ol>
+					</td>
+					<!-- ARTIFACTS -->
+					<td class="GIBG_Table_Equip_ArtifactsVAL VAL2">
+						<ol>
+							<li>Furia del Trueno (4)</li>
+							<li>Instructor (4)</li>
+							<li>Instructor (2) + Orquesta del Errante (2)</li>
+						</ol>
+					</td>
+					<!-- MAIN STATS -->
+					<td class="GIBG_Table_ArtifactStats_MainStatsVAL VAL2">
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Arenas del Eón</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Maestría Elemental</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Cáliz de Eonothem</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Maestría Elemental</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Tiara de Logos</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Maestría Elemental</span>
+					</td>
+					<!-- SUBSTATS -->
+					<td class="GIBG_Table_ArtifactStats_SubstatsVAL VAL2">
+						<ol>
+							<li>Maestría Elemental</li>
+							<li>Recarga de Energía</li>
+							<li>ATQ%</li>
+							<li>Prob. CRIT / Daño CRIT</li>
+						</ol>
+					</td>
+					<!-- TALENT PRIORITY -->
+					<td class="GIBG_Table_TalentsVAL VAL2">
+						<ol>
+							<li>Habilidad Definitiva</li>
+							<li>Habilidad Elemental</li>
+							<li>Ataque Normal</li>
+						</ol>
+						<p>
+							Los niveles de talento de Lisa como DPS de Maestría Elemental no son necesarios.
+						</p>
+					</td>
+					<!-- TIPS -->
+					<td class="GIBG_Table_TipsVAL VAL2">
+						<div class="GIBG_Table_TipsSectionDiv"></div>
+					</td>
+				</tr>
+
+				<tr>
+					<!-- ROLE -->
+					<td class="GIBG_Table_Role_VAL VAL1 Rol_VAL_Ind">DPS FUERA DE CAMPO ⭐</td>
+					<!-- WEAPONS -->
+					<td class="GIBG_Table_Equip_WeaponVAL VAL1">
+						<ol>
+							<li>Pergamino Celestial (5⭐)</li>
+							<li>Sinfonía de los Merodeadores (4⭐)</li>
+							<li>Oración Perdida a los Vientos Sagrados (5⭐)</li>
+							<li>Candado Terrenal (5⭐)</li>
+							<li>Carta Náutica (4⭐)</li>
+							<li>Códice de Favonius (4⭐)</li>
+							<li>Cuentos de Cazadores de Dragones (3⭐)</li>
+						</ol>
+					</td>
+					<!-- ARTIFACTS -->
+					<td class="GIBG_Table_Equip_ArtifactsVAL VAL1">
+						<ol>
+							<li>Furia del Trueno (2) + <i>cualquier conj. artf. ATQ+18</i> (2)</li>
+							<li>Furia del Trueno (2) + Ritual Antiguo de la Nobleza (2)</li>
+							<li>Ritual Antiguo de la Nobleza (4)</li>
+							<li>Domador de Truenos (4)</li>
+							<li>Exiliado (4)</li>
+						</ol>
+					</td>
+					<!-- MAIN STATS -->
+					<td class="GIBG_Table_ArtifactStats_MainStatsVAL VAL1">
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Arenas del Eón</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">ATQ% / Recarga de Energía</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Cáliz de Eonothem</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Bono de Daño Electro</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Tiara de Logos</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Prob. CRIT / Daño CRIT</span>
+					</td>
+					<!-- SUBSTATS -->
+					<td class="GIBG_Table_ArtifactStats_SubstatsVAL VAL1">
+						<ol>
+							<li>Recarga de Energía</li>
+							<li>Prob. CRIT / Daño CRIT</li>
+							<li>ATQ%</li>
+							<li>Maestría Elemental</li>
+							<li>ATQ fijo</li>
+						</ol>
+					</td>
+					<!-- TALENT PRIORITY -->
+					<td class="GIBG_Table_TalentsVAL VAL1">
+						<ol>
+							<li>Habilidad Definitiva</li>
+							<li>Habilidad Elemental</li>
+							<li>Ataque Normal</li>
+						</ol>
+					</td>
+					<!-- TIPS -->
+					<td class="GIBG_Table_TipsVAL VAL1">
+						<div class="GIBG_Table_TipsSectionDiv">
+							Mantener el hechizo de Lisa no requiere de 4 segundos de carga para alcanzar un umbral de
+							daño enorme, siempre y cuando el indicador se alineé con el anillo, puedes soltar el botón
+							para realizar el hechizo con la mayor cantidad de daño posible.
+						</div>
+					</td>
+				</tr>
+
+				<!-- DESCRIPTION -->
+				<tr>
+					<td class="GIBG_Table_Notes">NOTAS</td>
+					<td colspan="7" class="GIBG_Table_NotesVAL VAL2">
+						<div class="GIBG_Table_Notes_Role">DPS ELECTRO</div>
+						<span class="GIBG_Table_Notes_Regarding">
+							Con respecto a la elección de conjuntos de artefactos:
+						</span>
+						<table class="GIBG_SubTable_Regarding">
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Domador de Truenos (4):</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									Para equipos que se centren más en reacciones de Electrocargado, el <i>Domador de
+									Truenos (4)</i> puede superar por daño por segundo a la <i>Furia del Trueno (4)</i>,
+									dicho conjunto sólo se recomienda por debajo de la <i>Furia del Trueno (4)</i>
+									debido a la inconsistencia de su potencial.
+								</td>
+							</tr>
+						</table><br>
+
+						<p>
+							Lisa como DPS Electro funciona de forma ideal como reacciones de Electrocargado. Para
+							equipos con Lisa realizando reacciones de Sobrecarga, deberías de buildearla como DPS de
+							Maestría Elemental ya que puedes ser el que genere las reacciones con auxiliares que
+							apliquen Pyro de forma constante, estando fuera de combate.
+						</p>
+
+						<p>
+							Ciclo óptimo para Lisa:
+							(donde HE = Habilidad Elemental, AN = Ataque Normal, AC = Ataque Cargado)<br>
+							HE (pulsar una vez) > AN x2 (hasta tener tres acumulaciones) > HE (mantener pulsado hasta
+							estar completamente cargado), AN x2 > AC.<br>
+							Repetir los últimos dos pasos hasta que el tiempo de espera de la Habilidad Elemental se
+							termine, y repite el ciclo.
+						</p>
+
+						<p>
+							Al tener su <b>[C1]</b>, y al estar en una horda de enemigos, puedes cambiar tu estilo de
+							juego al abusar de la mecánica de su <b>[C1]</b> para generar más energía de forma eficiente.
+						</p>
+
+						<div class="GIBG_Table_Notes_Role SecondRole">DPS DE MAESTRÍA ELEMENTAL</div>
+						<p>
+							Lisa como DPS de Maestría Elemental se centra en ser el gatillo principal de reacciones
+							elementales. Sobrecarga es, generalmente, la mejor reacción elemental que ella puede
+							realizar. Evita tener a un segundo personaje Electro en el equipo debido a que esto puede
+							hacer que se arruine el aura Pyro que Lisa necesitaría para este estilo de juego.
+						</p>
+
+						<p>
+							Equipos de Electrocargado no la pasarán muy bien al intentar utilizar a Lisa como DPS de
+							Maestría Elemental. Si te encuentras en esta situación, será mejor buildear a Lisa como DPS
+							Electro, o Sub DPS.
+						</p>
+
+						<p>
+							Si tienes a Lisa a <b>[C1]</b>, entonces puedes cambiar la prioridad de la Recarga de
+							Energía, y centrarte más en el ATQ%.
+						</p>
+
+						<div class="GIBG_Table_Notes_Role SecondRole">DPS FUERA DE CAMPO ⭐</div>
+						<p>
+							Puede ser buildeada para realizar tanto daño de Habilidad Definitiva como daño de Habilidad
+							Elemental destructiva al cambiar rápido a Lisa.<br>
+							Lisa funciona muy bien con personajes Anemo, los cuales pueden mantener a los enemigos
+							dentro del AdE de su Habilidad Definitiva.
+						</p>
+
+						<span class="GIBG_Table_Notes_Regarding">
+							Con respecto a la elección de armas:
+						</span>
+						<table class="GIBG_SubTable_Regarding">
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Cuentos de Cazadores de Dragones:</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									Esta opción <b>sólo se recomienda en Lisa si no se le ha puesto mucha inversión</b>,
+									donde ella estará centralizada en potenciar a sus compañeros de equipo y contribuir
+									en dar daño por segundo al equipo en lugar de que ella misma haga mucho daño.
+								</td>
+							</tr>
+						</table><br>
+
+						<span class="GIBG_Table_Notes_Regarding">
+							Con respecto a la elección de prioridad de atributos secundarios:
+						</span>
+						<p>
+							Éstas opciones priorizan el tiempo de actividad de la Habilidad Definitiva de Lisa como una
+							herramienta de destrucción de defensa.
+						</p>
+					</td>
+				</tr>
+
+<!-- -------------------- RAZOR -------------------- -->
+				<tr>
+					<td class="GIBG_Table_CharacterName" rowspan="2">
+						<div class="GIBG_Table_CharacterContainer d-flex align-items-center justify-content-center">
+							<img src="https://paimon.moe/images/characters/razor.png">
+							<span class="GIBG_CharacterNameVAL">RAZOR</span>
+						</div>
+					</td>
+					<td class="GIBG_Table_Role" rowspan="2">ROL</td>
+					<td class="GIBG_Table_Equip" colspan="2">EQUIPAMIENTO</td>
+					<td class="GIBG_Table_ArtifactStats" colspan="2">ATRIBUTOS DE ARTEFACTOS</td>
+					<td class="GIBG_Table_Talents" rowspan="2">PRIORIDAD DE TALENTOS</td>
+					<td class="GIBG_Table_Tips" rowspan="2">CONSEJOS</td>
+				</tr>
+				<tr>
+					<td class="GIBG_Table_Equip GIBG_Table_EquipWeapon">ARMA</td>
+					<td class="GIBG_Table_Equip GIBG_Table_EquipArtifacts">CONJUNTO DE ARTEFACTOS</td>
+					<td class="GIBG_Table_ArtifactStats GIBG_Table_ArtifactStats_MainStats">PRINCIPALES</td>
+					<td class="GIBG_Table_ArtifactStats GIBG_Table_ArtifactStats_Substats">SECUNDARIOS</td>
+				</tr>
+				<tr>
+					<!-- CHARACTER IMAGE -->
+					<td class="GIBG_Table_CharacterImg">
+						<img src="https://paimon.moe/images/characters/full/razor.png"
+					</td>
+					<!-- ROLE -->
+					<td class="GIBG_Table_Role_VAL VAL1 Rol_VAL_Ind">DPS ⭐</td>
+					<!-- WEAPONS -->
+					<td class="GIBG_Table_Equip_WeaponVAL VAL1">
+						<ol>
+							<li>Lápida del Lobo (5⭐)</li>
+							<li>Oda de los Pinos (5⭐)</li>
+							<li>Espada de la Desidia (5⭐)</li>
+							<li>
+								<abbr title="Con todas sus 5 acumulaciones.">
+									Médula de la Serpiente Marina (4⭐)
+								</abbr>
+							</li>
+							<li>Orgullo Celestial (5⭐)</li>
+							<li>
+								<abbr title="Con 2 acumulaciones.">
+									Espada Lítica (4⭐)
+								</abbr>
+							</li>
+							<li>Prototipo Arcaico (4⭐)</li>
+						</ol>
+					</td>
+					<!-- ARTIFACTS -->
+					<td class="GIBG_Table_Equip_ArtifactsVAL VAL1">
+						<ol>
+							<li>Llamas Albinas (4)</li>
+							<li>
+								Llamas Albinas (2) + Caballería Sanguinaria (2)<br>
+								o Final del Gladiador (4)
+							</li>
+							<li>Caballería Sanguinaria (2) o Llamas Albinas (2) + <i>cualquier conj. artf. ATQ+18%</i> (2)</li>
+							<li>Artista Marcial (4)</li>
+						</ol>
+					</td>
+					<!-- MAIN STATS -->
+					<td class="GIBG_Table_ArtifactStats_MainStatsVAL VAL1">
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Arenas del Eón</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">ATQ%</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Cáliz de Eonothem</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Bono de Daño Físico</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Tiara de Logos</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Prob. CRIT / Daño CRIT</span>
+					</td>
+					<!-- SUBSTATS -->
+					<td class="GIBG_Table_ArtifactStats_SubstatsVAL VAL1">
+						<ol>
+							<li>Prob. CRIT / Daño CRIT</li>
+							<li>ATQ%</li>
+							<li>Recarga de Energía</li>
+							<li>Maestría Elemental</li>
+							<li>ATQ fijo</li>
+						</ol>
+					</td>
+					<!-- TALENT PRIORITY -->
+					<td class="GIBG_Table_TalentsVAL VAL1">
+						<ol>
+							<li>Ataque Normal</li>
+							<li>Habilidad Definitiva</li>
+							<li>Habilidad Elemental</li>
+						</ol>
+					</td>
+					<!-- TIPS -->
+					<td class="GIBG_Table_TipsVAL VAL1">
+						<div class="GIBG_Table_TipsSectionDiv">
+							La Habilidad Definitiva de Razor te proporciona de estado Electro cuando realizas un Ataque
+							Normal durante tu Habilidad Definitiva. Esto significa que puede ser utilizado para limpiar
+							estados elementales (no de elementos particulares efectivos). Sólo puede usarse para él
+							mismo.
+						</div>
+					</td>
+				</tr>
+
+				<!-- DESCRIPTION -->
+				<tr>
+					<td class="GIBG_Table_Notes">NOTAS</td>
+					<td colspan="7" class="GIBG_Table_NotesVAL VAL2">
+						<div class="GIBG_Table_Notes_Role">DPS ⭐</div>
+						<span class="GIBG_Table_Notes_Regarding">
+							Con respecto a la elección de armas:
+						</span>
+						<table class="GIBG_SubTable_Regarding">
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Lápida del Lobo:</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									Una <i>Lápida del Lobo</i> (inactiva) supera por mucho al <i>Orgullo Celestial</i>
+									en todos los aspectos, excepto en hordas.
+								</td>
+							</tr>
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Espada de la Desidia:</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									El estilo de juego de esta arma se vuelve mucho más cómodo sin tener que preocuparse
+									acerca de los aumentos de la <i>Lápida del Lobo</i> y de la <i>Oda de los Pinos</i>
+									para los Sub DPS, a la vez que proporciona más Protección del Escudo para un mayor
+									tiempo de actividad del escudo. Se requiere de un escudero para esto, siendo Zhongli
+									la opción más ideal.
+								</td>
+							</tr>
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Médula de la Serpiente Marina:</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									Al tener a Razor en <b>[C6]</b> y esta arma a refinamientos altos, es mejor irse por
+									un cáliz de ATQ% en lugar de Bono de Daño Físico. Esto es debido a la sobresaturación
+									de bonos de Daño (atributo de ascensión + <i>Médula de la Serpiente Marina</i>),
+									además del hecho de que Electro cuenta con una porción del daño de Razor. <b>Es
+									importante mencionar que, una <i>Médula de la Serpiente Marina</i> al [R5] con todas
+									sus acumulaciones puede superar a todas las armas de 5⭐ al [R1]</b>.
+								</td>
+							</tr>
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Orgullo Celestial:</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									Esta arma es muy viable con un cáliz de Bono de Daño Físico, ya que el daño que
+									realizas a través del efecto pasivo sube en proporción a tu Daño Físico.
+								</td>
+							</tr>
+						</table><br>
+
+						<span class="GIBG_Table_Notes_Regarding">
+							Con respecto a la elección de conjuntos de artefactos:
+						</span>
+						<table class="GIBG_SubTable_Regarding">
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Llamas Albinas (2) + Caballería Sanguinaria (2):
+								</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									Este conjunto de artefactos es mejor si tu ATQ% está cubierto por tus atributos
+									secundarios, de otra forma, sería mejor irse por el conjunto del <i>Final del
+									Gladiador (4)</i>. <b>Esto sólo se recomienda para aquellos que no tienen acceso
+									inmediato a un conjunto decente de las <i>Llamas Albinas (4)</i>, de lo contrario,
+									sería mejor que invirtieras en piezas de las <i>Llamas Albinas</i>, sin importar el
+									arma que elijas.</b>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+
+<!-- -------------------- KUJOU SARA -------------------- -->
+				<tr>
+					<td class="GIBG_Table_CharacterName" rowspan="2">
+						<div class="GIBG_Table_CharacterContainer d-flex align-items-center justify-content-center">
+							<img src="https://paimon.moe/images/characters/kujou_sara.png">
+							<span class="GIBG_CharacterNameVAL">KUJOU SARA</span>
+						</div>
+					</td>
+					<td class="GIBG_Table_Role" rowspan="2">ROL</td>
+					<td class="GIBG_Table_Equip" colspan="2">EQUIPAMIENTO</td>
+					<td class="GIBG_Table_ArtifactStats" colspan="2">ATRIBUTOS DE ARTEFACTOS</td>
+					<td class="GIBG_Table_Talents" rowspan="2">PRIORIDAD DE TALENTOS</td>
+					<td class="GIBG_Table_Tips" rowspan="2">CONSEJOS</td>
+				</tr>
+				<tr>
+					<td class="GIBG_Table_Equip GIBG_Table_EquipWeapon">ARMA</td>
+					<td class="GIBG_Table_Equip GIBG_Table_EquipArtifacts">CONJUNTO DE ARTEFACTOS</td>
+					<td class="GIBG_Table_ArtifactStats GIBG_Table_ArtifactStats_MainStats">PRINCIPALES</td>
+					<td class="GIBG_Table_ArtifactStats GIBG_Table_ArtifactStats_Substats">SECUNDARIOS</td>
+				</tr>
+				<tr>
+					<!-- CHARACTER IMAGE -->
+					<td class="GIBG_Table_CharacterImg">
+						<img src="https://paimon.moe/images/characters/full/kujou_sara.png"
+					</td>
+					<!-- ROLE -->
+					<td class="GIBG_Table_Role_VAL VAL1 Rol_VAL_Ind">AUXILIAR HAB. DEF. ⭐</td>
+					<!-- WEAPONS -->
+					<td class="GIBG_Table_Equip_WeaponVAL VAL1">
+						<ol>
+							<li>Alas Celestiales (5⭐)</li>
+							<li>Elegía del Fin (5⭐)</li>
+							<li>Agitador del Relámpago (5⭐)</li>
+							<li>Arco de Amos (5⭐)</li>
+							<li>Cazador del Callejón (4⭐)</li>
+							<li>Arco del Sacrificio (4⭐)</li>
+							<li>Arco del Peñasco Oscuro (4⭐)</li>
+							<li>Prototipo Luz de Luna (4⭐)</li>
+							<li>Arco de Favonius (4⭐)</li>
+							<li>Arco de la Cazadora Esmeralda (4⭐)</li>
+							<li>Mensajero (3⭐)</li>
+						</ol>
+					</td>
+					<!-- ARTIFACTS -->
+					<td class="GIBG_Table_Equip_ArtifactsVAL VAL1">
+						<ol>
+							<li>Ritual Antiguo de la Nobleza (4)</li>
+							<li>Emblema del Destino (4)</li>
+							<li>Ritual Antiguo de la Nobleza (2) + Furia del Trueno (2)</li>
+							<li>Ritual Antiguo de la Nobleza (2) + <i>cualquier conj. artf. ATQ+18%</i> (2)</li>
+						</ol>
+					</td>
+					<!-- MAIN STATS -->
+					<td class="GIBG_Table_ArtifactStats_MainStatsVAL VAL1">
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Arenas del Eón</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Recarga de Energía / ATQ%</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Cáliz de Eonothem</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Bono de Daño Electro</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Tiara de Logos</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Prob. CRIT / Daño CRIT</span>
+					</td>
+					<!-- SUBSTATS -->
+					<td class="GIBG_Table_ArtifactStats_SubstatsVAL VAL1">
+						<ol>
+							<li>Prob. CRIT / Daño CRIT</li>
+							<li>ATQ%</li>
+							<li>
+								<abbr title="Es recomendable priorizar la Recarga de Energía primero si no puedes utilizar la Habilidad Definitiva fuera del tiempo de espera.">
+									Recarga de Energía
+								</abbr>
+							</li>
+							<li>ATQ fijo</li>
+						</ol>
+					</td>
+					<!-- TALENT PRIORITY -->
+					<td class="GIBG_Table_TalentsVAL VAL1">
+						<ol>
+							<li>Habilidad Elemental</li>
+							<li>Habilidad Definitiva</li>
+						</ol>
+					</td>
+					<!-- TIPS -->
+					<td class="GIBG_Table_TipsVAL VAL1">
+						<div class="GIBG_Table_TipsSectionDiv">
+							Para que su Habilidad Elemental genere partículas de energía, deberás realizar un Ataque
+							Cargado para situar una pluma de cuervo (Velo Alado) después de haber realizado su Habilidad
+							Elemental. Si la explosión de la pluma de cuervo golpea a un enemigo, generará 3 partículas.
+							<br><br>
+							Las plumas de cuervo generadas con la segunda constelación de Kujou Sara NO generarán
+							partículas.
+						</div>
+					</td>
+				</tr>
+
+				<!-- DESCRIPTION -->
+				<tr>
+					<td class="GIBG_Table_Notes LastCharacter">NOTAS</td>
+					<td colspan="7" class="GIBG_Table_NotesVAL VAL2 LastCharacter">
+						<div class="GIBG_Table_Notes_Role">AUXILIAR HABILIDAD DEFINITIVA ⭐</div>
+						<p>
+							Sara es un personaje auxiliar quickswap (cambia-rápido) que es capaz de potenciar a tus
+							personajes activos a través de la mecánica de la pluma de cuervo (Velo Alado). Cuando Sara
+							utiliza su Habilidad Elemental, su siguiente Ataque Cargado dejará una pluma de cuervo en la
+							ubicación del objetivo y después de un corto lapso de tiempo, la pluma de cuervo explotará y
+							<b>el personaje activo dentro de su AdE se beneficiará del aumento de ATQ de Sara, la cual
+							está en proporción a su ATQ Base.</b>
+						</p>
+
+						<p>
+							A partir de su segunda constelación, puedes evitar realizar Ataques Cargados debido a que
+							inmediatamente se producirá una pluma de cuervo, y la puedes guardar para después si piensas
+							cambiarla de vuelta para amplificar el aumento. También puedes utilizar su Habilidad
+							Elemental seguido de su Habilidad Definitiva para que ella se beneficie de la pluma de
+							cuervo producido por su Habilidad Elemental, después cambiar a otro personaje para que ese
+							mismo personaje se beneficie del aumento de ATQ de Sara. Cabe mencionar que el aumento de
+							Daño CRIT de Sara en su sexta constelación no es instantáneo y tampoco se muestra en la
+							página de atributos, por lo que no hay de qué preocuparse si no ves los cambios ahí.
+						</p>
+
+						<span class="GIBG_Table_Notes_Regarding">
+							Con respecto a la elección de armas:
+						</span>
+						<p>
+							Las armas que se muestran aquí están clasificadas por ATQ Base para maximizar el aumento de
+							ATQ de Sara.
+						</p>
+
+						<span class="GIBG_Table_Notes_Regarding">
+							Con respecto a la elección de conjuntos de artefactos:
+						</span>
+						<table class="GIBG_SubTable_Regarding">
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Ritual Antiguo de la Nobleza (4):</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									El conjunto de artefactos universal para auxiliares que es capaz de aumentar el ATQ
+									de tu equipo en un 20%. Usa este conjunto en Sara si nadie más en tu equipo actual
+									tiene equipado este conjunto.
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+
+			<div class="GIBG_CharacterRarity w-100">
+				<span>5 ESTRELLAS</span>
+			</div>
+
+			<table class="GIBG_Table w-100">
+<!-- -------------------- TRAVELER -------------------- -->
+				<tr>
+					<td class="GIBG_Table_CharacterName" rowspan="2">
+						<div class="GIBG_Table_CharacterContainer d-flex align-items-center justify-content-center">
+							<img src="https://paimon.moe/images/characters/traveler_anemo.png">
+							<span class="GIBG_CharacterNameVAL">VIAJERO o VIAJERA</span>
+						</div>
+					</td>
+					<td class="GIBG_Table_Role" rowspan="2">ROL</td>
+					<td class="GIBG_Table_Equip" colspan="2">EQUIPAMIENTO</td>
+					<td class="GIBG_Table_ArtifactStats" colspan="2">ATRIBUTOS DE ARTEFACTOS</td>
+					<td class="GIBG_Table_Talents" rowspan="2">PRIORIDAD DE TALENTOS</td>
+					<td class="GIBG_Table_Tips" rowspan="2">CONSEJOS</td>
+				</tr>
+				<tr>
+					<td class="GIBG_Table_Equip GIBG_Table_EquipWeapon">ARMA</td>
+					<td class="GIBG_Table_Equip GIBG_Table_EquipArtifacts">CONJUNTO DE ARTEFACTOS</td>
+					<td class="GIBG_Table_ArtifactStats GIBG_Table_ArtifactStats_MainStats">PRINCIPALES</td>
+					<td class="GIBG_Table_ArtifactStats GIBG_Table_ArtifactStats_Substats">SECUNDARIOS</td>
+				</tr>
+				<tr>
+					<!-- CHARACTER IMAGE -->
+					<td class="GIBG_Table_CharacterImg">
+						<img src="https://paimon.moe/images/characters/full/traveler_anemo.png"
+					</td>
+					<!-- ROLE -->
+					<td class="GIBG_Table_Role_VAL VAL1 Rol_VAL_Ind">AUXILIAR ⭐</td>
+					<!-- WEAPONS -->
+					<td class="GIBG_Table_Equip_WeaponVAL VAL1">
+						<ol>
+							<li>Espada de Favonius (4⭐)</li>
+							<li>Espada de Sacrificio (4⭐)</li>
+							<li>Hoja Afilada Celestial (5⭐)</li>
+							<li>Deseo Ponzoñoso (4⭐)</li>
+							<li>Espada Surcacielos (3⭐)</li>
+						</ol>
+					</td>
+					<!-- ARTIFACTS -->
+					<td class="GIBG_Table_Equip_ArtifactsVAL VAL1">
+						<ol>
+							<li>Ritual Antiguo de la Nobleza (4)</li>
+							<li>Emblema del Destino (2) / Exiliado (2) / Erudita (2)</li>
+						</ol>
+					</td>
+					<!-- MAIN STATS -->
+					<td class="GIBG_Table_ArtifactStats_MainStatsVAL VAL1">
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Arenas del Eón</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Recarga de Energía</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Cáliz de Eonothem</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Bono de Daño Electro</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Tiara de Logos</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Prob. CRIT / Daño CRIT</span>
+					</td>
+					<!-- SUBSTATS -->
+					<td class="GIBG_Table_ArtifactStats_SubstatsVAL VAL1">
+						<ol>
+							<li>Recarga de Energía</li>
+							<li>ATQ%</li>
+							<li>Prob. CRIT / Daño CRIT</li>
+							<li>ATQ fijo</li>
+						</ol>
+					</td>
+					<!-- TALENT PRIORITY -->
+					<td class="GIBG_Table_TalentsVAL VAL1">
+						<ol>
+							<li>Habilidad Definitiva</li>
+							<li>Habilidad Elemental</li>
+						</ol>
+					</td>
+					<!-- TIPS -->
+					<td class="GIBG_Table_TipsVAL VAL1">
+						<div class="GIBG_Table_TipsSectionDiv"></div>
+					</td>
+				</tr>
+
+				<!-- DESCRIPTION -->
+				<tr>
+					<td class="GIBG_Table_Notes">NOTAS</td>
+					<td colspan="7" class="GIBG_Table_NotesVAL VAL2">
+						<div class="GIBG_Table_Notes_Role">AUXILIAR ⭐</div>
+						<p>
+							El viajero o la viajera pueden proveer de bastante energía y Recarga de Energía al personaje
+							en el campo de combate a través de su Habilidad Elemental o de sus procs de la Habilidad
+							Definitiva. Esto es bastante útil con alguien que haga mucho daño que no choque con el
+							elemento del viajero o la viajera, y puede beneficiarse de la abundancia de energía. Debido
+							a la baja proporción de daño que tienen la Habilidad Elemental y la Habilidad Definitiva del
+							viajero o la viajera Electro, es recomendable buildear al viajero o a la viajera Electro
+							apilando Recarga de Energía para amplificar su poder como batería.
+						</p>
+					</td>
+				</tr>
+
+<!-- -------------------- KEQING -------------------- -->
+				<tr>
+					<td class="GIBG_Table_CharacterName" rowspan="2">
+						<div class="GIBG_Table_CharacterContainer d-flex align-items-center justify-content-center">
+							<img src="https://paimon.moe/images/characters/keqing.png">
+							<span class="GIBG_CharacterNameVAL">KECHING</span>
+						</div>
+					</td>
+					<td class="GIBG_Table_Role" rowspan="2">ROL</td>
+					<td class="GIBG_Table_Equip" colspan="2">EQUIPAMIENTO</td>
+					<td class="GIBG_Table_ArtifactStats" colspan="2">ATRIBUTOS DE ARTEFACTOS</td>
+					<td class="GIBG_Table_Talents" rowspan="2">PRIORIDAD DE TALENTOS</td>
+					<td class="GIBG_Table_Tips" rowspan="2">CONSEJOS</td>
+				</tr>
+				<tr>
+					<td class="GIBG_Table_Equip GIBG_Table_EquipWeapon">ARMA</td>
+					<td class="GIBG_Table_Equip GIBG_Table_EquipArtifacts">CONJUNTO DE ARTEFACTOS</td>
+					<td class="GIBG_Table_ArtifactStats GIBG_Table_ArtifactStats_MainStats">PRINCIPALES</td>
+					<td class="GIBG_Table_ArtifactStats GIBG_Table_ArtifactStats_Substats">SECUNDARIOS</td>
+				</tr>
+				<tr>
+					<!-- CHARACTER IMAGE -->
+					<td class="GIBG_Table_CharacterImg" rowspan="2">
+						<img src="https://paimon.moe/images/characters/full/keqing.png"
+					</td>
+					<!-- ROLE -->
+					<td class="GIBG_Table_Role_VAL VAL1 Rol_VAL_Ind">DPS FÍSICO<br>⭐</td>
+					<!-- WEAPONS -->
+					<td class="GIBG_Table_Equip_WeaponVAL VAL1">
+						<ol>
+							<li>Aquila Favonia (5⭐)</li>
+							<li>Cortador de Jade Primordial (5⭐)</li>
+							<li>Rompemontañas (5⭐)</li>
+							<li>Prototipo Rencor <b>[R3+]</b> (4⭐)</li>
+							<li>Espada Negra <b>[R2+]</b> (4⭐)</li>
+							<li>Prototipo Rencor <b>[R1-R2]</b> (4⭐)</li>
+							<li>Espada Negra (4⭐)</li>
+							<li>Hoja Afiliada Celestial (5⭐)</li>
+							<li>Flauta (4⭐)</li>
+							<li>Espada Larga del Peñasco Oscuro (4⭐)</li>
+							<li>Espada del Alba <b>[R5]</b> (3⭐)</li>
+							<li>Espada Real Larga (4⭐)</li>
+							<li>Espina de Hierro (4⭐)</li>
+						</ol>
+					</td>
+					<!-- ARTIFACTS -->
+					<td class="GIBG_Table_Equip_ArtifactsVAL VAL1">
+						<ol>
+							<li>Llamas Albinas (4)</li>
+							<li>Llamas Albinas (2) + Caballería Sanguinaria (2)</li>
+							<li>Caballería Sanguinaria (2) + <i>cualquier conj. artf. ATQ+18%</i> (2)</li>
+							<li>Retroceso del Meteorito (4)</li>
+							<li>Caballería Sanguinaria (4)</li>
+						</ol>
+					</td>
+					<!-- MAIN STATS -->
+					<td class="GIBG_Table_ArtifactStats_MainStatsVAL VAL1">
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Arenas del Eón</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">ATQ%</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Cáliz de Eonothem</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Bono de Daño Físico</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Tiara de Logos</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Prob. CRIT / Daño CRIT</span>
+					</td>
+					<!-- SUBSTATS -->
+					<td class="GIBG_Table_ArtifactStats_SubstatsVAL VAL1">
+						<ol>
+							<li>Prob. CRIT / Daño CRIT</li>
+							<li>ATQ%</li>
+							<li>ATQ fijo</li>
+							<li>Recarga de Energía</li>
+						</ol>
+					</td>
+					<!-- TALENT PRIORITY -->
+					<td class="GIBG_Table_TalentsVAL VAL1">
+						<ol>
+							<li>Ataque Normal</li>
+							<li>Habilidad Definitiva</li>
+							<li>Habilidad Elemental</li>
+						</ol>
+					</td>
+					<!-- TIPS -->
+					<td class="GIBG_Table_TipsVAL VAL1">
+						<div class="GIBG_Table_TipsSectionDiv"></div>
+					</td>
+				</tr>
+
+				<tr>
+					<!-- ROLE -->
+					<td class="GIBG_Table_Role_VAL VAL2 Rol_VAL_Ind">DPS ELECTRO<br>⭐</td>
+					<!-- WEAPONS -->
+					<td class="GIBG_Table_Equip_WeaponVAL VAL2">
+						<ol>
+							<li>Reflejo de las Tinieblas (4⭐)</li>
+							<li>Cortador de Jade Primordial (5⭐)</li>
+							<li>Rompemontañas (5⭐)</li>
+							<li>Aquila Favonia (5⭐)</li>
+							<li>Espada Negra (4⭐)</li>
+							<li>Rugido del León (4⭐)</li>
+							<li>Espada Larga del Peñasco Oscuro (4⭐)</li>
+							<li>Espada del Alba <b>[R5]</b> (3⭐)</li>
+							<li>Flauta (4⭐)</li>
+							<li>Hoja Afiliada Celestial (5⭐)</li>
+							<li>Espada Real Larga (4⭐)</li>
+							<li>Prototipo Rencor (4⭐)</li>
+						</ol>
+					</td>
+					<!-- ARTIFACTS -->
+					<td class="GIBG_Table_Equip_ArtifactsVAL VAL2">
+						<ol>
+							<li>Furia del Trueno (2) + <i>cualquier conj. artf. ATQ+18%</i> (2)</li>
+							<li>Domador de Truenos (4)</li>
+							<li>Furia del Trueno (2) + Ritual Antiguo de la Nobleza (2)</li>
+						</ol>
+					</td>
+					<!-- MAIN STATS -->
+					<td class="GIBG_Table_ArtifactStats_MainStatsVAL VAL2">
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Arenas del Eón</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">ATQ%</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Cáliz de Eonothem</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Bono de Daño Electro</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Tiara de Logos</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Prob. CRIT / Daño CRIT</span>
+					</td>
+					<!-- SUBSTATS -->
+					<td class="GIBG_Table_ArtifactStats_SubstatsVAL VAL2">
+						<ol>
+							<li>Prob. CRIT / Daño CRIT</li>
+							<li>ATQ%</li>
+							<li>Maestría Elemental</li>
+							<li>ATQ fijo</li>
+							<li>Recarga de Energía</li>
+						</ol>
+					</td>
+					<!-- TALENT PRIORITY -->
+					<td class="GIBG_Table_TalentsVAL VAL2">
+						<ol>
+							<li>Ataque Normal</li>
+							<li>
+								<abbr title="Debido a que Keching utiliza su Habilidad Definitiva para obtener un 15% extra de Prob. CRIT, sería mucho mejor en subirlo de nivel. Lo mejor que puedes hacer es subir tanto el Ataque Normal como la Habilidad Definitiva juntos. No olvides subir el nivel de la Habilidad Elemental a un nivel decente.">
+									Habilidad Definitiva
+								</abbr>
+							</li>
+							<li>Habilidad Elemental</li>
+						</ol>
+					</td>
+					<!-- TIPS -->
+					<td class="GIBG_Table_TipsVAL VAL2">
+						<div class="GIBG_Table_TipsSectionDiv">
+							<b>Combo preferido de Habilidad Elemental:</b><br>
+							donde HE = Habilidad Elemental, HD = Habilidad Definitiva, AN = Ataque Normal
+							<br>
+							HE (situar la Cuña, no reactivar aún) > HD > HE > AN muchas veces > repetir
+							<br><br>
+
+							<b>Con respecto a sus roles:</b><br>
+							Tanto Keching Física como Electro son muy buenas y viables. Normalmente deberías decidir por
+							qué build irte dependiendo de tu suerte en el Gachapón de armas. Por ejemplo: el Rugido del
+							León = Electro, Flauta sería igual para físico/Electro, etc.
+						</div>
+					</td>
+				</tr>
+
+				<!-- DESCRIPTION -->
+				<tr>
+					<td class="GIBG_Table_Notes">NOTAS</td>
+					<td colspan="7" class="GIBG_Table_NotesVAL VAL2">
+						<div class="GIBG_Table_Notes_Role">DPS FÍSICO ⭐</div>
+						<p>
+							Esta sección está dedicada a un estilo de juego donde Keching no imbuirá sus ataques con
+							Electro, en su lugar, se centra en Daño Físico (números blancos). Por esta razón, deberías
+							realizar Ataques Cargados después de haber lanzado el Retorno estelar (su Habilidad
+							Elemental) en lugar de volver a lanzarlo.
+						</p>
+
+						<span class="GIBG_Table_Notes_Regarding">
+							Con respecto a la elección de conjuntos de artefactos:
+						</span>
+						<table class="GIBG_SubTable_Regarding">
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Llamas Albinas (4):</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									Este conjunto de artefactos es por mucho el mejor para Keching debido a que ella
+									puede procrear su conjunto de 4 piezas de forma inmediata al realizar un Ataque
+									Cargado después de lanzar su Habilidad Elemental.
+								</td>
+							</tr>
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Llamas Albinas (2) + Caballería Sanguinaria (2):</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									Este conjunto de artefactos sólo debería usarse hasta obtener el conjunto de
+									<i>Llamas Albinas (4).</i>
+								</td>
+							</tr>
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">
+									Caballería Sanguinaria (2) + cualquier conjunto de artefactos con ATQ+18% (2):
+								</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									El conjunto general para personajes DPS físicos.
+								</td>
+							</tr>
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Retroceso del Meteorito (4):</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									Este conjunto sólo deberá utilizarse al tener a un escudero consistente (por
+									ejemplo: Zhongli o Diona) por obvias razones.
+								</td>
+							</tr>
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Retroceso del Meteorito (4):</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									Este conjunto es únicamente para utilizarse generalmente en solitario o para la
+									Espiral del Abismo donde hay múltiples enemigos que pueden ser eliminados con
+									Ataques Cargados en menos de 10 segundos. Esto es para hacer daño en hordas, en
+									otras palabras: AdE. <b>No se recomienda debido a las condiciones de muerte.</b>
+								</td>
+							</tr>
+						</table>
+
+						<div class="GIBG_Table_Notes_Role SecondRole">DPS ELECTRO ⭐</div>
+						<span class="GIBG_Table_Notes_Regarding">
+							Con respecto a la elección de armas:
+						</span>
+						<table class="GIBG_SubTable_Regarding">
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Rompemontañas:</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									Esta arma sólo puede superar al <i>Cortador de Jade Primordial</i> cuando está al
+									<b>[R2]</b>.
+								</td>
+							</tr>
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Espada Negra:</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									Si se utiliza en una Keching cambia-rápido, esta arma se posicionaría por debajo de
+									la <i>Espada del Alba</i> <b>[R5]</b>.
+								</td>
+							</tr>
+						</table><br>
+
+						<span class="GIBG_Table_Notes_Regarding">
+							Con respecto a la elección de conjuntos de artefactos:
+						</span>
+						<table class="GIBG_SubTable_Regarding">
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">
+									Furia del Trueno (2) + cualquier conjunto de artefactos con ATQ+18% (2):
+								</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									Este conjunto es un conjunto generalizado, lo que significa que puede utilizarse en
+									donde sea, tanto en modo multijugador como en la Espiral del Abismo, o en contenido
+									de un jugador. Este conjunto es MUY consistente debido a su independencia del aura
+									Electro, lo que lo hace bastante confiable en la Espiral del Abismo.
+								</td>
+							</tr>
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Domador de Truenos (4):</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									Este conjunto debería usarse en composiciones Electrocargados (por ejemplo: Keching
+									+ Xingchiu) o en composiciones monotipo Electro (no recomendado). Este conjunto
+									tiene un modificador del 35% de daño la cual aumenta el daño de todas las fuentes,
+									aunque dicho modificador suele ser algo inestable debido a su dependencia a la
+									sustentabilidad del aura Electro en los enemigos.
+								</td>
+							</tr>
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">
+									Furia del Trueno (2) + Ritual Antiguo de la Nobleza (2):
+								</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									Este conjunto es usado en una Keching cambia-rápido/AdE Habilidad Definitiva. Con
+									este conjunto, se prefiere usar Paseo celestial (su Habilidad Definitiva) todo el
+									tiempo, la cual es tu fuente principal de daño por segundo con este conjunto.
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+
+<!-- -------------------- RAIDEN SHOGUN -------------------- -->
+				<tr>
+					<td class="GIBG_Table_CharacterName" rowspan="2">
+						<div class="GIBG_Table_CharacterContainer d-flex align-items-center justify-content-center">
+							<img src="https://paimon.moe/images/characters/raiden_shogun.png">
+							<span class="GIBG_CharacterNameVAL">SHOGUN RAIDEN</span>
+						</div>
+					</td>
+					<td class="GIBG_Table_Role" rowspan="2">ROL</td>
+					<td class="GIBG_Table_Equip" colspan="2">EQUIPAMIENTO</td>
+					<td class="GIBG_Table_ArtifactStats" colspan="2">ATRIBUTOS DE ARTEFACTOS</td>
+					<td class="GIBG_Table_Talents" rowspan="2">PRIORIDAD DE TALENTOS</td>
+					<td class="GIBG_Table_Tips" rowspan="2">CONSEJOS</td>
+				</tr>
+				<tr>
+					<td class="GIBG_Table_Equip GIBG_Table_EquipWeapon">ARMA</td>
+					<td class="GIBG_Table_Equip GIBG_Table_EquipArtifacts">CONJUNTO DE ARTEFACTOS</td>
+					<td class="GIBG_Table_ArtifactStats GIBG_Table_ArtifactStats_MainStats">PRINCIPALES</td>
+					<td class="GIBG_Table_ArtifactStats GIBG_Table_ArtifactStats_Substats">SECUNDARIOS</td>
+				</tr>
+				<tr>
+					<!-- CHARACTER IMAGE -->
+					<td class="GIBG_Table_CharacterImg">
+						<img src="https://paimon.moe/images/characters/full/raiden_shogun.png"
+					</td>
+					<!-- ROLE -->
+					<td class="GIBG_Table_Role_VAL VAL1 Rol_VAL_Ind">ELECTRO DPS ⭐</td>
+					<!-- WEAPONS -->
+					<td class="GIBG_Table_Equip_WeaponVAL VAL1">
+						<ol>
+							<li>Luz del Segador (5⭐)</li>
+							<li>Báculo de Homa (5⭐)</li>
+							<li>Halcón de Jade (5⭐)</li>
+							<li>Lanza Perforanubes (5⭐)</li>
+							<li>La Captura <b>[R5]</b> (4⭐)</li>
+							<li>Púa Celestial (5⭐)</li>
+							<li>
+								<abbr title="Con 2 acumulaciones.">
+									Lanza Lítica (4⭐)
+								</abbr>
+							</li>
+							<li>Lanza del Duelo (4⭐)</li>
+							<li>Lanza de Favonius (4⭐)</li>
+							<li>Prototipo Estelar (4⭐)</li>
+							<li>Lanza del Peñasco Oscuro (4⭐)</li>
+							<li>Borla Blanca (3⭐)</li>
+						</ol>
+					</td>
+					<!-- ARTIFACTS -->
+					<td class="GIBG_Table_Equip_ArtifactsVAL VAL1">
+						<ol>
+							<li>Emblema del Destino (4)</li>
+							<abbr title="Sólo elegir dos de estos conjuntos de artefactos.">
+								<li>Ritual Antiguo de la Nobleza (2) / Furia del Trueno (2) / <i>cualquier conj.
+									artf. ATQ+18</i> (2) / Emblema del Destino (2)</li>
+							</abbr>
+							<li>Tenacidad de la Geoarmada (4)</li>
+						</ol>
+					</td>
+					<!-- MAIN STATS -->
+					<td class="GIBG_Table_ArtifactStats_MainStatsVAL VAL1">
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Arenas del Eón</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Recarga de Energía / ATQ%</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Cáliz de Eonothem</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Bono de Daño Electro / ATQ%</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Tiara de Logos</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Prob. CRIT / Daño CRIT</span>
+					</td>
+					<!-- SUBSTATS -->
+					<td class="GIBG_Table_ArtifactStats_SubstatsVAL VAL1">
+						<ol>
+							<li>Prob. CRIT / Daño CRIT</li>
+							<li>ATQ%</li>
+							<li>Recarga de Energía</li>
+							<li>ATQ fijo</li>
+							<li>Maestría Elemental</li>
+						</ol>
+					</td>
+					<!-- TALENT PRIORITY -->
+					<td class="GIBG_Table_TalentsVAL VAL1">
+						<ol>
+							<li>Habilidad Definitiva</li>
+							<li>Habilidad Elemental</li>
+						</ol>
+					</td>
+					<!-- TIPS -->
+					<td class="GIBG_Table_TipsVAL VAL1">
+						<div class="GIBG_Table_TipsSectionDiv Tips_XL" style="height: 305px;">
+							Empieza tu rotación con la Habilidad Elemental de la Shogun Raiden para amplificar el daño
+							de la Habilidad Definitiva del miembro de tu equipo.
+							<br><br>
+							<b>Combo de Habilidad Definitiva:</b><br>
+							donde AN = Ataque Normal, AC = Ataque Cargado, HE = Habilidad Elemental, HD = Habilidad
+							Definitiva.<br><br>
+
+							<b>RECOMENDADO:</b><br>
+							HE > HD > AN x4 > AC (2 veces) > AN x2 > AC
+							<br>
+							<b>ÓPTIMO:</b><br>
+							HE > HD > AN x3 > AC (3 veces) > AN > AC
+							<br><br>
+							El combo recomendado proporciona un margen de error más elevado y ofrece una pequeña mejoría
+							del AdE mientras que el combo óptimo proporciona un poco más de daño.
+						</div>
+					</td>
+				</tr>
+
+				<!-- DESCRIPTION -->
+				<tr>
+					<td class="GIBG_Table_Notes LastCharacter">NOTAS</td>
+					<td colspan="7" class="GIBG_Table_NotesVAL VAL2 LastCharacter">
+						<div class="GIBG_Table_Notes_Role">ELECTRO DPS ⭐</div>
+						<p>
+							El daño de la Habilidad Definitiva de la Shogun Raiden depende del <b>consumo de energía de
+							los miembros del equipo antes de haber realizado la Habilidad Definitiva de la Shogun
+							Raiden</b>, y dicha Habilidad Definitiva <b>restaura una cantidad considerable de energía al
+							equipo</b> (la cual puede ser amplificada con su talento pasivo). Esto es especialmente
+							conveniente en equipos que no choquen con su elemento y quieran la provisión de energía (por
+							ejemplo: Eula, Electro, etc.) La Shogun Raiden no tiene problemas en utilizar su Habilidad
+							Definitiva durante su tiempo de espera después de haber alcanzado el 200% de Recarga de
+							Energía, pero es posible aumentarlo aún más para una mejor restauración de energía para su
+							equipo.
+						</p>
+						<span class="GIBG_Table_Notes_Regarding">
+							Con respecto a la elección de armas:
+						</span>
+						<p>
+							Esta lista asume que la Shogun Raiden no está con un potenciador externo.
+						</p>
+
+						<span class="GIBG_Table_Notes_Regarding">
+							Con respecto a la elección de conjuntos de artefactos:
+						</span>
+						<table class="GIBG_SubTable_Regarding">
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Tenacidad de la Geoarmada (4):</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									Este conjunto de artefactos está orientado como un conjunto auxiliar de baja
+									inversión. La Shogun Raiden es una excelente poseedora de la <i>Tenacidad de la
+									Geoarmada</i> ya que su Habilidad Elemental tiene un 100% de tiempo de actividad y
+									procrea muy fácilmente. Nota que si tu Shogun Raiden está equipando este conjunto,
+									entonces ella estará sacrificando su daño personal.
+								</td>
+							</tr>
+						</table><br>
+
+						<span class="GIBG_Table_Notes_Regarding">
+							Con respecto a la elección de prioridad de atributos principales:
+						</span>
+						<p>
+							<b>
+								La prioridad de los atributos principales de la Shogun Raiden para las Arenas del Eón y
+								el Cáliz de Eonothem dependen íntegramente de sus atributos secundarios, ya sea que
+								tenga aumentos externos y qué arma tiene equipada.
+							</b>
+						</p>
+					</td>
+				</tr>
+			</table>
+		</section>
+
+		<footer class="w-100 d-flex justify-content-center">
+			<div id="footerContent" class="px-2">©2019-2021 TheAdorableOshawott. Hosted by Neocities and powered by Bootstrap.</div>
+			<div id="header_spacer"></div>
+			<img class="my-2" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/600px-Bootstrap_logo.svg.png">
+			<img class="my-2" src="https://theadorableoshawott.neocities.org/neocities.png">
+		</footer>
+    </body>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+</HTML>

@@ -1,0 +1,9 @@
+.myPicture {
+	border-radius: 50%;
+	height: 45px;
+	margin-right: 15px;
+}
+
+.menuBar span {
+	text-decoration: none;
+}

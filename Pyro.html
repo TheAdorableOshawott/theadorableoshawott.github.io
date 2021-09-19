@@ -1,0 +1,2066 @@
+<!DOCTYPE HTML>
+<HTML lang="es" xmlns="http://www.w3.org/1999/html">
+	<head>
+		<!-- Required meta tags -->
+        <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Pyro - Guía de builds de Genshin Impact</title>
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+		<link rel="stylesheet" href="CSS/main.css">
+		<link rel="stylesheet" href="CSS/GenshinImpactBuildGuide.css">
+
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,700,700i" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=ABeeZee:400,400i" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i" rel="stylesheet">
+
+		<!-- Colors -->
+		<style>
+			.VAL1 {
+				background-color: #E26060;
+			}
+
+			.VAL2 {
+				background-color: #EA9999;
+				color: black;
+			}
+
+			.active, .GIBG_Header, .GIBG_CharacterRarity, .GIBG_Table_CharacterName, .GIBG_Table_Role,
+			.GIBG_Table_Equip, .GIBG_Table_ArtifactStats, .GIBG_Table_Talents, .GIBG_Table_Tips, .GIBG_Table_CharacterImg,
+			.GIBG_Table_Notes, .GIBG_Table_CharacterName {
+				background-color: #C00!important;
+			}
+
+			.active {
+				color: white!important;
+			}
+
+			#ElectroPage {
+				color: #B4A7D6;
+			}
+
+			#ElectroPage:hover {
+				background-color: #B4A7D6;
+				color: #674EA7;
+			}
+
+			#HydroPage {
+				color: #A4C2F4;
+			}
+
+			#HydroPage:hover {
+				background-color: #A4C2F4;
+				color: #3C78D8;
+			}
+		</style>
+    </head>
+
+    <body>
+		<header class="container-fluid d-flex flex-row justify-content-center align-middle">
+			<div id="my_name" class="header_item bd-highlight px-2">
+				<img id="avatar" src="https://pbs.twimg.com/profile_images/1437677631311204354/S5q6owg__400x400.png">
+				TheAdorableOshawott
+			</div>
+			<div id="header_spacer" class="header_item bd-highlight px-2"></div>
+			<div class="header_item bd-highlight px-3">Pokémon</div>
+			<div class="header_item bd-highlight px-3">Kirby</div>
+			<div class="header_item bd-highlight px-3">Animal Crossing</div>
+			<div class="header_item bd-highlight px-3">Genshin Impact</div>
+			<div class="header_item bd-highlight px-3">Other stuff</div>
+			<button type="button" id="backToHome" class="btn btn-outline-light">Back to Home</button>
+		</header>
+
+		<section id="GenshinImpactBuildGuide">
+			<ul class="nav nav-tabs ElementMenu">
+				<li class="nav-item"><a id="PyroPage" class="nav-link active" aria-current="page" href="#">Pyro</a></li>
+				<li class="nav-item"><a id="ElectroPage" class="nav-link" href="Electro.html">Electro</a></li>
+				<li class="nav-item"><a id="HydroPage" class="nav-link" href="Hydro.html">Hydro</a></li>
+				<li class="nav-item"><a id="CryoPage" class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Cryo</a></li>
+				<li class="nav-item"><a id="AnemoPage" class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Anemo</a></li>
+				<li class="nav-item"><a id="GeoPage" class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Geo</a></li>
+			</ul>
+
+			<div class="GIBG_Header w-100">
+				<div class="GIBG_Header_Element">PYRO</div>
+				<div class="GIBG_Header_Discl"><span>El rol en el que el personaje se destaque mejor estará marcado con una ⭐</span></div>
+			</div>
+
+			<div class="GIBG_CharacterRarity w-100">
+				<span>4 ESTRELLAS</span>
+			</div>
+
+			<table class="GIBG_Table w-100">
+<!-- -------------------- AMBER -------------------- -->
+				<tr>
+					<td class="GIBG_Table_CharacterName" rowspan="2">
+						<div class="GIBG_Table_CharacterContainer d-flex align-items-center justify-content-center">
+							<img src="https://paimon.moe/images/characters/amber.png">
+							<span class="GIBG_CharacterNameVAL">AMBER</span>
+						</div>
+					</td>
+					<td class="GIBG_Table_Role" rowspan="2">ROL</td>
+					<td class="GIBG_Table_Equip" colspan="2">EQUIPAMIENTO</td>
+					<td class="GIBG_Table_ArtifactStats" colspan="2">ATRIBUTOS DE ARTEFACTOS</td>
+					<td class="GIBG_Table_Talents" rowspan="2">PRIORIDAD DE TALENTOS</td>
+					<td class="GIBG_Table_Tips" rowspan="2">CONSEJOS</td>
+				</tr>
+				<tr>
+					<td class="GIBG_Table_Equip GIBG_Table_EquipWeapon">ARMA</td>
+					<td class="GIBG_Table_Equip GIBG_Table_EquipArtifacts">CONJUNTO DE ARTEFACTOS</td>
+					<td class="GIBG_Table_ArtifactStats GIBG_Table_ArtifactStats_MainStats">PRINCIPALES</td>
+					<td class="GIBG_Table_ArtifactStats GIBG_Table_ArtifactStats_Substats">SECUNDARIOS</td>
+				</tr>
+				<tr>
+					<!-- CHARACTER IMAGE -->
+					<td class="GIBG_Table_CharacterImg" rowspan="2">
+						<img src="https://paimon.moe/images/characters/full/amber.png">
+					</td>
+					<!-- ROLE -->
+					<td class="GIBG_Table_Role_VAL VAL1 Rol_VAL_Ind">DPS ⭐</td>
+					<!-- WEAPONS -->
+					<td class="GIBG_Table_Equip_WeaponVAL VAL1">
+						<ol>
+							<li>Arco de Amos (5⭐)</li>
+							<li>Agitador del Relámpago (5⭐)</li>
+							<li>Prototipo Luz de Luna (4⭐)</li>
+							<li>Alas Celestiales (5⭐)</li>
+							<li>Juramento del Arquero <b>[R5]</b> (3⭐)</li>
+							<li>Masacrademonios (4⭐)</li>
+							<li>Arco del Peñasco Oscuro (4⭐)</li>
+							<li>Arco de la Cazadora Esmeralda (4⭐)</li>
+						</ol>
+					</td>
+					<!-- ARTIFACTS -->
+					<td class="GIBG_Table_Equip_ArtifactsVAL VAL1">
+						<ol>
+							<li>Orquesta del Errante (4)</li>
+							<li>Bruja Carmesí en Llamas (4)</li>
+							<li>Bruja Carmesí en Llamas (2) + Orquesta del Errante (2)</li>
+							<li>Bruja Carmesí en Llamas (2) + <i>cualquier conj. artf. ATQ+18%</i> (2)</li>
+							<li><i>Cualquier conj. artf. ATQ+18</i> (2) + Artista Marcial (2)</li>
+						</ol>
+					</td>
+					<!-- MAIN STATS -->
+					<td class="GIBG_Table_ArtifactStats_MainStatsVAL VAL1">
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Arenas del Eón</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">ATQ% / Maestría Elemental</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Cáliz de Eonothem</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Bono de Daño Pyro</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Tiara de Logos</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Daño CRIT</span>
+					</td>
+					<!-- SUBSTATS -->
+					<td class="GIBG_Table_ArtifactStats_SubstatsVAL VAL1">
+						<ol>
+							<li>Daño CRIT</li>
+							<li>ATQ%</li>
+							<li>Maestría Elemental</li>
+							<li>Recarga de Energía</li>
+							<li>ATQ fijo</li>
+						</ol>
+					</td>
+					<!-- TALENT PRIORITY -->
+					<td class="GIBG_Table_TalentsVAL VAL1">
+						<ol>
+							<li>Ataque Normal</li>
+							<li>Habilidad Definitiva</li>
+							<li>Habilidad Elemental</li>
+						</ol>
+					</td>
+					<!-- TIPS -->
+					<td class="GIBG_Table_TipsVAL VAL1">
+						<div class="GIBG_Table_TipsSectionDiv"></div>
+					</td>
+				</tr>
+
+				<tr>
+					<!-- ROLE -->
+					<td class="GIBG_Table_Role_VAL VAL2">AUXILIAR</td>
+					<!-- WEAPONS -->
+					<td class="GIBG_Table_Equip_WeaponVAL VAL2">
+						<ol>
+							<li>Elegía del Fin (5⭐)</li>
+							<li>Arco de Favonius (4⭐)</li>
+							<li>Arco del Sacrificio (4⭐)</li>
+							<li>Alas Celestiales (5⭐)</li>
+							<li>Cazador del Callejón (4⭐)</li>
+							<li>Último Acorde (4⭐)</li>
+							<li>Arco de la Cazadora Esmeralda (4⭐)</li>
+						</ol>
+					</td>
+					<!-- ARTIFACTS -->
+					<td class="GIBG_Table_Equip_ArtifactsVAL VAL2">
+						<ol>
+							<li>Ritual Antiguo de la Nobleza (4)</li>
+							<li>Instructor (4)</li>
+							<li>Exiliado / Erudita (2) + Emblema del Destino (2)</li>
+							<li>Emblema del Destino (4)</li>
+							<li>Exiliado (4)</li>
+						</ol>
+					</td>
+					<!-- MAIN STATS -->
+					<td class="GIBG_Table_ArtifactStats_MainStatsVAL VAL2">
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Arenas del Eón</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Recarga de Energía / ATQ%</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Cáliz de Eonothem</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Bono de Daño Pyro</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Tiara de Logos</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Prob. CRIT / Daño CRIT</span>
+					</td>
+					<!-- SUBSTATS -->
+					<td class="GIBG_Table_ArtifactStats_SubstatsVAL VAL2">
+						<ol>
+							<li>Recarga de Energía</li>
+							<li>Prob. CRIT / Daño CRIT</li>
+							<li>ATQ%</li>
+							<li>Maestría Elemental</li>
+							<li>ATQ fijo</li>
+						</ol>
+					</td>
+					<!-- TALENT PRIORITY -->
+					<td class="GIBG_Table_TalentsVAL VAL2">
+						<ol>
+							<li>Habilidad Definitiva</li>
+							<li>Habilidad Elemental</li>
+						</ol>
+					</td>
+					<!-- TIPS -->
+					<td class="GIBG_Table_TipsVAL VAL2">
+						<div class="GIBG_Table_TipsSectionDiv"></div>
+					</td>
+				</tr>
+
+				<!-- DESCRIPTION -->
+				<tr>
+					<td class="GIBG_Table_Notes">NOTAS</td>
+					<td colspan="7" class="GIBG_Table_NotesVAL VAL2">
+						<div class="GIBG_Table_Notes_Role">DPS ⭐</div>
+						<p>
+							Amber como DPS estará centralizada en <b>maximizar el daño del Ataque Cargado en los puntos
+							débiles de los enemigos</b> debido a que el Talento Pasivo 2 de Amber (al ascender por cuarta vez)
+							aumenta el ATQ por 15% por 10 segundos al golpear un punto débil. <b>Daño CRIT está garantizado
+							cuando aciertas el tiro en un punto débil</b>, por lo que nos centramos más en maximizar el Daño
+							CRIT con una poca o nula dependencia en la Prob. CRIT. Esto puede cambiar después de C4.
+						</p>
+
+						<p>
+							Después de <b>[C4]</b>, el <b>estilo de juego utilizando su Habilidad Elemental se hace
+							disponible</b>, y con este build se recomendaría ir por <i>Bruja Carmesí en Llamas (4)</i>
+							mientras intentas mantener  el radio de CRIT en 1:2 para realizar nukes más frecuentes. Este
+							estilo de juego es más seguro, más consistente, y tiene más daño de AdE comparado a una Amber
+							con Ataque Cargado.
+						</p>
+
+						<span class="GIBG_Table_Notes_Regarding">
+							Con respecto a la elección de armas:
+						</span>
+						<table class="GIBG_SubTable_Regarding">
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Prototipo Luz de Luna:</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									Este arco superará al <i>Arco Celestial</i> si es <b>[R2]</b> o superior.
+								</td>
+							</tr>
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Masacrademonios:</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									Este arco superará al <i>Juramento del Arquero</i> <b>[R5]</b> si es <b>[R2]</b>
+									o superior.
+								</td>
+							</tr>
+						</table>
+
+						<div class="GIBG_Table_Notes_Role SecondRole">AUXILIAR</div>
+						<p>
+							Debido a sus pobres ajustes de proporción, esta sección está dedicada a un build que no
+							requiera de mucha inversión que provee utilidad y capacidad de romper escudos al abusar de
+							su rápida aplicación de Pyro de su Habilidad Definitiva. Debido a su extremadamente pobre
+							generación de partículas de energía, se priorizarán opciones de Recarga de Energía.
+						</p>
+
+						<span class="GIBG_Table_Notes_Regarding">
+							Con respecto a la elección de armas:
+						</span>
+						<p>
+							Si el tiempo de actividad de su Habilidad Definitiva puede mantenerse, un arco orientado a
+							hacer daño como el <i>Arco Celestial</i>, el <i>Cazador del Callejón</i>, o el <i>Último
+							Acorde</i> pueden usarse para maximizar el daño por encima del <i>Arco de Favonius</i>.
+						</p>
+					</td>
+				</tr>
+
+<!-- -------------------- XIANGLING -------------------- -->
+				<tr>
+					<td class="GIBG_Table_CharacterName" rowspan="2">
+						<div class="GIBG_Table_CharacterContainer d-flex align-items-center justify-content-center">
+							<img src="https://paimon.moe/images/characters/xiangling.png">
+							<span class="GIBG_CharacterNameVAL">XIANGLING</span>
+						</div>
+					</td>
+					<td class="GIBG_Table_Role" rowspan="2">ROL</td>
+					<td class="GIBG_Table_Equip" colspan="2">EQUIPAMIENTO</td>
+					<td class="GIBG_Table_ArtifactStats" colspan="2">ATRIBUTOS DE ARTEFACTOS</td>
+					<td class="GIBG_Table_Talents" rowspan="2">PRIORIDAD DE TALENTOS</td>
+					<td class="GIBG_Table_Tips" rowspan="2">CONSEJOS</td>
+				</tr>
+				<tr>
+					<td class="GIBG_Table_Equip GIBG_Table_EquipWeapon">ARMA</td>
+					<td class="GIBG_Table_Equip GIBG_Table_EquipArtifacts">CONJUNTO DE ARTEFACTOS</td>
+					<td class="GIBG_Table_ArtifactStats GIBG_Table_ArtifactStats_MainStats">PRINCIPALES</td>
+					<td class="GIBG_Table_ArtifactStats GIBG_Table_ArtifactStats_Substats">SECUNDARIOS</td>
+				</tr>
+				<tr>
+					<!-- CHARACTER IMAGE -->
+					<td class="GIBG_Table_CharacterImg" rowspan="2">
+						<img src="https://paimon.moe/images/characters/full/xiangling.png">
+					</td>
+					<!-- ROLE -->
+					<td class="GIBG_Table_Role_VAL VAL1 Rol_VAL_Ind">DPS FUERA DE CAMPO ⭐</td>
+					<!-- WEAPONS -->
+					<td class="GIBG_Table_Equip_WeaponVAL VAL1">
+						<ol>
+							<li>Báculo de Homa (5⭐) ~= Luz del Segador (5⭐) *</li>
+							<li>La Captura <b>[R5]</b> (4⭐)</li>
+							<li>Halcón de Jade (5⭐)</li>
+							<li>Lanza del Duelo (4⭐)</li>
+							<li>Púa Celestial (5⭐)</li>
+							<li>Lanza Perforanubes (5⭐)</li>
+							<li>Perdición del Dragón (4⭐)</li>
+							<li>Lanza Lítica (4⭐)</li>
+							<li>Lanza de Favonius (4⭐)</li>
+							<li>Cruz de Kitain (4⭐)</li>
+							<li>Alabarda (3⭐)</li>
+						</ol>
+					</td>
+					<!-- ARTIFACTS -->
+					<td class="GIBG_Table_Equip_ArtifactsVAL VAL1">
+						<ol>
+							<li>Emblema del Destino (4)</li>
+							<li>Bruja Carmesí en Llamas (4)</li>
+							<li>Ritual Antiguo de la Nobleza (2) + Bruja Carmesí en Llamas (2)</li>
+							<abbr title="Sólo elegir dos de estos conjuntos de artefactos.">
+								<li>Ritual Antiguo de la Nobleza (2) / Bruja Carmesí en Llamas (2) / <i>cualquier conj.
+									artf. ATQ+18</i> (2) / Orquesta del Errante (2) / Emblema del Destino (2)</li>
+							</abbr>
+							<li>Ritual Antiguo de la Nobleza (4)</li>
+							<li>Exiliado (2) + Erudita (2)</li>
+						</ol>
+					</td>
+					<!-- MAIN STATS -->
+					<td class="GIBG_Table_ArtifactStats_MainStatsVAL VAL1">
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Arenas del Eón</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Recarga de Energía / ATQ% / Maestría Elemental</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Cáliz de Eonothem</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Bono de Daño Pyro</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Tiara de Logos</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Prob. CRIT / Daño CRIT</span>
+					</td>
+					<!-- SUBSTATS -->
+					<td class="GIBG_Table_ArtifactStats_SubstatsVAL VAL1">
+						<ol>
+							<li>Recarga de Energía</li>
+							<li>Prob. CRIT / Daño CRIT</li>
+							<li>ATQ%</li>
+							<li>Maestría Elemental</li>
+							<li>ATQ fijo</li>
+						</ol>
+					</td>
+					<!-- TALENT PRIORITY -->
+					<td class="GIBG_Table_TalentsVAL VAL1">
+						<ol>
+							<li>Habilidad Definitiva</li>
+							<li>Habilidad Elemental</li>
+						</ol>
+					</td>
+					<!-- TIPS -->
+					<td class="GIBG_Table_TipsVAL VAL1">
+						<div class="GIBG_Table_TipsSectionDiv">
+							Algunos de los equipos más comunes utilizados para una Xiangling Pyro son:<br>
+							<i>EQUIPO NACIONAL:</i> Xiangling, Xingchiu, Sacarosa/Zhongli/Chongyun/Kazuha, y Bennett.<br>
+							<i>EQUIPO CHILDE:</i> Tartaglia, Xiangling, Sacarosa/Zhongli/Venti/Kazuha, y Bennett.<br><br>
+
+							<b>UMBRALES DE RECARGA DE ENERGÍA RECOMENDADAS:</b><br>
+							Equipos Nacional/Childe: 160%-200%<br>
+							Activador de Equipos de Congelamiento Inverso: 200%-250%
+						</div>
+					</td>
+				</tr>
+
+				<tr>
+					<!-- ROLE -->
+					<td class="GIBG_Table_Role_VAL VAL2">DPS FÍSICO</td>
+					<!-- WEAPONS -->
+					<td class="GIBG_Table_Equip_WeaponVAL VAL2">
+						<ol>
+							<li>Halcón de Jade (5⭐)</li>
+							<li>Pica Luna Creciente (4⭐)</li>
+							<li>Lanza Perforanubes (5⭐)</li>
+							<li>Báculo de Homa (5⭐)</li>
+							<li>Lanza de Espinadragón (4⭐)</li>
+							<li>Lanza del Peñasco Oscuro (4⭐)</li>
+							<li>Alabarda (3⭐)</li>
+						</ol>
+					</td>
+					<!-- ARTIFACTS -->
+					<td class="GIBG_Table_Equip_ArtifactsVAL VAL2">
+						<ol>
+							<li>Llamas Albinas (4)</li>
+							<li>Llamas Albinas (2) + Caballería Sanguinaria (2)</li>
+							<li>Final del Gladiador (4)</li>
+							<li>Caballería Sanguinaria (2) + <i>cualquier conj. artf. ATQ+18</i> (2)</li>
+							<li>Artista Marcial (4)</li>
+							<li>Caballería Sanguinaria (2) + Bruja Carmesí en Llamas (2)</li>
+						</ol>
+					</td>
+					<!-- MAIN STATS -->
+					<td class="GIBG_Table_ArtifactStats_MainStatsVAL VAL2">
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Arenas del Eón</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">ATQ%</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Cáliz de Eonothem</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Bono de Daño Físico</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Tiara de Logos</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Prob. CRIT / Daño CRIT</span>
+					</td>
+					<!-- SUBSTATS -->
+					<td class="GIBG_Table_ArtifactStats_SubstatsVAL VAL2">
+						<ol>
+							<li>Prob. CRIT / Daño CRIT</li>
+							<li>ATQ%</li>
+							<li>Recarga de Energía</li>
+							<li>Maestría Elemental</li>
+							<li>ATQ fijo</li>
+						</ol>
+					</td>
+					<!-- TALENT PRIORITY -->
+					<td class="GIBG_Table_TalentsVAL VAL2">
+						<ol>
+							<li>Ataque Normal</li>
+							<li>Habilidad Definitiva</li>
+							<li>Habilidad Elemental</li>
+						</ol>
+					</td>
+					<!-- TIPS -->
+					<td class="GIBG_Table_TipsVAL VAL2">
+						<div class="GIBG_Table_TipsSectionDiv"></div>
+					</td>
+				</tr>
+
+				<!-- DESCRIPTION -->
+				<tr>
+					<td class="GIBG_Table_Notes">NOTAS</td>
+					<td colspan="7" class="GIBG_Table_NotesVAL VAL2">
+						<div class="GIBG_Table_Notes_Role">DPS FUERA DE CAMPO ⭐</div>
+						<span class="GIBG_Table_Notes_Regarding">
+							Con respecto a la elección de armas:
+						</span>
+						<p>
+							<b>
+								ESTA LISTA ASUME QUE XIANGLING ESTÁ SIENDO UTILIZADA CON BENNETT Y UN POTENCIADOR
+								SECUNDARIO (como Kazuha/Sacarosa/Zhongli)
+							</b>
+						</p>
+						<table class="GIBG_SubTable_Regarding">
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Báculo de Homa y Luz del Segador:</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									Estas armas tienen escenarios específicos donde uno puede ser mejor que el otro,
+									pero la diferencia es prácticamente nula y deberías optar por cualquiera de estas
+									que satisfaga mejor los atributos secundarios que tienes.
+								</td>
+							</tr>
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Lanza Perforanubes:</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									<b>La <i>Lanza Perforanubes</i> cae bajo debido a la cantidad devastadora de ataque con
+									rendimiento decreciente (agravado más con Bennett). Aún así, supera a la <i>Púa
+									Celestial</i> si tienes a algún escudero.</b>
+								</td>
+							</tr>
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Perdición del Dragón:</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									La <i>Perdición del Dragón</i> <b>[R5]</b> superará por mucho a la <i>Lanza del
+									Duelo</i> <b>[R1]</b>.
+								</td>
+							</tr>
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Lanza de Favonius:</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									La utilidad que provee una <i>Lanza de Favonius</i> altamente refinada es que puede
+									ser el arma a elegir dentro de una composición donde Xiangling no es la que genera
+									la reacción y es usada dentro de un aura (por ejemplo: equipos de Derretido inverso).
+								</td>
+							</tr>
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Cruz de Kitain:</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									El efecto pasivo de la <i>Cruz de Kitain</i> reduce enormemente el umbral de Recarga
+									de Energía de Xiangling, incluso por debajo del 120% - 130% al <b>[R5]</b>. Esto
+									permite distribuir tiradas de Recarga de Energía en atributos secundarios ofensivos y,
+									debido a esto, una <i>Cruz de Kitain</i> al <b>[R5]</b> puede superar a la <i>Perdición
+									del Dragón</i>. Debido a que se baja mucho el umbral de Recarga de Energía, el
+									conjunto de artefactos de la <i>Bruja Carmesí en Llamas (4)</i> superará al
+									<i>Emblema del Destino (4)</i>.
+								</td>
+							</tr>
+						</table>
+
+						<div class="GIBG_Table_Notes_Role SecondRole">DPS FÍSICO</div>
+						<p>
+							<b>
+								No se recomienda irse por una Xiangling DPS Física debido a que Xiangling destaca más
+								como Pyro DPS fuera del campo de combate.
+							</b>
+						</p>
+
+						<span class="GIBG_Table_Notes_Regarding">
+							Con respecto a la elección de armas:
+						</span>
+						<table class="GIBG_SubTable_Regarding">
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Pica Luna Creciente:</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									La <i>Pica Luna Creciente</i> es extremadamente fuerte en Xiangling debido a la
+									naturaleza de su combo de ataques, la <i>Pica Luna Creciente</i> sigue sobrepasando
+									al <i>Halcón de Jade</i> en términos de daño de Ataque Normal/Cargado.
+								</td>
+							</tr>
+						</table><br>
+
+						<span class="GIBG_Table_Notes_Regarding">
+							Con respecto a la elección de conjuntos de artefactos:
+						</span>
+						<table class="GIBG_SubTable_Regarding">
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Llamas Albinas (4):</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									El efecto pasivo de este conjunto puede tener un tiempo de actividad del 100% al
+									utilizar a Guoba fuera del tiempo de espera.
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+
+<!-- -------------------- BENNETT -------------------- -->
+				<tr>
+					<td class="GIBG_Table_CharacterName" rowspan="2">
+						<div class="GIBG_Table_CharacterContainer d-flex align-items-center justify-content-center">
+							<img src="https://paimon.moe/images/characters/bennett.png">
+							<span class="GIBG_CharacterNameVAL">BENNETT</span>
+						</div>
+					</td>
+					<td class="GIBG_Table_Role" rowspan="2">ROL</td>
+					<td class="GIBG_Table_Equip" colspan="2">EQUIPAMIENTO</td>
+					<td class="GIBG_Table_ArtifactStats" colspan="2">ATRIBUTOS DE ARTEFACTOS</td>
+					<td class="GIBG_Table_Talents" rowspan="2">PRIORIDAD DE TALENTOS</td>
+					<td class="GIBG_Table_Tips" rowspan="2">CONSEJOS</td>
+				</tr>
+				<tr>
+					<td class="GIBG_Table_Equip GIBG_Table_EquipWeapon">ARMA</td>
+					<td class="GIBG_Table_Equip GIBG_Table_EquipArtifacts">CONJUNTO DE ARTEFACTOS</td>
+					<td class="GIBG_Table_ArtifactStats GIBG_Table_ArtifactStats_MainStats">PRINCIPALES</td>
+					<td class="GIBG_Table_ArtifactStats GIBG_Table_ArtifactStats_Substats">SECUNDARIOS</td>
+				</tr>
+				<tr>
+					<!-- CHARACTER IMAGE -->
+					<td class="GIBG_Table_CharacterImg" rowspan="3">
+						<img src="https://paimon.moe/images/characters/full/bennett.png">
+					</td>
+					<!-- ROLE -->
+					<td class="GIBG_Table_Role_VAL VAL1">DPS</td>
+					<!-- WEAPONS -->
+					<td class="GIBG_Table_Equip_WeaponVAL VAL1">
+						<ol>
+							<li>Reflejo de las Tinieblas (5⭐)</li>
+							<li>Cortador de Jade Primordial (5⭐)</li>
+							<li>Juramento por la Libertad (5⭐)</li>
+							<li>Rompemontañas (5⭐)</li>
+							<li>Aquila Favonia (5⭐)</li>
+							<li>Espina de Hierro <b>[R5]</b> (4⭐)</li>
+							<li>Deseo Ponzoñoso (4⭐)</li>
+							<li>Hoja Afilada Celestial (5⭐)</li>
+							<li>Destello en la Oscuridad (4⭐)</li>
+							<li>Espada Larga del Peñasco Oscuro (4⭐)</li>
+							<li>Espada Negra (4⭐)</li>
+							<li>Espina de Hierro (4⭐)</li>
+							<li>Rugido del León (4⭐)</li>
+						</ol>
+					</td>
+					<!-- ARTIFACTS -->
+					<td class="GIBG_Table_Equip_ArtifactsVAL VAL1">
+						<ol>
+							<li>Bruja Carmesí en Llamas (4)</li>
+							<abbr title="Elegir Bruja Carmesí en Llamas (2), después elegir otros de estos conjuntos de artefactos.">
+								<li>
+									Bruja Carmesí en Llamas (2) + <i>cualquier conj. artf. ATQ+18</i> (2) / Orquesta del
+									Errante (2) / Emblema del Destino (2)
+								</li>
+							</abbr>
+							<li>Furia del Trueno (4)</li>
+						</ol>
+					</td>
+					<!-- MAIN STATS -->
+					<td class="GIBG_Table_ArtifactStats_MainStatsVAL VAL1">
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Arenas del Eón</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">ATQ% / Maestría Elemental</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Cáliz de Eonothem</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Bono de Daño Pyro</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Tiara de Logos</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Prob. CRIT / Daño CRIT</span>
+					</td>
+					<!-- SUBSTATS -->
+					<td class="GIBG_Table_ArtifactStats_SubstatsVAL VAL1">
+						<ol>
+							<li>Prob. CRIT / Daño CRIT</li>
+							<abbr title="La Maestría Elemental tendrá menos prioridad que ATQ% al utilizar la Espina de Hierro.">
+								<li>Maestría Elemental</li>
+							</abbr>
+							<li>ATQ%</li>
+							<li>Recarga de Energía</li>
+						</ol>
+					</td>
+					<!-- TALENT PRIORITY -->
+					<td class="GIBG_Table_TalentsVAL VAL1">
+						<ol>
+							<li>Habilidad Elemental</li>
+							<li>Habilidad Definitiva</li>
+							<li>Ataque Normal</li>
+						</ol>
+					</td>
+					<!-- TIPS -->
+					<td class="GIBG_Table_TipsVAL VAL1">
+						<div class="GIBG_Table_TipsSectionDiv Tips_XL">
+							La Habilidad Definitiva de Bennett te proporciona de un estado de Pyro siempre y cuando tus
+							personajes estén dentro del AdE de su Habilidad Definitiva (especialmente Cryo, ya que Pyro >
+							Cryo).<br><br>
+
+							Para eso, lanza la Habilidad Definitiva con Bennett, cambia al personaje imbuido con Cryo y camina
+							dentro del campo de Bennett.<br><br>
+
+							Al entrar al campo de la Habilidad Definitiva, el estado Pyro te imbuirá de forma continua con
+							Pyro, reaccionando con otros elementos tuyos y eventualmente deshaciéndose de ellos.
+						</div>
+					</td>
+				</tr>
+
+				<tr>
+					<!-- ROLE -->
+					<td class="GIBG_Table_Role_VAL VAL2 Rol_VAL_Ind">AUXILIAR HAB. DEF. ⭐</td>
+					<!-- WEAPONS -->
+					<td class="GIBG_Table_Equip_WeaponVAL VAL2">
+						<ol>
+							<li>Reflejo de las Tinieblas (5⭐)</li>
+							<li>Aquila Favonia (5⭐)</li>
+							<li>Hoja Afilada Celestial (5⭐)</li>
+							<li>Juramento por la Libertad (5⭐)</li>
+							<li>Destello en la Oscuridad (4⭐)</li>
+							<li>Deseo Ponzoñoso (4⭐)</li>
+							<li>Prototipo Rencor (4⭐)</li>
+							<li>Espada de Favonius (4⭐)</li>
+							<li>Espada de Sacrificio (4⭐)</li>
+							<li>Espada Surcacielos (3⭐)</li>
+						</ol>
+					</td>
+					<!-- ARTIFACTS -->
+					<td class="GIBG_Table_Equip_ArtifactsVAL VAL2">
+						<ol>
+							<li>Ritual Antiguo de la Nobleza (4)</li>
+							<li>Emblema del Destino (4)</li>
+							<li>Bruja Carmesí en Llamas (4)</li>
+							<abbr title="Sólo elegir dos de estos conjuntos de artefactos.">
+								<li>
+									Ritual Antiguo de la Nobleza (2) / Bruja Carmesí en Llamas (2) / <i>cualquier conj.
+									artf. ATQ+18</i> (2) / Orquesta del Errante (2) / Emblema del Destino (2)
+								</li>
+							</abbr>
+						</ol>
+					</td>
+					<!-- MAIN STATS -->
+					<td class="GIBG_Table_ArtifactStats_MainStatsVAL VAL2">
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Arenas del Eón</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">ATQ% / Recarga de Energía</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Cáliz de Eonothem</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Bono de Daño Físico</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Tiara de Logos</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Prob. CRIT / Daño CRIT</span>
+					</td>
+					<!-- SUBSTATS -->
+					<td class="GIBG_Table_ArtifactStats_SubstatsVAL VAL2">
+						<ol>
+							<li>Prob. CRIT / Daño CRIT</li>
+							<li>ATQ%</li>
+							<abbr title="Es recomendable priorizar la Recarga de Energía primero si no puedes utilizar la Habilidad Definitiva fuera del tiempo de espera.">
+								<li>Recarga de Energía</li>
+							</abbr>
+							<li>Maestría Elemental</li>
+						</ol>
+					</td>
+					<!-- TALENT PRIORITY -->
+					<td class="GIBG_Table_TalentsVAL VAL2">
+						<ol>
+							<li>Habilidad Definitiva</li>
+							<li>Habilidad Elemental</li>
+						</ol>
+					</td>
+					<!-- TIPS -->
+					<td class="GIBG_Table_TipsVAL VAL2">
+						<div class="GIBG_Table_TipsSectionDiv">
+							Cantidad de Recarga de Energía recomendada: 180% - 200%
+						</div>
+					</td>
+				</tr>
+
+				<tr>
+					<!-- ROLE -->
+					<td class="GIBG_Table_Role_VAL VAL1">AUXILIAR</td>
+					<!-- WEAPONS -->
+					<td class="GIBG_Table_Equip_WeaponVAL VAL1">
+						<ol>
+							<li>Reflejo de las Tinieblas (5⭐)</li>
+							<li>Aquila Favonia (5⭐)</li>
+							<li>Juramento por la Libertad (5⭐)</li>
+							<li>Destello en la Oscuridad (4⭐)</li>
+							<li>Hoja Afilada Celestial (5⭐)</li>
+							<li>Prototipo Rencor (4⭐)</li>
+							<li>Deseo Ponzoñoso (4⭐)</li>
+							<li>Espada de Favonius (4⭐)</li>
+							<li>Espada de Sacrificio (4⭐)</li>
+							<li>Espada Surcacielos (3⭐)</li>
+						</ol>
+					</td>
+					<!-- ARTIFACTS -->
+					<td class="GIBG_Table_Equip_ArtifactsVAL VAL1">
+						<ol>
+							<li>Ritual Antiguo de la Nobleza (4)</li>
+							<li>Exiliado (2) + Erudita (2)</li>
+							<li>Tenacidad de la Geoarmada (2) + Doncella Amada (2)</li>
+							<li>Instructor (4)</li>
+						</ol>
+					</td>
+					<!-- MAIN STATS -->
+					<td class="GIBG_Table_ArtifactStats_MainStatsVAL VAL1">
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Arenas del Eón</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Recarga de Energía / Vida%</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Cáliz de Eonothem</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Vida%</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Tiara de Logos</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Bono de Curación / Vida%</span>
+					</td>
+					<!-- SUBSTATS -->
+					<td class="GIBG_Table_ArtifactStats_SubstatsVAL VAL1">
+						<ol>
+							<li>Recarga de Energía</li>
+							<li>Vida%</li>
+							<li>Vida (fijo)</li>
+						</ol>
+					</td>
+					<!-- TALENT PRIORITY -->
+					<td class="GIBG_Table_TalentsVAL VAL1">
+						<ol>
+							<li>Habilidad Definitiva</li>
+						</ol>
+					</td>
+					<!-- TIPS -->
+					<td class="GIBG_Table_TipsVAL VAL1">
+						<div class="GIBG_Table_TipsSectionDiv">
+							Cantidad de Recarga de Energía recomendada: +200%
+						</div>
+					</td>
+				</tr>
+
+				<!-- DESCRIPTION -->
+				<tr>
+					<td class="GIBG_Table_Notes">NOTAS</td>
+					<td colspan="7" class="GIBG_Table_NotesVAL VAL2">
+						<div class="GIBG_Table_Notes_Role">DPS</div>
+						<span class="GIBG_Table_Notes_Regarding">
+							Con respecto a la elección de armas:
+						</span>
+						<table class="GIBG_SubTable_Regarding">
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Destello en la Oscuridad:</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									El <i>Destello en la Oscuridad</i> tiene el potencial de sobrepasar a la <i>Espina de
+									Hierro</i> <b>[R5]</b>, pero esto requiere que el efecto pasivo se mantenga constantemente.
+									Al recibir daño, tu pasivo se deshabilita por 5 segundos y podrías perder bastante daño,
+									especialmente si recibes daño constante.
+								</td>
+							</tr>
+						</table><br>
+
+						<span class="GIBG_Table_Notes_Regarding">
+							Con respecto a la elección de conjuntos de artefactos:
+						</span>
+						<table class="GIBG_SubTable_Regarding">
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Bruja Carmesí en Llamas (4):</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									Este conjunto funciona mejor al tener a Chongyun en el mismo equipo para realizar la
+									reacción de Derretido de forma constante.<br>
+
+									Asumiendo que tienes un equipo Derretido/Vaporizado, la <i>Bruja Carmesí en Llamas (4)</i> es
+									tu mejor conjunto para realizar daño.<br>
+
+									El Bono de Daño Pyro siempre será lo mejor para el cáliz. El combo para la mayor cantidad
+									de daño Derretido/Vaporizado es utilizando la <i>Espada Negra</i> y unas Arenas del Eón con
+									Maestría Elemental. La <i>Espina de Hierro</i> al <b>[R1]</b>, junto con unas Arenas del Eón
+									con Maestría Elemental produce un rendimiento decreciente y eso no es bueno, pero al tenerlo
+									al <b>[R2]</b> o más es distinto por sus mejoras (asumiendo que no tienes un conjunto súper
+									potenciado con atributos de Prob. CRIT/Daño CRIT, en ese caso, la <i>Aquila Favonia</i> con
+									Arenas del Eón con Maestría Elemental es simple y llanamente mejor.)
+								</td>
+							</tr>
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Furia del Trueno (4):</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									Este conjunto <b>funciona mejor al tener a supports Electro como Beidou y Fischl/Lisa</b>, ya que
+									permite que Bennett realice dos cosas:<br>
+									1) Spamear su Habilidad Elemental para realizar daño Pyro + Sobrecarga<br>
+									2) Generar muchísimas partículas de energía para todo el equipo<br><br>
+
+									<b>La <i>Furia del Trueno (4)</i> también permite que Bennett destruya rápidamente los
+									escudos de los Bardos del Abismo</b> en la Espiral del Abismo. Esta composición es
+									generalmente recomendada para aquellos que tengan a Beidou al <b>[C2]/[C6]. Es importante
+									mencionar que los atributos principales de los artefactos que quieras farmear para Bennett
+									sean variadas del resto de los artefactos principales que usualmente irías en otros builds.
+									En lugar de ATQ/Maestría Elemental, Bono de Daño Pyro, o Prob. CRIT/Daño CRIT, podrías
+									considerar ir por Maestría Elemental/Bono de Daño Pyro/Maestría Elemental en un conjunto de
+									<i>Furia del Trueno (4)</i></b>. Así, esto también significa que las armas que tengan un
+									atributo secundario de Maestría Elemental como la <i>Espina de Hierro</i> tengan más
+									prioridad que el resto.<br><br>
+
+									También es importante mencionar que, con una <i>Furia del Trueno (4)</i>, el <i>Cortador
+									de Jade Primordial</i> sea capaz de sobrepasar al <i>Reflejo de las Tinieblas</i> debido a
+									su fantástica cantidad de Prob. CRIT, que te permitirá vaporizar constantemente a pesar de
+									tener artefactos que tengan atributos secundarios con poco Daño CRIT y Prob. CRIT. Esto
+									asumiendo que tus piezas con Maestría Elemental (Arenas, Cáliz y Tiara) no tengan atributos
+									secundarios de Prob. CRIT. Sin embargo, en dado caso de que, por alguna extraña ocasión de
+									que tus piezas de Maestría Elemental tengan muchos atributos secundarios de Daño CRIT y/o
+									Prob. CRIT, el <i>Reflejo de las Tinieblas</i> fácilmente sobrepasa al <i>Cortador de Jade
+									Primordial</i>. Se recomienda una cantidad de Recarga de Energía de entre 130% al 150%. Es
+									importante destacar que <b>con una <i>Furia del Trueno (4)</i>, tendrás muchísima libertad de
+									acción en cuanto a Recarga de Energía se refiere</b>.
+								</td>
+							</tr>
+						</table>
+
+						<div class="GIBG_Table_Notes_Role SecondRole">AUXILIAR HABILIDAD DEFINITIVA ⭐</div>
+						<p>
+							Tener a Bennett como Auxiliar de Habilidad Definitiva <b>hace que ignore por completo la necesidad de
+							curar</b> ya que la gente usualmente no necesita que él necesariamente cure al equipo, y prefiere
+							<b>sacar provecho del máximo daño posible</b> en su lugar.
+						</p>
+
+						<p>
+							En este build, Bennett está buildeado con <b>atributos ofensivos como ATQ%, Bono de Daño Pyro, y Prob.
+							CRIT/Daño CRIT mientras tiene una buena cantidad de Recarga de Energía para poder utilizar la
+							Habilidad Definitiva fuera del tiempo de espera.<br>
+							Es recomendable priorizar la Recarga de Energía primero si no puedes utilizar la Habilidad Definitiva
+							fuera del tiempo de espera.</b>
+						</p>
+
+						<div class="GIBG_Table_Notes_Role SecondRole">AUXILIAR</div>
+						<p>
+							<b>La Habilidad Definitiva de Bennett cura en proporción a su Vida</b>, mientras que <b>aumenta el ATQ
+							en proporción a su ATQ Base (ATQ Base del personaje y ATQ Base de su arma).</b>
+						</p>
+
+						<p>
+							<b>POR NINGÚN MOTIVO aumentes la constelación de Bennett de [C5] a [C6], a menos de que esté en un
+							equipo Pyro y sepas lo que estás haciendo. Esto es debido a que Bennett convierte todos los ataques
+							físicos de los personajes dentro del campo de Bennett en Pyro, lo que significa que Bennett puede
+							perder MUCHÍSIMO potencial como auxiliar.</b>
+						</p>
+
+						<p>
+							Aunque Bennett suele ser considerado un curador, él de por sí ya cura bastante sin necesidad de
+							buildear Vida%, por lo que, si no encuentras necesario buildear Vida%, puedes considerar buildearlo
+							como Sub DPS.
+						</p>
+
+						<span class="GIBG_Table_Notes_Regarding">
+							Con respecto a la elección de armas:
+						</span>
+						<table class="GIBG_SubTable_Regarding">
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Reflejo de las Tinieblas, Aquila Favonia:</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									Ambas armas tienen la mayor cantidad base de ATQ del juego, por lo que ambas están situadas
+									arriba en cuanto a posición se refiere. Esto es asumiendo que ya tienes suficiente Recarga
+									de Energía para que puedas seguir aprovechando la Habilidad Definitiva fuera del tiempo de
+									espera para realizar el mayor aumento de ATQ.
+								</td>
+							</tr>
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Juramento por la Libertad:</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									En composiciones donde Bennett puede realizar de forma confiable reacciones elementales (y
+									así activar el efecto pasivo de esta arma), los aumentos producidos por esta arma serían más
+									fuertes que la misma <i>Aquila Favonia</i>.
+								</td>
+							</tr>
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Destello en la Oscuridad:</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									Al día de hoy, esta arma tiene la mayor cantidad base de ATQ de todas las armas de 4
+									estrellas (teniendo aún más ATQ que ciertas armas de 5 estrellas como la <i>Hoja Afilada
+									Celestial</i>.)
+								</td>
+							</tr>
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Prototipo Rencor:</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									Esta arma tiene una de las mayores cantidades de ATQ base para un arma de 4 estrellas (y
+									este es el arma que puedes mandar a forjar en la herrería.)
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+
+<!-- -------------------- XINYAN -------------------- -->
+				<tr>
+					<td class="GIBG_Table_CharacterName" rowspan="2">
+						<div class="GIBG_Table_CharacterContainer d-flex align-items-center justify-content-center">
+							<img src="https://paimon.moe/images/characters/xinyan.png">
+							<span class="GIBG_CharacterNameVAL">XINYAN</span>
+						</div>
+					</td>
+					<td class="GIBG_Table_Role" rowspan="2">ROL</td>
+					<td class="GIBG_Table_Equip" colspan="2">EQUIPAMIENTO</td>
+					<td class="GIBG_Table_ArtifactStats" colspan="2">ATRIBUTOS DE ARTEFACTOS</td>
+					<td class="GIBG_Table_Talents" rowspan="2">PRIORIDAD DE TALENTOS</td>
+					<td class="GIBG_Table_Tips" rowspan="2">CONSEJOS</td>
+				</tr>
+				<tr>
+					<td class="GIBG_Table_Equip GIBG_Table_EquipWeapon">ARMA</td>
+					<td class="GIBG_Table_Equip GIBG_Table_EquipArtifacts">CONJUNTO DE ARTEFACTOS</td>
+					<td class="GIBG_Table_ArtifactStats GIBG_Table_ArtifactStats_MainStats">PRINCIPALES</td>
+					<td class="GIBG_Table_ArtifactStats GIBG_Table_ArtifactStats_Substats">SECUNDARIOS</td>
+				</tr>
+				<tr>
+					<!-- CHARACTER IMAGE -->
+					<td class="GIBG_Table_CharacterImg" rowspan="2">
+						<img src="https://paimon.moe/images/characters/full/xinyan.png">
+					</td>
+					<!-- ROLE -->
+					<td class="GIBG_Table_Role_VAL VAL1 Rol_VAL_Ind">DPS ⭐</td>
+					<!-- WEAPONS -->
+					<td class="GIBG_Table_Equip_WeaponVAL VAL1">
+						<ol>
+							<li>Orgullo Celestial (5⭐)</li>
+							<li>Espada de la Desidia (5⭐)</li>
+							<li>Lápida del Lobo (5⭐)</li>
+							<li>Oda de los Pinos (5⭐)</li>
+							<li>Médula de la Serpiente Marina (4⭐)</li>
+							<li>Argento Estelar de las Nieves (4⭐)</li>
+							<li>Prototipo Arcaico (4⭐)</li>
+							<li>
+								<abbr title="Con una acumulación.">
+									Espada Lítica (4⭐)
+								</abbr>
+							</li>
+							<li>Gran Hoja del Peñasco Oscuro (4⭐)</li>
+							<li>Gran Espada Surcacielos <b>[R5]</b> (3⭐)</li>
+						</ol>
+					</td>
+					<!-- ARTIFACTS -->
+					<td class="GIBG_Table_Equip_ArtifactsVAL VAL1">
+						<ol>
+							<li>Llamas Albinas (2) + Caballería Sanguinaria (2)</li>
+							<li>Retroceso del Meteorito (4)</li>
+							<li>Caballería Sanguinaria (2) + <i>cualquier conj. artf. ATQ+18%</i> (2)</li>
+							<li>Final del Gladiador (4)</li>
+							<li>Caballería Sanguinaria (4)</li>
+						</ol>
+					</td>
+					<!-- MAIN STATS -->
+					<td class="GIBG_Table_ArtifactStats_MainStatsVAL VAL1">
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Arenas del Eón</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">ATQ%</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Cáliz de Eonothem</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Bono de Daño Físico</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Tiara de Logos</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Prob. CRIT / Daño CRIT</span>
+					</td>
+					<!-- SUBSTATS -->
+					<td class="GIBG_Table_ArtifactStats_SubstatsVAL VAL1">
+						<ol>
+							<li>Prob. CRIT / Daño CRIT</li>
+							<li>ATQ%</li>
+							<li>Recarga de Energía</li>
+							<li>ATQ fijo</li>
+							<li>DEF%</li>
+						</ol>
+					</td>
+					<!-- TALENT PRIORITY -->
+					<td class="GIBG_Table_TalentsVAL VAL1">
+						<ol>
+							<li>Ataque Normal</li>
+							<li>Habilidad Definitiva</li>
+							<li>Habilidad Elemental</li>
+						</ol>
+					</td>
+					<!-- TIPS -->
+					<td class="GIBG_Table_TipsVAL VAL1">
+						<div class="GIBG_Table_TipsSectionDiv Tips_XL">
+							La Habilidad Elemental de Xinyan te proporciona estado Pyro al contacto con el escudo. No importa
+							cuántas veces cambies a tus personajes, seguirás aplicando Pyro cada vez que cambies a un personaje
+							con el escudo. Esto te permite limpiar cada estado elemental que se te haya aplicado a ti.
+							<br><br>
+							Si el estado no se limpia, cambia a ese personaje una vez más con el escudo. Pyro no suele limpiar
+							Hydro de forma eficiente, toma por ejemplo el Jardín de cecilias, donde deberás aplicar Pyro al
+							personaje unas 4 veces antes de limpiar el estado Hydro.
+						</div>
+					</td>
+				</tr>
+
+				<tr>
+					<!-- ROLE -->
+					<td class="GIBG_Table_Role_VAL VAL2">AUXILIAR</td>
+					<!-- WEAPONS -->
+					<td class="GIBG_Table_Equip_WeaponVAL VAL2">
+						<ol>
+							<li>Gran Espada de Sacrificio (4⭐)</li>
+							<li>Prototipo Arcaico (4⭐)</li>
+							<li>Sombra Blanca (4⭐)</li>
+							<li>Orgullo Celestial (5⭐)</li>
+							<li>Gran Espada de Favonius (4⭐)</li>
+						</ol>
+					</td>
+					<!-- ARTIFACTS -->
+					<td class="GIBG_Table_Equip_ArtifactsVAL VAL2">
+						<span>
+							<abbr title="Sólo utiliza atributos para DPS si utilizarás estos conjuntos.">
+								<b>Para Sub-DPS:</b>
+							</abbr>
+						</span>
+						<ol>
+							<li>Ritual Antiguo de la Nobleza (4)</li>
+							<li>
+								<abbr title="Elegir Ritual Antiguo de la Nobleza (2), luego elegir uno de los primeros dos.">
+									Caballería Sanguinaria (2) / Llamas Albinas (2) + Ritual Antiguo de la Nobleza (2)
+								</abbr>
+							</li>
+							<li>Caballería Sanguinaria (2) + Llamas Albinas (2)</li>
+							<li>Ritual Antiguo de la Nobleza (2) + <i>cualquier conj. artf. ATQ+18%</i> (2)</li>
+							<li>Caballería Sanguinaria (2) + <i>cualquier conj. artf. ATQ+18%</i> (2)</li>
+						</ol>
+
+						<span><b>Para escudero auxiliar:</b></span>
+						<ol start="6">
+							<li>Tenacidad de la Geoarmada (4)</li>
+							<li>Corazón del Guardián (2) + Ritual Antiguo de la Nobleza (2)</li>
+							<li>Exiliado (4)</li>
+						</ol>
+					</td>
+					<!-- MAIN STATS -->
+					<td class="GIBG_Table_ArtifactStats_MainStatsVAL VAL2">
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Arenas del Eón</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">DEF% / ATQ% / Recarga de Energía</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Cáliz de Eonothem</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Bono de Daño Físico / DEF%</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Tiara de Logos</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">DEF% / Prob. CRIT / Daño CRIT</span>
+					</td>
+					<!-- SUBSTATS -->
+					<td class="GIBG_Table_ArtifactStats_SubstatsVAL VAL2">
+						<ol>
+							<li>DEF% / ATQ%</li>
+							<li>
+								<abbr title="Ve por Daño CRIT al [C2].">
+									Prob. CRIT / Daño CRIT
+								</abbr>
+							</li>
+							<li>
+								<abbr title="Si la tienes como escudera auxiliar, prioriza primero la Recarga de Energía en lugar del ATQ%.">
+									Recarga de Energía
+								</abbr>
+							</li>
+						</ol>
+					</td>
+					<!-- TALENT PRIORITY -->
+					<td class="GIBG_Table_TalentsVAL VAL2">
+						<ol>
+							<li>Habilidad Elemental</li>
+							<li>Habilidad Definitiva</li>
+						</ol>
+					</td>
+					<!-- TIPS -->
+					<td class="GIBG_Table_TipsVAL VAL2">
+						<div class="GIBG_Table_TipsSectionDiv"></div>
+					</td>
+				</tr>
+
+				<!-- DESCRIPTION -->
+				<tr>
+					<td class="GIBG_Table_Notes">NOTAS</td>
+					<td colspan="7" class="GIBG_Table_NotesVAL VAL2">
+						<div class="GIBG_Table_Notes_Role">DPS ⭐</div>
+						<span class="GIBG_Table_Notes_Regarding">
+							Con respecto a la elección de armas:
+						</span>
+						<table class="GIBG_SubTable_Regarding">
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Médula de la Serpiente Marina:</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									Cabe mencionar que una <i>Médula de la Serpiente Marina</i> al <b>[R5]</b> puede superar
+									a todas las armas de 5 estrellas al <b>[R1]</b> con un buen manejo de acumulaciones.
+								</td>
+							</tr>
+						</table><br>
+
+						<span class="GIBG_Table_Notes_Regarding">
+							Con respecto a la elección de conjuntos de artefactos:
+						</span>
+						<table class="GIBG_SubTable_Regarding">
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Caballería Sanguinaria (4):</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									A pesar de lo dependiente que es el estilo de juego de Xinyan con sus Ataques Cargados,
+									un conjunto completo de <i>Caballería Sanguinaria</i> sigue sin ser recomendado debido a
+									que sólo hará efecto después de derrotar a un enemigo.
+								</td>
+							</tr>
+						</table>
+
+						<div class="GIBG_Table_Notes_Role SecondRole">AUXILIAR</div>
+						<span class="GIBG_Table_Notes_Regarding">
+							Con respecto a la elección de conjuntos de artefactos:
+						</span>
+						<table class="GIBG_SubTable_Regarding">
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Ritual Antiguo de la Nobleza (4):</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									Este conjunto sólo puede ser usado en Xinyan si nadie más en el equipo ya tiene este
+									conjunto para el aumento de ATQ a todo el equipo.
+								</td>
+							</tr>
+						</table><br>
+
+						<span class="GIBG_Table_Notes_Regarding">
+							Con respecto a la Tenacidad de la Geoarmada y la Gran Espada del Sacrificio:
+						</span>
+						<p>
+							Xinyan como auxiliar sólo suele ser utilizada por su escudo y el daño de su Habilidad Definitiva.
+							Si quieres utilizarla como auxiliar física, ella necesita tener tanto su talento pasivo de
+							ascensión 4 como <b>[C4]</b> para maximizar sus capacidades de auxiliar, haciéndola más o menos una
+							elección un poco costosa para ser considerada auxiliar física. Sin embargo, el conjunto de la
+							<i>Tenacidad de la Geoarmada</i> le da un nuevo rol con prerrequisitos menores de constelaciones.
+						</p>
+
+						<table class="GIBG_SubTable_Regarding">
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Tenacidad de la Geoarmada (4):</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									Este conjunto le da a Xinyan un rol único entre todos los escuderos. Actualmente, Xinyan
+									es una de las pocas escuderas en el juego que puede sacar el máximo provecho de los efectos
+									del conjunto de la <i>Tenacidad de la Geoarmada</i>. Si puedes maximizar el tiempo de
+									actividad del escudo de Xinyan al nivel 3, ella puede proporcionar una Protección del
+									Escudo del 30% constante, y un aumento del 20% del ATQ al equipo (siempre y cuando los
+									pulsos golpeen al enemigo). Esto significa que la <i>Gran Espada del Sacrificio</i> y la
+									segunda constelación de Xinyan son cruciales para hacer que este conjunto destaque en ella.
+									<b>Este conjunto no es recomendable para ella si no tienes ninguno de estos dos requisitos.</b>
+									<br><br>
+									El tiempo de actividad del escudo también es crucial para maximizar sus capacidades de
+									auxiliar física/escudera. Si no tienes la <i>Gran Espada del Sacrificio</i> ni su <b>[C2]</b>
+									(preferiblemente en <b>[C4]</b>), tal vez sería mejor buildearla como auxiliar Habilidad
+									Definitiva en lugar de auxiliar física/escudera.
+									<br><br>
+									Al ser <b>[C2]</b>, su Habilidad Definitiva "Melodía de la rebelión" tiene un 100% de
+									Prob. CRIT, lo que significa que la puedes buildear con solo Daño CRIT (en lugar de
+									conseguir un radio de 1:2 de Prob. CRIT y Daño CRIT, respectivamente) si intentas
+									buildearla como auxiliar Habilidad Definitiva Física.
+								</td>
+							</tr>
+						</table><br>
+
+						<p>
+							<b>
+								Por lo general, no se recomienda para aplicar Pyro, ya que los pulsos sólo suceden cuando el
+								escudo está al nivel 3, y no son eficientes para romper escudos Cryo.
+							</b>
+						</p>
+					</td>
+				</tr>
+
+<!-- -------------------- YANFEI -------------------- -->
+				<tr>
+					<td class="GIBG_Table_CharacterName" rowspan="2">
+						<div class="GIBG_Table_CharacterContainer d-flex align-items-center justify-content-center">
+							<img src="https://paimon.moe/images/characters/yanfei.png">
+							<span class="GIBG_CharacterNameVAL">YANFEI</span>
+						</div>
+					</td>
+					<td class="GIBG_Table_Role" rowspan="2">ROL</td>
+					<td class="GIBG_Table_Equip" colspan="2">EQUIPAMIENTO</td>
+					<td class="GIBG_Table_ArtifactStats" colspan="2">ATRIBUTOS DE ARTEFACTOS</td>
+					<td class="GIBG_Table_Talents" rowspan="2">PRIORIDAD DE TALENTOS</td>
+					<td class="GIBG_Table_Tips" rowspan="2">CONSEJOS</td>
+				</tr>
+				<tr>
+					<td class="GIBG_Table_Equip GIBG_Table_EquipWeapon">ARMA</td>
+					<td class="GIBG_Table_Equip GIBG_Table_EquipArtifacts">CONJUNTO DE ARTEFACTOS</td>
+					<td class="GIBG_Table_ArtifactStats GIBG_Table_ArtifactStats_MainStats">PRINCIPALES</td>
+					<td class="GIBG_Table_ArtifactStats GIBG_Table_ArtifactStats_Substats">SECUNDARIOS</td>
+				</tr>
+				<tr>
+					<!-- CHARACTER IMAGE -->
+					<td class="GIBG_Table_CharacterImg">
+						<img src="https://paimon.moe/images/characters/full/yanfei.png">
+					</td>
+					<!-- ROLE -->
+					<td class="GIBG_Table_Role_VAL VAL1 Rol_VAL_Ind">DPS ⭐</td>
+					<!-- WEAPONS -->
+					<td class="GIBG_Table_Equip_WeaponVAL VAL1">
+						<ol>
+							<li>Pergamino Celestial (5⭐) ~= Candado Terrenal (5⭐)</li>
+							<li>Oración Perdida a los Vientos Sagrados (5⭐)</li>
+							<li>Sinfonía de los Merodeadores <b>[R5]</b> (4⭐)</li>
+							<li>Cuentos de Dodoco <b>[R5]</b> (4⭐)</li>
+							<li>Perla Solar (4⭐)</li>
+							<li>Sinfonía de los Merodeadores (4⭐)</li>
+							<li>Ágata del Peñasco Oscuro (4⭐)</li>
+							<li>Carta Náutica (4⭐)</li>
+						</ol>
+					</td>
+					<!-- ARTIFACTS -->
+					<td class="GIBG_Table_Equip_ArtifactsVAL VAL1">
+						<ol>
+							<li>Bruja Carmesí en Llamas (4)</li>
+							<li>Orquesta del Errante (4)</li>
+							<li>Bruja Carmesí en Llamas (2) + <i>cualquier conj. artf. ATQ+18%</i> (2)</li>
+							<li>Retroceso del Meteorito (4)</li>
+						</ol>
+					</td>
+					<!-- MAIN STATS -->
+					<td class="GIBG_Table_ArtifactStats_MainStatsVAL VAL1">
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Arenas del Eón</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">ATQ% / Maestría Elemental</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Cáliz de Eonothem</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Bono de Daño Pyro</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Tiara de Logos</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Prob. CRIT / Daño CRIT</span>
+					</td>
+					<!-- SUBSTATS -->
+					<td class="GIBG_Table_ArtifactStats_SubstatsVAL VAL1">
+						<ol>
+							<li>Prob. CRIT / Daño CRIT</li>
+							<li>ATQ%</li>
+							<li>Recarga de Energía</li>
+							<li>Maestría Elemental</li>
+							<li>ATQ fijo</li>
+						</ol>
+					</td>
+					<!-- TALENT PRIORITY -->
+					<td class="GIBG_Table_TalentsVAL VAL1">
+						<ol>
+							<li>Ataque Normal</li>
+							<li>Habilidad Definitiva</li>
+							<li>Habilidad Elemental</li>
+						</ol>
+					</td>
+					<!-- TIPS -->
+					<td class="GIBG_Table_TipsVAL VAL1">
+						<div class="GIBG_Table_TipsSectionDiv">
+							Su Talento Pasivo de su Ascensión 4 realiza un segundo golpe después de un Ataque Cargado CRIT en
+							proporción al 80% de tu ATQ y puede hacer reacciones elementales al igual que tener un tiempo de
+							espera separado para su propia aplicación Pyro.
+						</div>
+					</td>
+				</tr>
+
+				<!-- DESCRIPTION -->
+				<tr>
+					<td class="GIBG_Table_Notes LastCharacter">NOTAS</td>
+					<td colspan="7" class="GIBG_Table_NotesVAL VAL2 LastCharacter">
+						<div class="GIBG_Table_Notes_Role">DPS ⭐</div>
+						<p>
+							Yanfei puede tener problemas al intentar configurarla para realizar reacciones como DPS.
+							Vaporización es, de forma general, la opción más consistente y necesitarías a Xingchiu para que
+							esto funcione mejor. Cuando tengas un equipo de Vaporización con Xingchiu, 3 Ataques Normales (AN)
+							dentro de un Ataque Cargado (AC), es decir: (AN1>AN2>AN3>AC) es la forma más segura y confiable
+							para vaporizar tus Ataques Cargados. Asegúrate de que estés aplicando primero el efecto Hydro antes
+							de empezar a hacer tus combos.
+						</p>
+						<span class="GIBG_Table_Notes_Regarding">
+							Con respecto a la elección de armas:
+						</span>
+						<table class="GIBG_SubTable_Regarding">
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Cuentos de Dodoco:</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									Si están al mismo nivel de refinación, la <i>Sinfonía de los Merodeadores</i> es mejor que
+									<i>Cuentos de Dodoco</i>, pero asumiendo que tienes <i>Cuentos de Dodoco</i> <b>[R5]</b>
+									contra una <i>Sinfonía de los Merodeadores</i> <b>[R1-R3]</b>, <i>Cuentos de Dodoco</i>
+									<b>[R5]</b> es mejor.<br>
+									<b>
+										Cabe mencionar que el aumento de ATQ de Bennett, o el aumento de <i>Cuentos de
+										Cazadores de Dragones</i> + el aumento del <i>Ritual Antiguo de la Nobleza (4)</i>
+										pueden hacer que la <i>Sinfonía de los Merodeadores</i> y la <i>Perla Solar</i>
+										superen a <i>Cuentos de Dodoco</i>, incluso a refinamientos bajos.
+									</b>
+								</td>
+							</tr>
+						</table><br>
+
+						<span class="GIBG_Table_Notes_Regarding">
+							Con respecto a la elección de conjuntos de artefactos:
+						</span>
+						<table class="GIBG_SubTable_Regarding">
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Retroceso del Meteorito (4):</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									Utilizando a Yanfei con un escudero también te permite hacer uso de un conjunto de 4
+									piezas del <i>Retroceso del Meteorito</i> como una alternativa temporal hasta que obtengas
+									un conjunto de 4 piezas de la <i>Bruja Carmesí en Llamas</i>.
+								</td>
+							</tr>
+						</table><br>
+
+						<span class="GIBG_Table_Notes_Regarding">
+							Con respecto a la elección de prioridad de atributos secundarios:
+						</span>
+						<p>
+							La Recarga de Energía está situada por encima de la Maestría Elemental en términos de priorización
+							debido a que ella tiene un costo de 80 puntos de energía, mientras que su Habilidad Elemental
+							tampoco es muy eficiente para generar suficientes partículas de energía y obtenerla de vuelta. Una
+							gran fuente de energía puede venir de enemigos, al igual que personajes que funcionen como
+							baterías Pyro como Bennett, así que asegúrate de que ella obtenga las partículas ya que los
+							personajes que no estén en combate sólo reciben un 60% del valor de las partículas.
+						</p>
+					</td>
+				</tr>
+			</table>
+
+			<div class="GIBG_CharacterRarity w-100">
+				<span>5 ESTRELLAS</span>
+			</div>
+
+			<table class="GIBG_Table w-100">
+<!-- -------------------- DILUC -------------------- -->
+				<tr>
+					<td class="GIBG_Table_CharacterName" rowspan="2">
+						<div class="GIBG_Table_CharacterContainer d-flex align-items-center justify-content-center">
+							<img src="https://paimon.moe/images/characters/diluc.png">
+							<span class="GIBG_CharacterNameVAL">DILUC</span>
+						</div>
+					</td>
+					<td class="GIBG_Table_Role" rowspan="2">ROL</td>
+					<td class="GIBG_Table_Equip" colspan="2">EQUIPAMIENTO</td>
+					<td class="GIBG_Table_ArtifactStats" colspan="2">ATRIBUTOS DE ARTEFACTOS</td>
+					<td class="GIBG_Table_Talents" rowspan="2">PRIORIDAD DE TALENTOS</td>
+					<td class="GIBG_Table_Tips" rowspan="2">CONSEJOS</td>
+				</tr>
+				<tr>
+					<td class="GIBG_Table_Equip GIBG_Table_EquipWeapon">ARMA</td>
+					<td class="GIBG_Table_Equip GIBG_Table_EquipArtifacts">CONJUNTO DE ARTEFACTOS</td>
+					<td class="GIBG_Table_ArtifactStats GIBG_Table_ArtifactStats_MainStats">PRINCIPALES</td>
+					<td class="GIBG_Table_ArtifactStats GIBG_Table_ArtifactStats_Substats">SECUNDARIOS</td>
+				</tr>
+				<tr>
+					<!-- CHARACTER IMAGE -->
+					<td class="GIBG_Table_CharacterImg">
+						<img src="https://paimon.moe/images/characters/full/diluc.png">
+					</td>
+					<!-- ROLE -->
+					<td class="GIBG_Table_Role_VAL VAL1 Rol_VAL_Ind">DPS ⭐</td>
+					<!-- WEAPONS -->
+					<td class="GIBG_Table_Equip_WeaponVAL VAL1">
+						<ol>
+							<li>Lápida del Lobo (5⭐)</li>
+							<li>Espada de la Desidia (5⭐)</li>
+							<li>Médula de la Serpiente Marina (4⭐)</li>
+							<li>Oda de los Pinos (5⭐)</li>
+							<li>Orgullo Celestial (5⭐)</li>
+							<li>Gran Hoja del Peñasco Oscuro (4⭐)</li>
+							<li>Segadora de la Lluvia (4⭐)</li>
+							<li>
+								<abbr title="Con una acumulación.">
+									Espada Lítica (4⭐)
+								</abbr>
+							</li>
+							<li>Prototipo Arcaico (4⭐)</li>
+							<li>Garrote del Debate (3⭐)</li>
+						</ol>
+					</td>
+					<!-- ARTIFACTS -->
+					<td class="GIBG_Table_Equip_ArtifactsVAL VAL1">
+						<ol>
+							<li>Bruja Carmesí en Llamas (4)</li>
+							<li>Bruja Carmesí en Llamas (2) + <i>cualquier conj. artf. ATQ+18%</i> (2) / Orquesta del Errante (2)</li>
+							<li>Final del Gladiador (4)</li>
+							<li><i>Cualquier conj. artf. ATQ+18%</i> (2) + Artista Marcial (2)</li>
+						</ol>
+					</td>
+					<!-- MAIN STATS -->
+					<td class="GIBG_Table_ArtifactStats_MainStatsVAL VAL1">
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Arenas del Eón</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">ATQ% / Maestría Elemental</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Cáliz de Eonothem</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Bono de Daño Pyro</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Tiara de Logos</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Prob. CRIT / Daño CRIT</span>
+					</td>
+					<!-- SUBSTATS -->
+					<td class="GIBG_Table_ArtifactStats_SubstatsVAL VAL1">
+						<ol>
+							<li>Prob. CRIT / Daño CRIT</li>
+							<li>ATQ%</li>
+							<li>
+								<abbr title="La Maestría Elemental tiene más prioridad si Diluc se encuentra en composiciones de equipos de Vaporización o Derretido.">
+									Maestría Elemental
+								</abbr>
+							</li>
+							<li>Recarga de Energía</li>
+						</ol>
+					</td>
+					<!-- TALENT PRIORITY -->
+					<td class="GIBG_Table_TalentsVAL VAL1">
+						<ol>
+							<li>Ataque Normal</li>
+							<li>
+								<abbr title="Vale la pena mencionar que las constelaciones de Diluc aumentan el daño de su Habilidad Elemental, así que la priorización de talentos puede variar por jugador.">
+									Habilidad Elemental
+								</abbr>
+							</li>
+							<li>Habilidad Definitiva</li>
+						</ol>
+					</td>
+					<!-- TIPS -->
+					<td class="GIBG_Table_TipsVAL VAL1">
+						<div class="GIBG_Table_TipsSectionDiv">
+							Puedes entrelazar los Ataques Normales mientras realizas la Habilidad Elemental. Por ejemplo:
+							donde HE = Habilidad Elemental, AN = Ataque Normal
+
+							HE > AN > AN > HE > AN > AN > HE > AN > AN
+						</div>
+					</td>
+				</tr>
+
+				<!-- DESCRIPTION -->
+				<tr>
+					<td class="GIBG_Table_Notes">NOTAS</td>
+					<td colspan="7" class="GIBG_Table_NotesVAL VAL2">
+						<div class="GIBG_Table_Notes_Role">DPS ⭐</div>
+						<span class="GIBG_Table_Notes_Regarding">
+							Con respecto a la elección de armas:
+						</span>
+						<table class="GIBG_SubTable_Regarding">
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Médula de la Serpiente Marina:</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									Una <i>Médula de la Serpiente Marina</i> al <b>[R5]</b> (con un manejo decente de aumentos)
+									puede superar por mucho a una <i>Lápida del Lobo</i> al <b>[R2]</b>.
+									<br><br>
+									Si Diluc está en <b>[C2]</b>, evita utilizar esta arma ya que <b>[C2]</b> requiere que
+									recibas daño para que el aumento surta efecto, lo cual va en contra del efecto pasivo de
+									la <i>Médula de la Serpiente Marina</i> <b>A MENOS</b> de que Diluc esté siendo usado junto
+									con Zhongli para tener un escudo consistente. La <i>Médula de la Serpiente Marina</i> puede
+									perder sus acumulaciones si recibes daño, pero recibir golpes con el escudo hará que no
+									recibas daño. El aumento de <b>[C2]</b> se va acumulando incluso aunque recibas daño con
+									un escudo, lo que significa que puedes, potencialmente, acumular los aumentos de la <b>[C2]</b>
+									y de la <i>Médula de la Serpiente Marina</i>. Esto sólo puede ser realizado si tienes a un
+									Zhongli muy bien invertido.
+								</td>
+							</tr>
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Segadora de la Lluvia:</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									Obviamente, esta arma sólo se recomienda cuando Diluc está en una composición donde puede
+									procrear Vaporización (por ejemplo, con Xingchiu). <b>La <i>Segadora de la Lluvia</i>
+									también superará a la <i>Gran Hoja del Peñasco Oscuro</i> si la primera está al [R3]</b>.
+								</td>
+							</tr>
+						</table><br>
+
+						<span class="GIBG_Table_Notes_Regarding">
+							Con respecto a la elección de conjuntos de artefactos:
+						</span>
+						<table class="GIBG_SubTable_Regarding">
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Bruja Carmesí en Llamas (4):</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									Es, por lo general, el mejor conjunto para Diluc debido a lo fácil que él puede realizar
+									el efecto de daño Pyro, mientras que su Habilidad Definitiva imbuye sus Ataques Normales
+									y Cargados con Pyro.
+								</td>
+							</tr>
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Final del Gladiador (4):</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									Para aquellos que todavía no están dispuestos a farmear por el conjunto de la <i>Bruja
+									Carmesí en Llamas</i> (normalmente antes de ser Rango de Aventura 45), esto aún puede ser
+									de utilidad para proporcionar un gran aumento del daño por segundo debido a que él sigue
+									dependiendo de Ataques Normales y Cargados la mayor parte del tiempo.
+								</td>
+							</tr>
+						</table><br>
+
+						<span class="GIBG_Table_Notes_Regarding">
+							Con respecto a la elección de prioridad de atributos principales:
+						</span>
+						<p>
+							Si Diluc está junto con Xingchiu donde pueda realizar Vaporización frecuentemente, puedes ir por
+							Arenas del Eón con Maestría Elemental. La Maestría Elemental potencia el daño de reacciones
+							elementales de Diluc por mucho, después de todo. Cabe destacar que, cuando el ataque básico de
+							Diluc imbuido en Pyro está activo, puede realizar Vaporización cada dos Ataques Normales debido a
+							su tiempo de espera interno.
+						</p>
+					</td>
+				</tr>
+
+<!-- -------------------- KLEE -------------------- -->
+				<tr>
+					<td class="GIBG_Table_CharacterName" rowspan="2">
+						<div class="GIBG_Table_CharacterContainer d-flex align-items-center justify-content-center">
+							<img src="https://paimon.moe/images/characters/klee.png">
+							<span class="GIBG_CharacterNameVAL">KLEE</span>
+						</div>
+					</td>
+					<td class="GIBG_Table_Role" rowspan="2">ROL</td>
+					<td class="GIBG_Table_Equip" colspan="2">EQUIPAMIENTO</td>
+					<td class="GIBG_Table_ArtifactStats" colspan="2">ATRIBUTOS DE ARTEFACTOS</td>
+					<td class="GIBG_Table_Talents" rowspan="2">PRIORIDAD DE TALENTOS</td>
+					<td class="GIBG_Table_Tips" rowspan="2">CONSEJOS</td>
+				</tr>
+				<tr>
+					<td class="GIBG_Table_Equip GIBG_Table_EquipWeapon">ARMA</td>
+					<td class="GIBG_Table_Equip GIBG_Table_EquipArtifacts">CONJUNTO DE ARTEFACTOS</td>
+					<td class="GIBG_Table_ArtifactStats GIBG_Table_ArtifactStats_MainStats">PRINCIPALES</td>
+					<td class="GIBG_Table_ArtifactStats GIBG_Table_ArtifactStats_Substats">SECUNDARIOS</td>
+				</tr>
+				<tr>
+					<!-- CHARACTER IMAGE -->
+					<td class="GIBG_Table_CharacterImg">
+						<img src="https://paimon.moe/images/characters/full/klee.png">
+					</td>
+					<!-- ROLE -->
+					<td class="GIBG_Table_Role_VAL VAL1 Rol_VAL_Ind">DPS ⭐</td>
+					<!-- WEAPONS -->
+					<td class="GIBG_Table_Equip_WeaponVAL VAL1">
+						<ol>
+							<li>Pergamino Celestial (5⭐) ~= Candado Terrenal (5⭐)</li>
+							<li>Oración Perdida a los Vientos Sagrados (5⭐)</li>
+							<li>Cuentos de Dodoco <b>[R5]</b> (4⭐)</li>
+							<li>Perla Solar (4⭐)</li>
+							<li>Sinfonía de los Merodeadores (4⭐)</li>
+							<li>Ágata del Peñasco Oscuro (4⭐)</li>
+							<li>Carta Náutica (4⭐)</li>
+							<li>Guía Mágica (3⭐)</li>
+						</ol>
+					</td>
+					<!-- ARTIFACTS -->
+					<td class="GIBG_Table_Equip_ArtifactsVAL VAL1">
+						<ol>
+							<li>Bruja Carmesí en Llamas (2) + <i>cualquier conj. artf. ATQ+18%</i> (2)</li>
+							<li>Virtuoso Corredor de Lava (4)</li>
+							<li>Bruja Carmesí en Llamas (4)</li>
+							<li>Bruja Carmesí en Llamas (2) + Ritual Antiguo de la Nobleza (2)</li>
+							<li>Orquesta del Errante (4)</li>
+						</ol>
+					</td>
+					<!-- MAIN STATS -->
+					<td class="GIBG_Table_ArtifactStats_MainStatsVAL VAL1">
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Arenas del Eón</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">ATQ%</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Cáliz de Eonothem</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Bono de Daño Pyro</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Tiara de Logos</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Prob. CRIT / Daño CRIT</span>
+					</td>
+					<!-- SUBSTATS -->
+					<td class="GIBG_Table_ArtifactStats_SubstatsVAL VAL1">
+						<ol>
+							<li>Prob. CRIT / Daño CRIT</li>
+							<li>ATQ%</li>
+							<li>Maestría Elemental</li>
+							<li>Recarga de Energía</li>
+							<li>ATQ fijo</li>
+						</ol>
+					</td>
+					<!-- TALENT PRIORITY -->
+					<td class="GIBG_Table_TalentsVAL VAL1">
+						<ol>
+							<li>Ataque Normal</li>
+							<li>Habilidad Definitiva</li>
+							<li>Habilidad Elemental</li>
+						</ol>
+					</td>
+					<!-- TIPS -->
+					<td class="GIBG_Table_TipsVAL VAL1">
+						<div class="GIBG_Table_TipsSectionDiv">
+							Los ataques de Klee tienen un 50% de probabilidad de que aparezca una estrellita flotante. La
+							estrellita flotante hace que el próximo Ataque Cargado no consuma Aguante, y aumenta el 50% de
+							su daño.
+						</div>
+					</td>
+				</tr>
+
+				<!-- DESCRIPTION -->
+				<tr>
+					<td class="GIBG_Table_Notes">NOTAS</td>
+					<td colspan="7" class="GIBG_Table_NotesVAL VAL2">
+						<div class="GIBG_Table_Notes_Role">DPS ⭐</div>
+						<p>
+							Un personaje bastante blando en cuestión de animaciones, Klee requiere de un posicionamiento
+							relativamente preciso. Siendo pequeña, es muy difícil de conseguir. Saltar constantemente durante
+							tus Ataques Cargados puede ayudar.
+						</p>
+
+						<span class="GIBG_Table_Notes_Regarding">
+							Con respecto a la elección de armas:
+						</span>
+						<table class="GIBG_SubTable_Regarding">
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Cuentos de Dodoco:</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									Si están al mismo nivel de refinación, la <i>Sinfonía de los Merodeadores</i> y la
+									<i>Perla Solar</i> son mejores que <i>Cuentos de Dodoco</i>, pero asumiendo que tienes
+									<i>Cuentos de Dodoco</i> <b>[R5]</b> contra una <i>Sinfonía de los Merodeadores</i> o
+									una <i>Perla Solar</i> al <b>[R1-R3]</b>, <i>Cuentos de Dodoco</i> <b>[R5]</b> es mejor.<br>
+									<b>
+										Cabe mencionar que el aumento de ATQ de Bennett, o el aumento de <i>Cuentos de
+										Cazadores de Dragones</i> + el aumento del <i>Ritual Antiguo de la Nobleza (4)</i>
+										pueden hacer que la <i>Sinfonía de los Merodeadores</i> y la <i>Perla Solar</i>
+										superen a <i>Cuentos de Dodoco</i>, incluso a refinamientos bajos.
+									</b>
+								</td>
+							</tr>
+						</table><br>
+
+						<span class="GIBG_Table_Notes_Regarding">
+							Con respecto a la elección de conjuntos de artefactos:
+						</span>
+						<table class="GIBG_SubTable_Regarding">
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Virtuoso Corredor de Lava (4):</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									El kit de Klee hace que sea muy complicado realizar reacciones de Vaporización y de
+									Derretido de la misma manera que otros personajes Pyro podrían hacer, pero su constante
+									aplicación de Pyro pueden hacer que el conjunto del <i>Virtuoso Corredor de Lava</i> sea
+									viable.
+								</td>
+							</tr>
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Bruja Carmesí en Llamas (4):</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									Este conjunto es mejor usado en una Klee que realice reacciones de Vaporización, pero hay
+									que tener en cuenta que, debido a lo rápido que Klee aplica Pyro con todos sus kits, ella
+									podría no ser capaz de Vaporizar la mayoría de sus Ataques Normales y/o Cargados.
+								</td>
+							</tr>
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Orquesta del Errante (4):</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									La Orquesta del Errante aumenta el Ataque Cargado por otro 35% del bono de daño elemental.
+									Puede servir como una opción DPS decente, pero, debido a lo tedioso que son las animaciones
+									de Klee, es difícil poner esto en práctica, pues requiere que esquives muchísimo y, por
+									ende, consumir más Aguante, sin mencionar cómo el daño por segundo puede verse atrapado por
+									los otros builds mencionados anteriormente.
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+
+<!-- -------------------- HU TAO -------------------- -->
+				<tr>
+					<td class="GIBG_Table_CharacterName" rowspan="2">
+						<div class="GIBG_Table_CharacterContainer d-flex align-items-center justify-content-center">
+							<img src="https://paimon.moe/images/characters/hu_tao.png">
+							<span class="GIBG_CharacterNameVAL">HU TAO</span>
+						</div>
+					</td>
+					<td class="GIBG_Table_Role" rowspan="2">ROL</td>
+					<td class="GIBG_Table_Equip" colspan="2">EQUIPAMIENTO</td>
+					<td class="GIBG_Table_ArtifactStats" colspan="2">ATRIBUTOS DE ARTEFACTOS</td>
+					<td class="GIBG_Table_Talents" rowspan="2">PRIORIDAD DE TALENTOS</td>
+					<td class="GIBG_Table_Tips" rowspan="2">CONSEJOS</td>
+				</tr>
+				<tr>
+					<td class="GIBG_Table_Equip GIBG_Table_EquipWeapon">ARMA</td>
+					<td class="GIBG_Table_Equip GIBG_Table_EquipArtifacts">CONJUNTO DE ARTEFACTOS</td>
+					<td class="GIBG_Table_ArtifactStats GIBG_Table_ArtifactStats_MainStats">PRINCIPALES</td>
+					<td class="GIBG_Table_ArtifactStats GIBG_Table_ArtifactStats_Substats">SECUNDARIOS</td>
+				</tr>
+				<tr>
+					<!-- CHARACTER IMAGE -->
+					<td class="GIBG_Table_CharacterImg">
+						<img src="https://paimon.moe/images/characters/full/hu_tao.png">
+					</td>
+					<!-- ROLE -->
+					<td class="GIBG_Table_Role_VAL VAL1 Rol_VAL_Ind">DPS ⭐</td>
+					<!-- WEAPONS -->
+					<td class="GIBG_Table_Equip_WeaponVAL VAL1">
+						<ol>
+							<li>Báculo de Homa (5⭐)</li>
+							<li>Perdición del Dragón (4⭐)</li>
+							<li>Halcón de Jade (5⭐)</li>
+							<li>Lanza del Duelo (4⭐)</li>
+							<li>Lanza del Peñasco Oscuro (4⭐)</li>
+							<li>Lanza Perforanubes (5⭐)</li>
+							<li>Púa Celestial (5⭐)</li>
+							<li>Borla Blanca (3⭐)</li>
+							<li>
+								<abbr title="Con dos acumulaciones.">
+									Lanza Lítica (4⭐)
+								</abbr>
+							</li>
+						</ol>
+					</td>
+					<!-- ARTIFACTS -->
+					<td class="GIBG_Table_Equip_ArtifactsVAL VAL1">
+						<ol>
+							<li>Bruja Carmesí en Llamas (2) + <i>cualquier conj. artf. ATQ+18%</i> (2)</li>
+							<li>Reminiscencia de la Purificación (4)</li>
+							<abbr title="Elegir Bruja Carmesí en Llamas (2), después elegir otros de estos conjuntos de artefactos.">
+								<li>
+									Bruja Carmesí en Llamas (2) + Orquesta del Errante (2) / Tenacidad de la Geoarmada (2)
+								</li>
+							</abbr>
+							<li>Retroceso del Meteorito (4)</li>
+						</ol>
+					</td>
+					<!-- MAIN STATS -->
+					<td class="GIBG_Table_ArtifactStats_MainStatsVAL VAL1">
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Arenas del Eón</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Vida% / Maestría Elemental</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Cáliz de Eonothem</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Bono de Daño Pyro</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Tiara de Logos</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Prob. CRIT / Daño CRIT</span>
+					</td>
+					<!-- SUBSTATS -->
+					<td class="GIBG_Table_ArtifactStats_SubstatsVAL VAL1">
+						<ol>
+							<li>Prob. CRIT / Daño CRIT</li>
+							<li>
+								<abbr title="Si tienes menos de 100 de Maestría Elemental (incluyendo el aumento de ME de Sacarosa, conjunto del Instructor (4), etc.), la Maestría Elemental tomará prioridad por encima de la Prob. CRIT / Daño CRIT.">
+									Maestría Elemental
+								</abbr>
+							</li>
+							<li>Vida%</li>
+							<li>ATQ%</li>
+							<li>Recarga de Energía</li>
+						</ol>
+					</td>
+					<!-- TALENT PRIORITY -->
+					<td class="GIBG_Table_TalentsVAL VAL1">
+						<ol>
+							<li>Ataque Normal</li>
+							<li>Habilidad Elemental</li>
+							<li>Habilidad Definitiva</li>
+						</ol>
+					</td>
+					<!-- TIPS -->
+					<td class="GIBG_Table_TipsVAL VAL1">
+						<div class="GIBG_Table_TipsSectionDiv" style="height: 325px">
+							Cuando termines el combo de ataques de Hu Tao con una Habilidad Definitiva, si no saltas o esprintas
+							para cancelar el último Ataque Cargado, la Habilidad Definitiva aún se beneficiará de la Habilidad
+							Elemental de Hu Tao.
+							<br><br>
+							Se recomienda que utilices movimientos de cancelación de animaciones cuando performes tus combos de
+							Hu Tao para maximizar el daño posible.<br>
+							Donde Nx = Ataque Normal (x veces), C = Ataque Cargado, J = Saltar, D = Esprintar:
+							<ul style="padding-left: 15px; padding-right: 15px;">
+								<li><b>N2CJ</b> al tenerla <b>[C0]</b>, y <b>N2CD</b> al <b>[C1]</b>.</li>
+								<li>
+									<b>N3CJ/N3CD</b> puede utilizarse para conservar Aguante, pero a costa de realizar menos daño.
+								</li>
+							</ul>
+						</div>
+					</td>
+				</tr>
+
+				<!-- DESCRIPTION -->
+				<tr>
+					<td class="GIBG_Table_Notes">NOTAS</td>
+					<td colspan="7" class="GIBG_Table_NotesVAL VAL2">
+						<div class="GIBG_Table_Notes_Role">DPS ⭐</div>
+						<p>
+							Hu Tao es súper efectiva cuando se utiliza con Xingchiu para procrear reacciones de Vaporización/
+							Derrite-Congelado, la cual utiliza el mejor conjunto en slot que tiene, la <i>Bruja Carmesí en
+							Llamas (4)</i>. Derrite-Congelado se refiere a Congelar enemigos para después Derretirlos, ya que,
+							a diferencia de Diluc y Klee, Hu Tao no destruye la congelación de los enemigos.
+						</p>
+
+						<span class="GIBG_Table_Notes_Regarding">
+							Con respecto a la elección de armas:
+						</span>
+						<table class="GIBG_SubTable_Regarding">
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Halcón de Jade:</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									En lugar de gastar tiempo acumulando y manteniendo el efecto pasivo del arma, puedes
+									empezar con un potencial de daño máximo con la <i>Perdición del Dragón</i> para realizar
+									un Nuke Vaporización/DPS, la cual da resultados más rápidos en situaciones realistas.
+								</td>
+							</tr>
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Lanza del Duelo:</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									La <i>Lanza del Duelo</i> es mejor que la <i>Perdición del Dragón</i> cuando no haces
+									Vaporización.
+								</td>
+							</tr>
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Lanza del Peñasco Oscuro:</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									A pesar de que se vea muy bien debido al atributo secundario de Daño CRIT, esta arma tiene
+									pocas mejoras que una <i>Borla Blanca</i> al <b>[R5]</b> ya que es difícil mantener
+									acumulaciones de forma consistente. No se recomienda obtener esta arma sólo para Hu Tao
+									y sólo debería considerar el utilizarse si ya tienes una.
+								</td>
+							</tr>
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Lanza Perforanubes y Púa Celestial:</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									Proporciona poco o nada a Hu Tao ya que ella hace mejor con Vida% que con ATQ% con cada
+									lanza del juego. <b>El ATQ Base hace muy poca diferencia en Hu Tao porque ella tiene una
+									alta taza de conversión de Vida a ATQ.</b>
+								</td>
+							</tr>
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Borla Blanca:</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									Esta arma requiere que tus combos se centren más en Ataques Normales (como N2C en lugar de
+									N1C) para hacer uso de su efecto pasivo.
+								</td>
+							</tr>
+						</table><br>
+
+						<span class="GIBG_Table_Notes_Regarding">
+							Con respecto a la elección de conjuntos de artefactos:
+						</span>
+						<table class="GIBG_SubTable_Regarding">
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Reminiscencia de la Purificación (4):</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									Proporciona mejor daño AA que un conjunto de 4 piezas de la <i>Bruja Carmesí en Llamas</i>,
+									pero baja el daño de tu Habilidad Definitiva lo cual puede afectar negativamente a tu
+									daño de AdE, también, si no eres capaz de realizar la Habilidad Definitiva, puede causar
+									problemas de supervivencia si no tienes a algún healer (curador).
+								</td>
+							</tr>
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">
+									Retroceso del Meteorito (4), y Bruja Carmesí en Llamas (2) + Orquesta del Errante (2)
+									/ Tenacidad de la Geoarmada (2):
+								</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									Todas estas opciones están casi a pie de igualdad porque ambos conjuntos producen un
+									daño promedio muy similar, asumiendo que tienes un tiempo de actividad del 100% con un
+									escudo al utilizar el <i>Retroceso del Meteorito (4)</i>. La diferencia es que, podrías
+									utilizar el conjunto <i>Orquesta del Errante (2)</i>/<i>Bruja Carmesí en Llamas (2)</i>
+									cuando te centres en realizar un Nuke y en una mejor consistencia, mientras que el
+									<i>Retroceso del Meteorito (4)</i> es para realizar más daño de los Ataques Normales,
+									pero a cambio de producir menos daño con la Habilidad Definitiva, aunque puede ser
+									inconsistente si no puedes mantener tu escudo de forma permanente.
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+
+<!-- -------------------- YOIMIYA -------------------- -->
+				<tr>
+					<td class="GIBG_Table_CharacterName" rowspan="2">
+						<div class="GIBG_Table_CharacterContainer d-flex align-items-center justify-content-center">
+							<img src="https://paimon.moe/images/characters/yoimiya.png">
+							<span class="GIBG_CharacterNameVAL">YOIMIYA</span>
+						</div>
+					</td>
+					<td class="GIBG_Table_Role" rowspan="2">ROL</td>
+					<td class="GIBG_Table_Equip" colspan="2">EQUIPAMIENTO</td>
+					<td class="GIBG_Table_ArtifactStats" colspan="2">ATRIBUTOS DE ARTEFACTOS</td>
+					<td class="GIBG_Table_Talents" rowspan="2">PRIORIDAD DE TALENTOS</td>
+					<td class="GIBG_Table_Tips" rowspan="2">CONSEJOS</td>
+				</tr>
+				<tr>
+					<td class="GIBG_Table_Equip GIBG_Table_EquipWeapon">ARMA</td>
+					<td class="GIBG_Table_Equip GIBG_Table_EquipArtifacts">CONJUNTO DE ARTEFACTOS</td>
+					<td class="GIBG_Table_ArtifactStats GIBG_Table_ArtifactStats_MainStats">PRINCIPALES</td>
+					<td class="GIBG_Table_ArtifactStats GIBG_Table_ArtifactStats_Substats">SECUNDARIOS</td>
+				</tr>
+				<tr>
+					<!-- CHARACTER IMAGE -->
+					<td class="GIBG_Table_CharacterImg">
+						<img src="https://paimon.moe/images/characters/full/yoimiya.png">
+					</td>
+					<!-- ROLE -->
+					<td class="GIBG_Table_Role_VAL VAL1 Rol_VAL_Ind">DPS ⭐</td>
+					<!-- WEAPONS -->
+					<td class="GIBG_Table_Equip_WeaponVAL VAL1">
+						<ol>
+							<li>Agitador del Relámpago (5⭐)</li>
+							<li>Arco de Amos (5⭐)</li>
+							<li>Alas Celestiales (5⭐)</li>
+							<li>Herrumbre (4⭐)</li>
+							<li>Prototipo Luz de Luna (4⭐)</li>
+							<li>Masacrademonios (4⭐)</li>
+							<li>Tirachinas (3⭐)</li>
+						</ol>
+					</td>
+					<!-- ARTIFACTS -->
+					<td class="GIBG_Table_Equip_ArtifactsVAL VAL1">
+						<ol>
+							<li>Bruja Carmesí en Llamas (2) + <i>cualquier conj. artf. ATQ+18%</i> (2)</li>
+							<li>Reminiscencia de la Purificación (4)</li>
+							<li>Bruja Carmesí en Llamas (4)</li>
+							<li>Virtuoso Corredor de Lava (4)</li>
+						</ol>
+					</td>
+					<!-- MAIN STATS -->
+					<td class="GIBG_Table_ArtifactStats_MainStatsVAL VAL1">
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Arenas del Eón</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">ATQ%</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Cáliz de Eonothem</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Bono de Daño Pyro</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Tiara de Logos</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Prob. CRIT / Daño CRIT</span>
+					</td>
+					<!-- SUBSTATS -->
+					<td class="GIBG_Table_ArtifactStats_SubstatsVAL VAL1">
+						<ol>
+							<li>Prob. CRIT / Daño CRIT</li>
+							<li>ATQ%</li>
+							<li>Maestría Elemental</li>
+							<li>Recarga de Energía</li>
+							<li>ATQ fijo</li>
+						</ol>
+					</td>
+					<!-- TALENT PRIORITY -->
+					<td class="GIBG_Table_TalentsVAL VAL1">
+						<ol>
+							<li>Ataque Normal</li>
+							<li>Habilidad Definitiva</li>
+							<li>Habilidad Elemental</li>
+						</ol>
+					</td>
+					<!-- TIPS -->
+					<td class="GIBG_Table_TipsVAL VAL1">
+						<div class="GIBG_Table_TipsSectionDiv"></div>
+					</td>
+				</tr>
+
+				<!-- DESCRIPTION -->
+				<tr>
+					<td class="GIBG_Table_Notes LastCharacter">NOTAS</td>
+					<td colspan="7" class="GIBG_Table_NotesVAL VAL2 LastCharacter">
+						<div class="GIBG_Table_Notes_Role">DPS ⭐</div>
+						<span class="GIBG_Table_Notes_Regarding">
+							Con respecto a la elección de armas:
+						</span>
+						<table class="GIBG_SubTable_Regarding">
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Herrumbre:</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									Al estar refinado relativamente alto, el Herrumbre puede ser una mejor opción que un
+									<i>Arco de Amos</i> al <b>[R1]</b> y las <i>Alas Celestiales</i>.
+								</td>
+							</tr>
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Masacrademonios:</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									Si estás usando el conjunto de artefactos de la <i>Reminiscencia de la Purificación (4)</i>,
+									esta arma no sinergizará muy bien con este conjunto de artefactos debido a su talento
+									pasivo. Por lo general, se recomienda utilizar el <i>Prototipo Luz de Luna</i> en lugar de
+									éste.
+								</td>
+							</tr>
+						</table><br>
+
+						<span class="GIBG_Table_Notes_Regarding">
+							Con respecto a la elección de conjuntos de artefactos:
+						</span>
+						<table class="GIBG_SubTable_Regarding">
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">
+									Bruja Carmesí en Llamas (2) + cualquier conjunto de artefactos con ATQ+18% (2):
+								</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									El mejor <b>conjunto de artefactos general</b> para Yoimiya. Este conjunto es considerado
+									mejor que la <i>Reminiscencia de la Purificación (4)</i> debido al combo opcional de
+									Yoimiya que involucra utilizar la Habilidad Definitiva antes que la Habilidad Elemental.
+									<b>La <i>Reminiscencia de la Purificación (4)</i> ofrece más daño personal en Yoimiya pero
+									sacrifica su tiempo de actividad de la Habilidad Definitiva lo que resulta en un bajo DPS
+									para el equipo en general</b> debido a que no es capaz de beneficiarse completamente del
+									talento pasivo de su cuarta ascensión.
+								</td>
+							</tr>
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Bruja Carmesí en Llamas (4):</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									El conjunto de artefactos más utilizado por personajes Pyro centralizados en Vaporizar,
+									<b>que destaca mucho sobre las demás opciones, especialmente en composiciones centralizadas
+									en hacer reacciones elementales</b>.
+								</td>
+							</tr>
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Bruja Carmesí en Llamas (4):</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									Una opción viable para un <b>equipo monotipo Pyro</b> donde Yoimiya puede tener el 100% de
+									tiempo de actividad por el efecto pasivo del artefacto.
+								</td>
+							</tr>
+						</table><br>
+
+						<span class="GIBG_Table_Notes_Regarding">
+							Con respecto a la elección de prioridad de talentos:
+						</span>
+						<p>
+							Su Habilidad Elemental no beneficia mucho, por lo que se toma como menos prioritaria. Si no te
+							importa mucho el daño que produce su Habilidad Definitiva, puedes priorizar la Habilidad Elemental
+							sobre la Habilidad Definitiva, pero el talento del Ataque Normal sigue teniendo la máxima prioridad,
+							puesto que es la fuente principal de la producción de daño de Yoimiya.
+						</p>
+					</td>
+				</tr>
+			</table>
+		</section>
+
+		<footer class="w-100 d-flex justify-content-center">
+			<div id="footerContent" class="px-2">©2019-2021 TheAdorableOshawott. Hosted by Neocities and powered by Bootstrap.</div>
+			<div id="header_spacer"></div>
+			<img class="my-2" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/600px-Bootstrap_logo.svg.png">
+			<img class="my-2" src="https://theadorableoshawott.neocities.org/neocities.png">
+		</footer>
+    </body>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+</HTML>
