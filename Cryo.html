@@ -1,0 +1,2026 @@
+<!DOCTYPE HTML>
+<HTML lang="es" xmlns="http://www.w3.org/1999/html">
+	<head>
+		<!-- Required meta tags -->
+        <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Cryo - Guía de builds de Genshin Impact</title>
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+		<link rel="stylesheet" href="CSS/main.css">
+		<link rel="stylesheet" href="CSS/GenshinImpactBuildGuide.css">
+
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,700,700i" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=ABeeZee:400,400i" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i" rel="stylesheet">
+
+		<!-- Colors -->
+		<style>
+			html, table, .GIBG_Header_Element, .GIBG_Header_Discl {
+				color: black!important;
+				text-shadow: none!important;
+			}
+
+			.VAL1 {
+				background-color: #21F5FF;
+			}
+
+			.VAL2 {
+				background-color: #7DF9FF;
+				color: black;
+			}
+
+			.active, .GIBG_Header, .GIBG_CharacterRarity, .GIBG_Table_CharacterName, .GIBG_Table_Role,
+			.GIBG_Table_Equip, .GIBG_Table_ArtifactStats, .GIBG_Table_Talents, .GIBG_Table_Tips, .GIBG_Table_CharacterImg,
+			.GIBG_Table_Notes, .GIBG_Table_CharacterName {
+				background-color: #00E7F2!important;
+				color: black;
+				text-shadow: none!important;
+			}
+
+			.active {
+				color: black!important;
+			}
+
+			#PyroPage {
+				color: #EA9999;
+			}
+
+			#PyroPage:hover {
+				background-color: #EA9999;
+				color: #C00;
+			}
+
+			#ElectroPage {
+				color: #B4A7D6;
+			}
+
+			#ElectroPage:hover {
+				background-color: #B4A7D6;
+				color: #674EA7;
+			}
+
+			#HydroPage {
+				color: #A4C2F4;
+			}
+
+			#HydroPage:hover {
+				background-color: #A4C2F4;
+				color: #3C78D8;
+			}
+		</style>
+    </head>
+
+    <body>
+		<header class="container-fluid d-flex flex-row justify-content-center align-middle">
+			<div id="my_name" class="header_item bd-highlight px-2">
+				<img id="avatar" src="https://pbs.twimg.com/profile_images/1437677631311204354/S5q6owg__400x400.png">
+				TheAdorableOshawott
+			</div>
+			<div id="header_spacer" class="header_item bd-highlight px-2"></div>
+			<div class="header_item bd-highlight px-3">Pokémon</div>
+			<div class="header_item bd-highlight px-3">Kirby</div>
+			<div class="header_item bd-highlight px-3">Animal Crossing</div>
+			<div class="header_item bd-highlight px-3">Genshin Impact</div>
+			<div class="header_item bd-highlight px-3">Other stuff</div>
+			<button type="button" id="backToHome" class="btn btn-outline-light">Back to Home</button>
+		</header>
+
+		<section id="GenshinImpactBuildGuide">
+			<ul class="nav nav-tabs ElementMenu">
+				<li class="nav-item"><a id="PyroPage" class="nav-link" href="Pyro.html">Pyro</a></li>
+				<li class="nav-item"><a id="ElectroPage" class="nav-link" href="Electro.html">Electro</a></li>
+				<li class="nav-item"><a id="HydroPage" class="nav-link" href="Hydro.html">Hydro</a></li>
+				<li class="nav-item"><a id="CryoPage" class="nav-link active" aria-current="page">Cryo</a></li>
+				<li class="nav-item"><a id="AnemoPage" class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Anemo</a></li>
+				<li class="nav-item"><a id="GeoPage" class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Geo</a></li>
+			</ul>
+
+			<div class="GIBG_Header w-100">
+				<div class="GIBG_Header_Element">CRYO</div>
+				<div class="GIBG_Header_Discl"><span>El rol en el que el personaje se destaque mejor estará marcado con una ⭐</span></div>
+			</div>
+
+			<div class="GIBG_CharacterRarity GIBG_LightMode w-100">
+				<span style="text-shadow: none;">4 ESTRELLAS</span>
+			</div>
+
+			<table class="GIBG_Table w-100">
+<!-- -------------------- DIONA -------------------- -->
+				<tr>
+					<td class="GIBG_Table_CharacterName" rowspan="2">
+						<div class="GIBG_Table_CharacterContainer d-flex align-items-center justify-content-center">
+							<img src="https://paimon.moe/images/characters/diona.png">
+							<span class="GIBG_LightMode GIBG_CharacterNameVAL">DIONA</span>
+						</div>
+					</td>
+					<td class="GIBG_LightMode GIBG_Table_Role" rowspan="2">ROL</td>
+					<td class="GIBG_LightMode GIBG_Table_Equip" colspan="2">EQUIPAMIENTO</td>
+					<td class="GIBG_LightMode GIBG_Table_ArtifactStats" colspan="2">ATRIBUTOS DE ARTEFACTOS</td>
+					<td class="GIBG_LightMode GIBG_Table_Talents" rowspan="2">PRIORIDAD DE TALENTOS</td>
+					<td class="GIBG_LightMode GIBG_Table_Tips" rowspan="2">CONSEJOS</td>
+				</tr>
+				<tr>
+					<td class="GIBG_Table_Equip GIBG_Table_EquipWeapon">ARMA</td>
+					<td class="GIBG_Table_Equip GIBG_Table_EquipArtifacts">CONJUNTO DE ARTEFACTOS</td>
+					<td class="GIBG_Table_ArtifactStats GIBG_Table_ArtifactStats_MainStats">PRINCIPALES</td>
+					<td class="GIBG_Table_ArtifactStats GIBG_Table_ArtifactStats_Substats">SECUNDARIOS</td>
+				</tr>
+				<tr>
+					<!-- CHARACTER IMAGE -->
+					<td class="GIBG_Table_CharacterImg">
+						<img src="https://paimon.moe/images/characters/full/diona.png">
+					</td>
+					<!-- ROLE -->
+					<td class="GIBG_Table_Role_VAL VAL1 Rol_VAL_Ind">AUXILIAR ⭐</td>
+					<!-- WEAPONS -->
+					<td class="GIBG_Table_Equip_WeaponVAL VAL1">
+						<ol>
+							<li>Arco del Sacrificio (4⭐)</li>
+							<li>Arco de Favonius (4⭐)</li>
+							<li>Elegía del Fin (5⭐)</li>
+							<li>Arco Recurvo (3⭐)</li>
+						</ol>
+					</td>
+					<!-- ARTIFACTS -->
+					<td class="GIBG_Table_Equip_ArtifactsVAL VAL1">
+						<ol>
+							<li>Ritual Antiguo de la Nobleza (4)</li>
+							<li>Emblema del Destino (2) + Tenacidad de la Geoarmada (2)</li>
+							<li>Doncella Amada (2) + Tenacidad de la Geoarmada (2)</li>
+							<li>Doncella Amada (4)</li>
+							<li>Doncella Amada (2) + <i>cualquier conj. artf. +20% <abbr title="Recarga de Energía">RE</abbr></i> (2)</li>
+							<li>Exiliado (4)</li>
+							<li>Instructor (4)</li>
+						</ol>
+					</td>
+					<!-- MAIN STATS -->
+					<td class="GIBG_Table_ArtifactStats_MainStatsVAL VAL1">
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Arenas del Eón</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Recarga de Energía / Vida%</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Cáliz de Eonothem</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Vida%</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Tiara de Logos</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Vida% / Bono de Curación</span>
+					</td>
+					<!-- SUBSTATS -->
+					<td class="GIBG_Table_ArtifactStats_SubstatsVAL VAL1">
+						<ol>
+							<li>Vida%</li>
+							<li>Recarga de Energía</li>
+							<li>Vida fija</li>
+						</ol>
+					</td>
+					<!-- TALENT PRIORITY -->
+					<td class="GIBG_Table_TalentsVAL VAL1">
+						<ol>
+							<li>
+								Habilidad Definitiva = <br>
+								Habilidad Elemental
+							</li>
+						</ol>
+					</td>
+					<!-- TIPS -->
+					<td class="GIBG_Table_TipsVAL VAL1">
+						<div class="GIBG_Table_TipsSectionDiv">
+							La Habilidad Elemental de Diona te proporciona un escudo Cryo que te permite limpiarte de
+							estado. Cada vez que cambies de personaje con el escudo puesto, aplicará Cryo. Esto actúa
+							como una limpia.
+						</div>
+					</td>
+				</tr>
+
+				<!-- DESCRIPTION -->
+				<tr>
+					<td class="GIBG_Table_Notes">NOTAS</td>
+					<td colspan="7" class="GIBG_Table_NotesVAL VAL2">
+						<div class="GIBG_Table_Notes_Role">AUXILIAR ⭐</div>
+						<p>
+							El escudo que proporciona Diona debería compensar la necesidad de curarse con su Habilidad
+							Definitiva. El aumento de daño del <i>Ritual Antiguo de la Nobleza (4)</i> tiene un mayor
+							uso practico. Adicionalmente, su primera constelación aumenta por mucho su tiempo de
+							actividad, reduciendo aún más la cantidad de curación necesitada.
+						</p>
+
+						<p>
+							Como auxiliar, Diona se suele utilizar para tres cosas: Escudo, Curación, y generación de
+							partículas Cryo. Emparejando a Diona con otro personaje Cryo como Ganyu o Eula te permite
+							canalizar la energía hacia tus DPS mientras les proporcionas escudos rápidos para resistir.
+							Armas como el <i>Arco del Sacrificio</i> y el <i>Arco de Favonius</i> aumentan muchísimo su
+							potencial como batería.
+						</p>
+
+						<span class="GIBG_Table_Notes_Regarding">
+							Con respecto a la elección de armas:
+						</span>
+						<table class="GIBG_SubTable_Regarding">
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Arco del Sacrificio:</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									Mejor preferido que el <i>Arco de Favonius</i>, especialmente a refinamientos altos,
+									debido a que el escudo obtiene más tiempo de actividad.
+								</td>
+							</tr>
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Arco de Favonius:</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									Deberías ver e invertir en cubrir la Prob. CRIT de Diona para tener altas
+									probabilidades de activar el efecto pasivo del arco para generar energía.
+								</td>
+							</tr>
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Arco Recurvo:</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									Este arco es tu mejor elección para tener escudos más resistentes, pero reduce el
+									tiempo de actividad de la Habilidad Definitiva de Diona debido a que el arma carece
+									de Recarga de Energía.
+								</td>
+							</tr>
+						</table><br>
+
+						<span class="GIBG_Table_Notes_Regarding">
+							Con respecto a la elección de conjuntos de artefactos:
+						</span>
+						<table class="GIBG_SubTable_Regarding">
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Ritual Antiguo de la Nobleza (4):</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									Este conjunto de artefactos proporciona un aumento de ATQ a la vez que aumenta el
+									daño de su Habilidad Definitiva. Este conjunto se suele usar mucho en curadores
+									porque quieres utilizar conjuntos de artefactos centralizados en hacer daño en otras
+									unidades auxiliares tales como Xingchiu o Beidou.
+								</td>
+							</tr>
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">
+									Emblema del Destino (2) + Tenacidad de la Geoarmada (2):
+								</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									Proporciona tanto Recarga de Energía como Vida, los cuales son muy valuables para
+									Diona como auxiliar, aumentando el tiempo de actividad de su Habilidad Definitiva y
+									fuerza de curación, respectivamente.
+								</td>
+							</tr>
+						</table><br>
+
+						<span class="GIBG_Table_Notes_Regarding">
+							Con respecto a la elección de prioridad de atributos principales:
+						</span>
+						<p>
+							Un conjunto completo de Vida% es recomendable si quieres un escudo resistente pero una
+							curación débil. Puedes poner una tiara con Bono de Curación si quieres un balance entre los
+							dos.
+						</p>
+
+						<span class="GIBG_Table_Notes_Regarding">
+							Con respecto a la elección de prioridad de talentos:
+						</span>
+						<p>
+							Prioriza de acuerdo a cómo utilizrás a tu Diona (escudera o curadora). Si quieres un balance
+							entre los dos, sube ambos de nivel por igual.
+						</p>
+					</td>
+				</tr>
+
+<!-- -------------------- CHONGYUN -------------------- -->
+				<tr>
+					<td class="GIBG_Table_CharacterName" rowspan="2">
+						<div class="GIBG_Table_CharacterContainer d-flex align-items-center justify-content-center">
+							<img src="https://paimon.moe/images/characters/chongyun.png">
+							<span class="GIBG_CharacterNameVAL">CHONGYUN</span>
+						</div>
+					</td>
+					<td class="GIBG_Table_Role" rowspan="2">ROL</td>
+					<td class="GIBG_Table_Equip" colspan="2">EQUIPAMIENTO</td>
+					<td class="GIBG_Table_ArtifactStats" colspan="2">ATRIBUTOS DE ARTEFACTOS</td>
+					<td class="GIBG_Table_Talents" rowspan="2">PRIORIDAD DE TALENTOS</td>
+					<td class="GIBG_Table_Tips" rowspan="2">CONSEJOS</td>
+				</tr>
+				<tr>
+					<td class="GIBG_Table_Equip GIBG_Table_EquipWeapon">ARMA</td>
+					<td class="GIBG_Table_Equip GIBG_Table_EquipArtifacts">CONJUNTO DE ARTEFACTOS</td>
+					<td class="GIBG_Table_ArtifactStats GIBG_Table_ArtifactStats_MainStats">PRINCIPALES</td>
+					<td class="GIBG_Table_ArtifactStats GIBG_Table_ArtifactStats_Substats">SECUNDARIOS</td>
+				</tr>
+				<tr>
+					<!-- CHARACTER IMAGE -->
+					<td class="GIBG_Table_CharacterImg">
+						<img src="https://paimon.moe/images/characters/full/chongyun.png">
+					</td>
+					<!-- ROLE -->
+					<td class="GIBG_Table_Role_VAL VAL1 Rol_VAL_Ind">AUXILIAR HAB. DEF. ⭐</td>
+					<!-- WEAPONS -->
+					<td class="GIBG_Table_Equip_WeaponVAL VAL1">
+						<ol>
+							<li>Lápida del Lobo (5⭐)</li>
+							<li>Médula de la Serpiente Marina (4⭐)</li>
+							<li>Espada de la Desidia (5⭐)</li>
+							<li>Orgullo Celestial (5⭐)</li>
+							<li>Rey de los Mares (4⭐)</li>
+							<li>Espada Lítica (4⭐)</li>
+							<li>Gran Espada de Sacrificio (4⭐)</li>
+							<li>Gran Hoja del Peñasco Oscuro (4⭐)</li>
+							<li>Prototipo Arcaico (4⭐)</li>
+							<li>Gran Espada de Favonius (4⭐)</li>
+						</ol>
+					</td>
+					<!-- ARTIFACTS -->
+					<td class="GIBG_Table_Equip_ArtifactsVAL VAL1">
+						<ol>
+							<li>Ritual Antiguo de la Nobleza (2) + Nómada del Invierno (2)</li>
+							<li>Emblema del Destino (4)</li>
+							<abbr title="Sólo elegir dos de estos conjuntos de artefactos.">
+								<li>
+									Ritual Antiguo de la Nobleza (2) / Nómada del Invierno (2) /
+									Orquesta del Errante (2) / <i>cualquier conj. artf. ATQ+18</i> (2) /
+									Emblema del Destino (2)
+								</li>
+							</abbr>
+							<li>Ritual Antiguo de la Nobleza (4)</li>
+						</ol>
+					</td>
+					<!-- MAIN STATS -->
+					<td class="GIBG_Table_ArtifactStats_MainStatsVAL VAL1">
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Arenas del Eón</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">ATQ% / Recarga de Energía / Maestría Elemental</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Cáliz de Eonothem</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Bono de Daño Cryo</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Tiara de Logos</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Prob. CRIT / Daño CRIT</span>
+					</td>
+					<!-- SUBSTATS -->
+					<td class="GIBG_Table_ArtifactStats_SubstatsVAL VAL1">
+						<ol>
+							<li>Prob. CRIT / Daño CRIT</li>
+							<li>ATQ%</li>
+							<li>Maestría Elemental</li>
+							<li>Recarga de Energía</li>
+							<li>ATQ fijo</li>
+						</ol>
+					</td>
+					<!-- TALENT PRIORITY -->
+					<td class="GIBG_Table_TalentsVAL VAL1">
+						<ol>
+							<li>
+								Habilidad Definitiva = <br>
+								Habilidad Elemental
+							</li>
+						</ol>
+					</td>
+					<!-- TIPS -->
+					<td class="GIBG_Table_TipsVAL VAL1">
+						<div class="GIBG_Table_TipsSectionDiv">
+							La Habilidad Definitiva de Chongyun se calcula como daño de mandoble, lo que significa que
+							puede destruir escudo o estructuras Geo de forma más rápida.
+						</div>
+					</td>
+				</tr>
+
+				<!-- DESCRIPTION -->
+				<tr>
+					<td class="GIBG_Table_Notes">NOTAS</td>
+					<td colspan="7" class="GIBG_Table_NotesVAL VAL2">
+						<div class="GIBG_Table_Notes_Role">AUXILIAR HABILIDAD DEFINITIVA ⭐</div>
+						<p>
+							Chongyun es bastante preferido como Sub-DPS o Nuke en lugar de DPS principal ya que <b>los
+							valores de su Ataque Normal son muy bajos</b>, incluso en su <b>[C1]</b>. En cambio, <b>su
+							Habilidad Definitiva puede golpear bastante duro</b> en constelaciones altas y toma una
+							mayor porción del daño total muy alta en comparación a su Ataque Normal. Además de eso,
+							puedes realizar Derretido Inverso con sus 3 golpes de su Habilidad Definitiva a enemigos
+							que están imbuidos en Pyro, como la Habilidad Elemental y Habilidad Definitiva de Bennett.
+						</p>
+
+						<p>
+							Chongyun es <b>muy raro de ver</b> ya que sólo funciona bien con ciertos equipos, pero
+							también puede perjudicar a otros. Él suele ser utilizado como un <b>activador</b>, ya sea
+							para <b>Equipos de Derretido Inverso</b> (por ejemplo: Bennett como DPS de Derretido),
+							o <b>Equipos de Congelamiento</b> (por ejemplo: Kaeya como DPS de Congelamiento). Él
+							<b>tampoco funciona en equipos Físicos</b> (como Razor o Eula) ya que su Habilidad Elemental
+							resulta inútil, debido a que <b>convierte el daño de los Ataques Normales de Daño Físico a
+							Daño Cryo</b>. Como esa clase de equipos suele utilizar cálices de Bono de Daño Físico, al
+							convertir Daño Físico a Cryo, <b>no se beneficiarán del Bono de Daño Físico</b> del cáliz,
+							por lo que es una pérdida de daño por segundo.
+						</p>
+
+						<p>
+							A partir de su <b>[C2]</b>, su Habilidad Elemental <b>reduce el tiempo de espera de su
+							habilidad en un 15%, que es lanzada dentro de la zona de la misma</b>. Ésta es una de las
+							pocas habilidades en el juego que permiten reducir el tiempo de espera.
+						</p>
+
+						<span class="GIBG_Table_Notes_Regarding">
+							Con respecto a la elección de armas:
+						</span>
+						<table class="GIBG_SubTable_Regarding">
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Gran Espada de Sacrificio:</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									Esta arma es tu mejor elección si te encuentras en una situación donde dependes
+									mucho del tiempo de actividad de infusión Cryo de Chongyun (por ejemplo: contra
+									Heraldos del Abismo).
+								</td>
+							</tr>
+						</table><br>
+
+						<span class="GIBG_Table_Notes_Regarding">
+							Con respecto a la elección de conjuntos de artefactos:
+						</span>
+						<table class="GIBG_SubTable_Regarding">
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Ritual Antiguo de la Nobleza (4):</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									Chongyun es uno de los mejores portadores del <i>Ritual Antiguo de la Nobleza</i>
+									ya que tiene pocos requisitos de energía para su Habilidad Definitiva.
+								</td>
+							</tr>
+						</table><br>
+
+						<span class="GIBG_Table_Notes_Regarding">
+							Con respecto a la elección de prioridad de talentos:
+						</span>
+						<p>
+							Prioriza la Habilidad Definitiva si lo utilizarás en equipos de Derretido, ya que sus valores
+							funcionan mejor que con su Habilidad Elemental.
+							<br>
+							Por otro lado, prioriza la Habilidad Elemental si lo utilizarás en equipos de Congelamiento
+							para extender la duración de la infusión Cryo.
+						</p>
+					</td>
+				</tr>
+
+<!-- -------------------- KAEYA -------------------- -->
+				<tr>
+					<td class="GIBG_Table_CharacterName" rowspan="2">
+						<div class="GIBG_Table_CharacterContainer d-flex align-items-center justify-content-center">
+							<img src="https://paimon.moe/images/characters/kaeya.png">
+							<span class="GIBG_CharacterNameVAL">KAEYA</span>
+						</div>
+					</td>
+					<td class="GIBG_Table_Role" rowspan="2">ROL</td>
+					<td class="GIBG_Table_Equip" colspan="2">EQUIPAMIENTO</td>
+					<td class="GIBG_Table_ArtifactStats" colspan="2">ATRIBUTOS DE ARTEFACTOS</td>
+					<td class="GIBG_Table_Talents" rowspan="2">PRIORIDAD DE TALENTOS</td>
+					<td class="GIBG_Table_Tips" rowspan="2">CONSEJOS</td>
+				</tr>
+				<tr>
+					<td class="GIBG_Table_Equip GIBG_Table_EquipWeapon">ARMA</td>
+					<td class="GIBG_Table_Equip GIBG_Table_EquipArtifacts">CONJUNTO DE ARTEFACTOS</td>
+					<td class="GIBG_Table_ArtifactStats GIBG_Table_ArtifactStats_MainStats">PRINCIPALES</td>
+					<td class="GIBG_Table_ArtifactStats GIBG_Table_ArtifactStats_Substats">SECUNDARIOS</td>
+				</tr>
+				<tr>
+					<!-- CHARACTER IMAGE -->
+					<td class="GIBG_Table_CharacterImg" rowspan="3">
+						<img src="https://paimon.moe/images/characters/full/kaeya.png">
+					</td>
+					<!-- ROLE -->
+					<td class="GIBG_Table_Role_VAL VAL1 Rol_VAL_Ind">DPS CRYO ⭐</td>
+					<!-- WEAPONS -->
+					<td class="GIBG_Table_Equip_WeaponVAL VAL1">
+						<ol>
+							<li>Reflejo de las Tinieblas (5⭐)</li>
+							<li>Rompemontañas (5⭐)</li>
+							<li>Cortador de Jade Primordial (5⭐)</li>
+							<li>Aquila Favonia (5⭐)</li>
+							<li>Espada Larga del Peñasco Oscuro (4⭐)</li>
+							<li>Flauta (4⭐)</li>
+							<li>Hoja Afilada Celestial (5⭐)</li>
+							<li>Espada Negra (4⭐)</li>
+							<li>Hoja Fría (3⭐)</li>
+						</ol>
+					</td>
+					<!-- ARTIFACTS -->
+					<td class="GIBG_Table_Equip_ArtifactsVAL VAL1">
+						<ol>
+							<li>Nómada del Invierno (4)</li>
+							<li>Nómada del Invierno (2) + <i>cualquier conj. artf. ATQ+18</i> (2)</li>
+							<li>Final del Gladiador (4)</li>
+							<li>Nómada del Invierno (2) + Ritual Antiguo de la Nobleza (2)</li>
+							<li>Artista Marcial (4)</li>
+						</ol>
+					</td>
+					<!-- MAIN STATS -->
+					<td class="GIBG_Table_ArtifactStats_MainStatsVAL VAL1">
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Arenas del Eón</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">ATQ%</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Cáliz de Eonothem</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Bono de Daño Cryo</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Tiara de Logos</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Daño CRIT</span>
+					</td>
+					<!-- SUBSTATS -->
+					<td class="GIBG_Table_ArtifactStats_SubstatsVAL VAL1">
+						<ol>
+							<li>Daño CRIT</li>
+							<li>ATQ%</li>
+							<li>Recarga de Energía</li>
+							<abbr title="Por lo general, no suele tener mucho valor que los otros atributos ofensivos debido a que ya tendrías alrededor de un 60-75% de Prob. CRIT con el conjunto del Nómada del Invierno y la consonancia Cryo.">
+								<li>Prob. CRIT</li>
+							</abbr>
+							<li>ATQ fijo</li>
+						</ol>
+					</td>
+					<!-- TALENT PRIORITY -->
+					<td class="GIBG_Table_TalentsVAL VAL1">
+						<dfn title="Como DPS Cryo autónomo, tanto el Ataque Normal como sus Habilidades tienen prioridad por igual. Sin embargo, al emparejarlo con Chongyun, el Ataque Normal de Kaeya toma más prioridad que sus Habilidades.">
+							<ol>
+								<li>Ataque Normal</li>
+								<li>Habilidad Definitiva</li>
+								<li>Habilidad Elemental</li>
+							</ol>
+						</dfn>
+					</td>
+					<!-- TIPS -->
+					<td class="GIBG_Table_TipsVAL VAL1">
+						<div class="GIBG_Table_TipsSectionDiv">
+							Como DPS de Congelamiento, él puede ganar más del 55%+ de Prob. CRIT si está con el equipo
+							correcto:<br>
+							<ul style="padding-left: 15px; padding-right: 15px;">
+								<li>15% con la consonacia Cryo contra enemigos afectados por Cryo.</li>
+								<li>40% con el conjunto del <i>Nómada del Invierno</i> contra enemigos congelados.</li>
+								<li>15% con su <b>[C1]</b> contra enemigos afectados por Cryo.</li>
+							</ul>
+						</div>
+					</td>
+				</tr>
+
+				<tr>
+					<!-- ROLE -->
+					<td class="GIBG_Table_Role_VAL VAL2">DPS FÍSICO</td>
+					<!-- WEAPONS -->
+					<td class="GIBG_Table_Equip_WeaponVAL VAL2">
+						<ol>
+							<li>Aquila Favonia (5⭐)</li>
+							<li>Rompemontañas (5⭐)</li>
+							<li>Cortador de Jade Primordial (5⭐)</li>
+							<li>Reflejo de las Tinieblas (5⭐)</li>
+							<li>Prototipo Rencor (4⭐)</li>
+							<li>Espada Negra (4⭐)</li>
+							<li>Espada Larga del Peñasco Oscuro (4⭐)</li>
+						</ol>
+					</td>
+					<!-- ARTIFACTS -->
+					<td class="GIBG_Table_Equip_ArtifactsVAL VAL2">
+						<ol>
+							<li>Llamas Albinas (2) + Caballería Sanguinaria (2)</li>
+							<li>Llamas Albinas (4)</li>
+							<li>Final del Gladiador (4)</li>
+							<li>Llamas Albinas (2) / Caballería Sanguinaria (2) + <i>cualquier conj. artf. ATQ+18</i> (2)</li>
+						</ol>
+					</td>
+					<!-- MAIN STATS -->
+					<td class="GIBG_Table_ArtifactStats_MainStatsVAL VAL2">
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Arenas del Eón</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">ATQ%</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Cáliz de Eonothem</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Bono de Daño Físico</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Tiara de Logos</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Prob. CRIT / Daño CRIT</span>
+					</td>
+					<!-- SUBSTATS -->
+					<td class="GIBG_Table_ArtifactStats_SubstatsVAL VAL2">
+						<ol>
+							<li>Prob. CRIT / Daño CRIT</li>
+							<li>ATQ%</li>
+							<li>ATQ fijo</li>
+							<li>Recarga de Energía</li>
+						</ol>
+					</td>
+					<!-- TALENT PRIORITY -->
+					<td class="GIBG_Table_TalentsVAL VAL2">
+						<ol>
+							<li>Ataque Normal</li>
+							<li>Habilidad Definitiva</li>
+							<li>Habilidad Elemental</li>
+						</ol>
+					</td>
+					<!-- TIPS -->
+					<td class="GIBG_Table_TipsVAL VAL2">
+						<div class="GIBG_Table_TipsSectionDiv"></div>
+					</td>
+				</tr>
+
+				<tr>
+					<!-- ROLE -->
+					<td class="GIBG_Table_Role_VAL VAL1 Rol_VAL_Ind">AUXILIAR HAB. DEF. ⭐</td>
+					<!-- WEAPONS -->
+					<td class="GIBG_Table_Equip_WeaponVAL VAL1">
+						<ol>
+							<li>Cortador de Jade Primordial (5⭐)</li>
+							<li>Reflejo de las Tinieblas (5⭐)</li>
+							<li>Hoja Afilada Celestial (5⭐)</li>
+							<li>Rompemontañas (5⭐)</li>
+							<li>Aquila Favonia (5⭐)</li>
+							<li>Juramento por la Libertad (5⭐)</li>
+							<li>Rugido del León (4⭐)</li>
+							<li>Espada Amenoma Gemela (4⭐)</li>
+							<li>Deseo Ponzoñoso (4⭐)</li>
+							<li>Destello en la Oscuridad (4⭐)</li>
+							<li>Espada del Alba (3⭐)</li>
+						</ol>
+					</td>
+					<!-- ARTIFACTS -->
+					<td class="GIBG_Table_Equip_ArtifactsVAL VAL1">
+						<ol>
+							<li>Ritual Antiguo de la Nobleza (4)</li>
+							<li>Emblema del Destino (4)</li>
+							<li>Ritual Antiguo de la Nobleza (2) + Nómada del Invierno (2)</li>
+							<li>Ritual Antiguo de la Nobleza (2) + Exiliado (2) / Erudita (2)</li>
+							<li>Exiliado (2) + Erudita (2)</li>
+							<li>Instructor (4)</li>
+							<li>Exiliado (4)</li>
+						</ol>
+					</td>
+					<!-- MAIN STATS -->
+					<td class="GIBG_Table_ArtifactStats_MainStatsVAL VAL1">
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Arenas del Eón</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Recarga de Energía / ATQ%</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Cáliz de Eonothem</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Bono de Daño Cryo</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Tiara de Logos</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Prob. CRIT / Daño CRIT</span>
+					</td>
+					<!-- SUBSTATS -->
+					<td class="GIBG_Table_ArtifactStats_SubstatsVAL VAL1">
+						<ol>
+							<li>Recarga de Energía</li>
+							<li>Prob. CRIT / Daño CRIT</li>
+							<li>ATQ%</li>
+							<li>Maestría Elemental</li>
+							<li>ATQ fijo</li>
+						</ol>
+					</td>
+					<!-- TALENT PRIORITY -->
+					<td class="GIBG_Table_TalentsVAL VAL1">
+						<ol>
+							<li>Habilidad Definitiva</li>
+							<li>Habilidad Elemental</li>
+						</ol>
+					</td>
+					<!-- TIPS -->
+					<td class="GIBG_Table_TipsVAL VAL1">
+						<div class="GIBG_Table_TipsSectionDiv"></div>
+					</td>
+				</tr>
+
+				<!-- DESCRIPTION -->
+				<tr>
+					<td class="GIBG_Table_Notes">NOTAS</td>
+					<td colspan="7" class="GIBG_Table_NotesVAL VAL2">
+						<div class="GIBG_Table_Notes_Role">DPS CRYO ⭐</div>
+						<p>
+							Kaeya como DPS Cryo se utiliza mucho en un equipo con Chongyun y Xingchiu/Bárbara mientras
+							tiene equipado el conjunto del <i>Nómada del Invierno (4)</i>. En este equipo, Kaeya tiene
+							un 55% de Prob. CRIT contra enemigos congelados sin ningún atributo CRIT adicional, lo que
+							significa que los atributos secundarios de Prob. CRIT son menos priorizados que el ATQ% o
+							el Daño CRIT.
+						</p>
+
+						<div class="GIBG_Table_Notes_Role SecondRole">DPS FÍSICO</div>
+						<span class="GIBG_Table_Notes_Regarding">
+							Con respecto a la elección de conjuntos de artefactos:
+						</span>
+						<table class="GIBG_SubTable_Regarding">
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Llamas Albinas (4):</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									Es difícil sacar el máximo provecho de este conjunto de artefactos debido al
+									tiempo de espera de la Habilidad Elemental de Kaeya (6 s.) El efecto pasivo del
+									conjunto de 4 piezas requiere 2 acumulaciones activadas cuando sea, por lo que
+									mantener las acumulaciones puede ser muy difícil cuando consideras las rotaciones
+									entre personajes.
+								</td>
+							</tr>
+						</table>
+
+						<p><b>
+							Se recomienda utilizar a Kaeya como DPS Cryo en lugar de DPS Físico ya que la gran mayoría
+							de los valores de su kit son mejores con Cryo.
+						</b></p>
+
+						<div class="GIBG_Table_Notes_Role SecondRole">AUXILIAR HABILIDAD DEFINITIVA ⭐</div>
+						<p>
+							La Habilidad Definitiva de Kaeya lo hace una excelente fuente de aplicación Cryo para
+							personajes que suelen estar en un rango de cuerpo a cuerpo, aunque no se le puede sacar
+							mucho provecho en equipos de Derretido Inverso debido a que su daño Cryo está dividido en
+							una avalancha de ataques.
+						</p>
+
+						<p>
+							En varios equipos, invertir en daño no es muy necesario. Ejemplos muy conocidos y notorios
+							son equipos conformados por Razor, Hu Tao y Xingchiu, donde su propósito general es aplicar
+							Cryo, en lugar de ser el que aplica daño. Esto no significa que no se le deba invertir a él,
+							pero aún así, él es muy útil sin tanta inversión.
+						</p>
+
+						<span class="GIBG_Table_Notes_Regarding">
+							Con respecto a la elección de armas:
+						</span>
+						<table class="GIBG_SubTable_Regarding">
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Hoja Afilada Celestial:</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									En una composición de Congelamiento, esta arma tendría una menor prioridad ya que
+									otro personaje Cryo suele ser el que genera energía.
+								</td>
+							</tr>
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Rugido del León y Destello en la Oscuridad:</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									Estas dos opciones son muy recomendadas en equipos donde Kaeya aplicaría reacciones
+									de Derretido Inverso.
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+
+<!-- -------------------- ROSARIA -------------------- -->
+				<tr>
+					<td class="GIBG_Table_CharacterName" rowspan="2">
+						<div class="GIBG_Table_CharacterContainer d-flex align-items-center justify-content-center">
+							<img src="https://paimon.moe/images/characters/rosaria.png">
+							<span class="GIBG_CharacterNameVAL">ROSARIA</span>
+						</div>
+					</td>
+					<td class="GIBG_Table_Role" rowspan="2">ROL</td>
+					<td class="GIBG_Table_Equip" colspan="2">EQUIPAMIENTO</td>
+					<td class="GIBG_Table_ArtifactStats" colspan="2">ATRIBUTOS DE ARTEFACTOS</td>
+					<td class="GIBG_Table_Talents" rowspan="2">PRIORIDAD DE TALENTOS</td>
+					<td class="GIBG_Table_Tips" rowspan="2">CONSEJOS</td>
+				</tr>
+				<tr>
+					<td class="GIBG_Table_Equip GIBG_Table_EquipWeapon">ARMA</td>
+					<td class="GIBG_Table_Equip GIBG_Table_EquipArtifacts">CONJUNTO DE ARTEFACTOS</td>
+					<td class="GIBG_Table_ArtifactStats GIBG_Table_ArtifactStats_MainStats">PRINCIPALES</td>
+					<td class="GIBG_Table_ArtifactStats GIBG_Table_ArtifactStats_Substats">SECUNDARIOS</td>
+				</tr>
+				<tr>
+					<!-- CHARACTER IMAGE -->
+					<td class="GIBG_Table_CharacterImg" rowspan="3">
+						<img src="https://paimon.moe/images/characters/full/rosaria.png">
+					</td>
+					<!-- ROLE -->
+					<td class="GIBG_Table_Role_VAL VAL1">DPS CRYO</td>
+					<!-- WEAPONS -->
+					<td class="GIBG_Table_Equip_WeaponVAL VAL1">
+						<ol>
+							<li>Halcón de Jade (5⭐)</li>
+							<li>
+								<abbr title="Al tener un escudo.">
+									Lanza Perforanubes (4⭐)
+								</abbr>
+							</li>
+							<li>Báculo de Homa (5⭐)</li>
+							<li>Lanza del Duelo (4⭐)</li>
+							<li>Púa Celestial (5⭐)</li>
+							<li>
+								<abbr title="Con 2 acumulaciones.">
+									Lanza Lítica (4⭐)
+								</abbr>
+							</li>
+							<li>
+								<abbr title="Con una acumulación.">
+									Lanza del Peñasco Oscuro (4⭐)
+								</abbr>
+							</li>
+							<li>Borla Blanca <b>[R5]</b>(3⭐)</li>
+						</ol>
+					</td>
+					<!-- ARTIFACTS -->
+					<td class="GIBG_Table_Equip_ArtifactsVAL VAL1">
+						<ol>
+							<li>Nómada del Invierno (4)</li>
+							<li>Final del Gladiador (4)</li>
+							<li>Nómada del Invierno (2) + <i>cualquier conj. artf. ATQ+18%</i> (2)</li>
+						</ol>
+					</td>
+					<!-- MAIN STATS -->
+					<td class="GIBG_Table_ArtifactStats_MainStatsVAL VAL1">
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Arenas del Eón</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">ATQ%</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Cáliz de Eonothem</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Bono de Daño Cryo</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Tiara de Logos</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Daño CRIT</span>
+					</td>
+					<!-- SUBSTATS -->
+					<td class="GIBG_Table_ArtifactStats_SubstatsVAL VAL1">
+						<ol>
+							<li>Daño CRIT</li>
+							<li>ATQ%</li>
+							<li>Recarga de Energía</li>
+							<li>Prob. CRIT</li>
+							<li>ATQ fijo</li>
+						</ol>
+					</td>
+					<!-- TALENT PRIORITY -->
+					<td class="GIBG_Table_TalentsVAL VAL1">
+						<ol>
+							<li>Ataque Normal</li>
+							<li>Habilidad Definitiva</li>
+							<li>Habilidad Elemental</li>
+						</ol>
+					</td>
+					<!-- TIPS -->
+					<td class="GIBG_Table_TipsVAL VAL1">
+						<div class="GIBG_Table_TipsSectionDiv"></div>
+					</td>
+				</tr>
+
+				<tr>
+					<!-- ROLE -->
+					<td class="GIBG_Table_Role_VAL VAL2">DPS FÍSICO</td>
+					<!-- WEAPONS -->
+					<td class="GIBG_Table_Equip_WeaponVAL VAL2">
+						<ol>
+							<li>Halcón de Jade (5⭐)</li>
+							<li>
+								<abbr title="Al tener un escudo.">
+									Lanza Perforanubes (4⭐)
+								</abbr>
+							</li>
+							<li>Báculo de Homa (5⭐)</li>
+							<li>Pica Luna Creciente (4⭐)</li>
+							<li>Lanza del Duelo (4⭐)</li>
+							<li>Púa Celestial (5⭐)</li>
+							<li>
+								<abbr title="Con 2 acumulaciones.">
+									Lanza Lítica (4⭐)
+								</abbr>
+							</li>
+							<li>
+								<abbr title="Con una acumulación.">
+									Lanza del Peñasco Oscuro (4⭐)
+								</abbr>
+							</li>
+							<li>Borla Blanca <b>[R5]</b>(3⭐)</li>
+						</ol>
+					</td>
+					<!-- ARTIFACTS -->
+					<td class="GIBG_Table_Equip_ArtifactsVAL VAL2">
+						<ol>
+							<li>Llamas Albinas (2) + Caballería Sanguinaria (2)</li>
+							<li>Llamas Albinas (4)</li>
+							<li>Final del Gladiador (4)</li>
+							<li>Llamas Albinas (2) / Caballería Sanguinaria (2) + <i>cualquier conj. artf. ATQ+18%</i> (2)</li>
+							<li>Nómada del Invierno (4)</li>
+							<li>Retroceso del Meteorito (4)</li>
+						</ol>
+					</td>
+					<!-- MAIN STATS -->
+					<td class="GIBG_Table_ArtifactStats_MainStatsVAL VAL2">
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Arenas del Eón</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">ATQ%</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Cáliz de Eonothem</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Bono de Daño Físico</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Tiara de Logos</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Prob. CRIT / Daño CRIT</span>
+					</td>
+					<!-- SUBSTATS -->
+					<td class="GIBG_Table_ArtifactStats_SubstatsVAL VAL2">
+						<ol>
+							<li>Prob. CRIT / Daño CRIT</li>
+							<li>ATQ%</li>
+							<li>Recarga de Energía</li>
+							<li>ATQ fijo</li>
+						</ol>
+					</td>
+					<!-- TALENT PRIORITY -->
+					<td class="GIBG_Table_TalentsVAL VAL2">
+						<ol>
+							<li>Ataque Normal</li>
+							<li>Habilidad Definitiva</li>
+							<li>Habilidad Elemental</li>
+						</ol>
+					</td>
+					<!-- TIPS -->
+					<td class="GIBG_Table_TipsVAL VAL2">
+						<div class="GIBG_Table_TipsSectionDiv"></div>
+					</td>
+				</tr>
+
+				<tr>
+					<!-- ROLE -->
+					<td class="GIBG_Table_Role_VAL VAL2 Rol_VAL_Ind">AUXILIAR HAB. DEF. ⭐</td>
+					<!-- WEAPONS -->
+					<td class="GIBG_Table_Equip_WeaponVAL VAL2">
+						<ol>
+							<li>Báculo de Homa (5⭐)</li>
+							<li>La Captura (4⭐)</li>
+							<li>Perdición del Dragón (4⭐)</li>
+							<li>Halcón de Jade (5⭐)</li>
+							<li>Púa Celestial (5⭐)</li>
+							<li>Lanza Perforanubes (4⭐)</li>
+							<li>Lanza del Duelo (4⭐)</li>
+							<li>
+								<abbr title="Con 2 acumulaciones.">
+									Lanza Lítica (4⭐)
+								</abbr>
+							</li>
+							<li>
+								<abbr title="Con una acumulación.">
+									Lanza del Peñasco Oscuro (4⭐)
+								</abbr>
+							</li>
+							<li>Lanza de Favonius (4⭐)</li>
+							<li>Prototipo Estelar (4⭐)</li>
+							<li>Borla Blanca <b>[R5]</b>(3⭐)</li>
+						</ol>
+					</td>
+					<!-- ARTIFACTS -->
+					<td class="GIBG_Table_Equip_ArtifactsVAL VAL2">
+						<ol>
+							<li>Emblema del Destino (4)</li>
+							<li>Ritual Antiguo de la Nobleza (2) + Nómada del Invierno (2)</li>
+							<abbr title="Sólo elegir dos de estos conjuntos de artefactos.">
+								<li>Ritual Antiguo de la Nobleza (2) / Nómada del Invierno (2) /
+								<i>cualquier conj. artf. ATQ+18</i> (2)</li>
+							</abbr>
+							<li>Virtuoso Corredor de Lava (4)</li>
+							<li>Ritual Antiguo de la Nobleza (4)</li>
+						</ol>
+					</td>
+					<!-- MAIN STATS -->
+					<td class="GIBG_Table_ArtifactStats_MainStatsVAL VAL2">
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Arenas del Eón</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">ATQ% / Recarga de Energía</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Cáliz de Eonothem</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Bono de Daño Cryo</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Tiara de Logos</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Prob. CRIT / Daño CRIT</span>
+					</td>
+					<!-- SUBSTATS -->
+					<td class="GIBG_Table_ArtifactStats_SubstatsVAL VAL2">
+						<ol>
+							<li>Prob. CRIT / Daño CRIT</li>
+							<li>Maestría Elemental</li>
+							<li>ATQ%</li>
+							<li>Recarga de Energía</li>
+							<li>ATQ fijo</li>
+						</ol>
+					</td>
+					<!-- TALENT PRIORITY -->
+					<td class="GIBG_Table_TalentsVAL VAL2">
+						<ol>
+							<li>Habilidad Definitiva</li>
+							<li>Habilidad Elemental</li>
+						</ol>
+					</td>
+					<!-- TIPS -->
+					<td class="GIBG_Table_TipsVAL VAL2">
+						<div class="GIBG_Table_TipsSectionDiv">
+							Asegúrate de lanzar la Habilidad Elemental antes de la Habilidad Definitiva ya que la Prob.
+							CRIT proporcionada por el talento pasivo de su ascensión 1 se sumará con la bonificación del
+							talento pasivo de su ascensión 4.
+							<br><br>
+							Tanto la Habilidad Elemental como la Habilidad Definitiva de Rosaria pueden aplicársele
+							Derretido Inverso (1.5x) con otro aplicador Pyro para hacer daño más rápido y potente.
+						</div>
+					</td>
+				</tr>
+
+				<!-- DESCRIPTION -->
+				<tr>
+					<td class="GIBG_Table_Notes LastCharacter">NOTAS</td>
+					<td colspan="7" class="GIBG_Table_NotesVAL VAL2 LastCharacter">
+						<div class="GIBG_Table_Notes_Role">DPS CRYO</div>
+						<p>
+							Esta sección está dedicada para singerizar a Rosaria con Chongyun, la cual permitirá que sus
+							ataques se imbuyan en Cryo.
+							<br>
+							Si se utiliza en un equipo de Congelación Permanente (permafreeze), Rosaria tendría la misma
+							composición que Kaeya como DPS de Congelación. Asegúrate de leer la información del apartado
+							de consejos de Kaeya para configurar una composición así.
+						</p>
+
+						<span class="GIBG_Table_Notes_Regarding">
+							Con respecto a la elección de prioridad de atributos secundarios:
+						</span>
+						<p>
+							La Recarga de Energía está situada por encima de la Prob. CRIT hasta que tenga el 150% o más de
+							Recarga de Energía.
+							<br>
+							A comparación de Kaeya, Rosaria necesita aún menos atributos de Prob. CRIT, ya que el talento
+							pasivo de su ascensión 1 incluye un bono de 12% de Prob. CRIT al golpear al enemigo por detrás
+							con su Habilidad Elemental.
+						</p>
+
+						<div class="GIBG_Table_Notes_Role SecondRole">DPS FÍSICO</div>
+						<span class="GIBG_Table_Notes_Regarding">
+							Con respecto a la elección de conjuntos de artefactos:
+						</span>
+						<table class="GIBG_SubTable_Regarding">
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Llamas Albinas (4):</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									Es difícil sacar el máximo provecho de este conjunto de artefactos debido al
+									tiempo de espera de la Habilidad Elemental de Rosaria (6 s.) El efecto pasivo del
+									conjunto de 4 piezas requiere 2 acumulaciones activadas cuando sea, por lo que
+									mantener las acumulaciones puede ser muy difícil cuando consideras las rotaciones
+									entre personajes.
+								</td>
+							</tr>
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Final del Gladiador (4):</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									El efecto pasivo del conjunto de 4 piezas no funcionará con la <i>Pica Luna
+									Creciente</i>.
+								</td>
+							</tr>
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Nómada del Invierno (4):</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									La Habilidad Definitiva de Rosaria es obligatoria para mantener el tiempo de actividad
+									del <i>Nómada del Invierno (4)</i> (debido a Fischl o Beidou tomando procreaciones
+									Cryo para realizar Superconductor). Debido al bajo tiempo de actividad de la Habilidad
+									Definitiva de Rosaria al <b>[C0]</b>, este conjunto de artefactos sólo se recomienda
+									cuando Rosaria esté al <b>[C2]</b>.
+								</td>
+							</tr>
+						</table>
+
+						<div class="GIBG_Table_Notes_Role SecondRole">AUXILIAR HABILIDAD DEFINITIVA ⭐</div>
+						<p>
+							Esta sección está adaptada para darle a Rosaria la mayor cantidad de daño posible. Acumular
+							Prob. CRIT no será necesario si por lo mínimo tendrás garantizado un 50% de Prob. CRIT, aún
+							darías aumentos del 9.7% de Prob. CRIT con el bono del talento pasivo de su ascensión 1.
+						</p>
+
+						<span class="GIBG_Table_Notes_Regarding">
+							Con respecto a la elección de armas:
+						</span>
+						<p>
+							Esta sección fue calculada con el requisito del 160% de Recarga de Energía, por lo
+							que, armas que tengan un atributo secundario de Recarga de Energía son muy valuados
+							aquí. Con bajos niveles de Recarga de Energía, éstas armas pueden caer bajo en
+							comparación con armas con atributos secundarios más ofensivos.
+						</p>
+						<table class="GIBG_SubTable_Regarding">
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Perdición del Dragón:</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									La <i>Perdición del Dragon</i> está posicionada de esta forma sólo si Rosaria es
+									utilizada en una composición donde ella active el Derretido Inverso, de otra manera,
+									no utilices esta arma.
+								</td>
+							</tr>
+						</table><br>
+
+						<span class="GIBG_Table_Notes_Regarding">
+							Con respecto a la elección de conjuntos de artefactos:
+						</span>
+						<table class="GIBG_SubTable_Regarding">
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Virtuoso Corredor de Lava (4):</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									Sólo se considera confiable si Rosaria es la que activa el Derretido Inverso,
+									se posiciona por encima del <i>Ritual Antiguo de la Nobleza (2)</i> + <i>Nómada del
+									Invierno (2)</i> asumiendo que puedes realizar Derretido Inverso con todos sus kits.
+								</td>
+							</tr>
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Ritual Antiguo de la Nobleza (4):</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									Ofrece una mejora de ATQ a todo el equipo, puedes usar este conjunto en Rosaria si
+									nadie más en el equipo tiene equipado este conjunto.
+								</td>
+							</tr>
+						</table><br>
+
+						<span class="GIBG_Table_Notes_Regarding">
+							Con respecto a la elección de prioridad de atributos secundarios:
+						</span>
+						<p>
+							La Maestría Elemental sólo se recomienda si Rosaria activa el Derretido Inverso, como
+							se muestra en el apartado de Consejos.
+						</p>
+
+						<p>
+							<b>
+							Lo siguiente sólo se recomienda para aquellos que no han obtenido algún conjunto deseado
+							para Rosaria, con Prob. CRIT como conjunto temporal.
+							</b><br>
+							Si no deseas invertir bastante en Rosaria, ella todavía puede usarse como proveedora de
+							Prob. CRIT. Puedes acumular hasta el 88% de Prob. CRIT y utilizar su Habilidad Elemental
+							para llegar al 100% de Prob. CRIT, después lanzar la Habilidad Definitiva para el aumento
+							de Prob. CRIT. Esto puede lograrse muy fácilmente si ya tienes una lanza con Prob. CRIT,
+							de otra forma sólo utiliza cualquier tiara con Prob. CRIT como atributo principal.
+							Los atributos secundarios, y artefactos del <i>Berserker</i> también te ayudarán a acumular
+							Prob. CRIT.
+						</p>
+					</td>
+				</tr>
+			</table>
+
+			<div class="GIBG_CharacterRarity GIBG_LightMode w-100">
+				<span style="text-shadow: none;">5 ESTRELLAS</span>
+			</div>
+
+			<table class="GIBG_Table w-100">
+<!-- -------------------- QIQI -------------------- -->
+				<tr>
+					<td class="GIBG_Table_CharacterName" rowspan="2">
+						<div class="GIBG_Table_CharacterContainer d-flex align-items-center justify-content-center">
+							<img src="https://paimon.moe/images/characters/qiqi.png">
+							<span class="GIBG_CharacterNameVAL">QIQI</span>
+						</div>
+					</td>
+					<td class="GIBG_Table_Role" rowspan="2">ROL</td>
+					<td class="GIBG_Table_Equip" colspan="2">EQUIPAMIENTO</td>
+					<td class="GIBG_Table_ArtifactStats" colspan="2">ATRIBUTOS DE ARTEFACTOS</td>
+					<td class="GIBG_Table_Talents" rowspan="2">PRIORIDAD DE TALENTOS</td>
+					<td class="GIBG_Table_Tips" rowspan="2">CONSEJOS</td>
+				</tr>
+				<tr>
+					<td class="GIBG_Table_Equip GIBG_Table_EquipWeapon">ARMA</td>
+					<td class="GIBG_Table_Equip GIBG_Table_EquipArtifacts">CONJUNTO DE ARTEFACTOS</td>
+					<td class="GIBG_Table_ArtifactStats GIBG_Table_ArtifactStats_MainStats">PRINCIPALES</td>
+					<td class="GIBG_Table_ArtifactStats GIBG_Table_ArtifactStats_Substats">SECUNDARIOS</td>
+				</tr>
+				<tr>
+					<!-- CHARACTER IMAGE -->
+					<td class="GIBG_Table_CharacterImg">
+						<img src="https://paimon.moe/images/characters/full/qiqi.png">
+					</td>
+					<!-- ROLE -->
+					<td class="GIBG_Table_Role_VAL VAL1 Rol_VAL_Ind">AUXILIAR ⭐</td>
+					<!-- WEAPONS -->
+					<td class="GIBG_Table_Equip_WeaponVAL VAL1">
+						<ol>
+							<li>Espada de Sacrificio (4⭐)</li>
+							<li>Hoja Afilada Celestial (5⭐)</li>
+							<li>Flauta (4⭐)</li>
+							<li>Espada de Favonius (4⭐)</li>
+							<li>Deseo Ponzoñoso (4⭐)</li>
+							<li>Espada Amenoma Gemela (4⭐)</li>
+							<li>Espada Surcacielos (3⭐)</li>
+							<li>Hoja de Filetear (3⭐)</li>
+							<li>Hoja Fría (3⭐)</li>
+						</ol>
+					</td>
+					<!-- ARTIFACTS -->
+					<td class="GIBG_Table_Equip_ArtifactsVAL VAL1">
+						<ol>
+							<li>Tenacidad de la Geoarmada (4)</li>
+							<li>Doncella Amada (4)</li>
+							<li>Doncella Amada (2) + Final del Gladiador (2)</li>
+							<li>Ritual Antiguo de la Nobleza (4)</li>
+							<abbr title="Sólo elegir dos de estos conjuntos de artefactos.">
+								<li>Exiliado (2) / Erudita (2) / Emblema del Destino (2)</li>
+							</abbr>
+						</ol>
+					</td>
+					<!-- MAIN STATS -->
+					<td class="GIBG_Table_ArtifactStats_MainStatsVAL VAL1">
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Arenas del Eón</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">ATQ% / Recarga de Energía</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Cáliz de Eonothem</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">ATQ%</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Tiara de Logos</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Bono de Curación / ATQ%</span>
+					</td>
+					<!-- SUBSTATS -->
+					<td class="GIBG_Table_ArtifactStats_SubstatsVAL VAL1">
+						<ol>
+							<li>ATQ%</li>
+							<li>Recarga de Energía</li>
+							<li>ATQ fijo</li>
+						</ol>
+					</td>
+					<!-- TALENT PRIORITY -->
+					<td class="GIBG_Table_TalentsVAL VAL1">
+						<ol>
+							<li>Habilidad Definitiva</li>
+							<li>Habilidad Elemental</li>
+						</ol>
+					</td>
+					<!-- TIPS -->
+					<td class="GIBG_Table_TipsVAL VAL1">
+						<div class="GIBG_Table_TipsSectionDiv"></div>
+					</td>
+				</tr>
+
+				<!-- DESCRIPTION -->
+				<tr>
+					<td class="GIBG_Table_Notes">NOTAS</td>
+					<td colspan="7" class="GIBG_Table_NotesVAL VAL2">
+						<div class="GIBG_Table_Notes_Role">AUXILIAR ⭐</div>
+						<p>
+							La Habilidad Definitiva de Qiqi tiene un costo de 80 puntos de energía con su Habilidad
+							Elemental no generando energía hasta su <b>[C1]</b>. La Recarga de Energía le beneficiará
+							muchísimo a Qiqi, mientras que su Habilidad Definitiva debería utilizarse como último recurso.
+						</p>
+						<p>
+							La Habilidad Definitiva de Qiqi le permite a otros personajes maximizar el tiempo de DPS en
+							combate mientras Qiqi ofrece curación estando fuera del combate. A partir de su ascensión 4,
+							su Ataque Normal aplica el Talismán de conservación a un enemigo con un tiempo de espera de
+							30 segundos.
+						</p>
+
+						<span class="GIBG_Table_Notes_Regarding">
+							Con respecto a la Tenacidad de la Geoarmada y la Gran Espada de Sacrificio:
+						</span>
+						<p>
+							La <i>Tenacidad de la Geoarmada</i> le permite a Qiqi darle un aumento decente de ATQ (y
+							un aumento de Protección del Escudo si tu equipo contiene a un escudero) mientras está cuerpo
+							a cuerpo contra un enemigo con la Habilidad Elemental activa. La <i>Espada de Sacrificio</i>
+							aumenta el tiempo de actividad de su Habilidad Elemental, lo cual aumenta el tiempo de
+							actividad del aumento de ATQ y Protección del Escudo. Si ves que Qiqi está curando más que
+							suficiente, podrías considerar cambiarla a éste conjunto de artefactos. <b>Ten en cuenta que
+							otros personajes podrían utilizar la <i>Espada de Sacrificio</i> más que Qiqi, como Xingchiu,
+							Kazuha, entre otros</b>.
+						</p>
+					</td>
+				</tr>
+
+<!-- -------------------- GANYU -------------------- -->
+				<tr>
+					<td class="GIBG_Table_CharacterName" rowspan="2">
+						<div class="GIBG_Table_CharacterContainer d-flex align-items-center justify-content-center">
+							<img src="https://paimon.moe/images/characters/ganyu.png">
+							<span class="GIBG_CharacterNameVAL">GANYU</span>
+						</div>
+					</td>
+					<td class="GIBG_Table_Role" rowspan="2">ROL</td>
+					<td class="GIBG_Table_Equip" colspan="2">EQUIPAMIENTO</td>
+					<td class="GIBG_Table_ArtifactStats" colspan="2">ATRIBUTOS DE ARTEFACTOS</td>
+					<td class="GIBG_Table_Talents" rowspan="2">PRIORIDAD DE TALENTOS</td>
+					<td class="GIBG_Table_Tips" rowspan="2">CONSEJOS</td>
+				</tr>
+				<tr>
+					<td class="GIBG_Table_Equip GIBG_Table_EquipWeapon">ARMA</td>
+					<td class="GIBG_Table_Equip GIBG_Table_EquipArtifacts">CONJUNTO DE ARTEFACTOS</td>
+					<td class="GIBG_Table_ArtifactStats GIBG_Table_ArtifactStats_MainStats">PRINCIPALES</td>
+					<td class="GIBG_Table_ArtifactStats GIBG_Table_ArtifactStats_Substats">SECUNDARIOS</td>
+				</tr>
+				<tr>
+					<!-- CHARACTER IMAGE -->
+					<td class="GIBG_Table_CharacterImg" rowspan="3">
+						<img src="https://paimon.moe/images/characters/full/ganyu.png">
+					</td>
+					<!-- ROLE -->
+					<td class="GIBG_Table_Role_VAL VAL1 Rol_VAL_Ind">DPS DERRET. ⭐</td>
+					<!-- WEAPONS -->
+					<td class="GIBG_Table_Equip_WeaponVAL VAL1">
+						<ol>
+							<li>Arco de Amos (5⭐)</li>
+							<li>
+								Agitador del Relámpago (5⭐) ~=<br>
+								Alas Celestiales (5⭐)
+							</li>
+							<li>Prototipo Luz de Luna (4⭐)</li>
+							<li>Masacrademonios (4⭐)</li>
+							<li>Arco del Peñasco Oscuro (4⭐)</li>
+							<li>Arco de la Cazadora Esmeralda (4⭐)</li>
+						</ol>
+					</td>
+					<!-- ARTIFACTS -->
+					<td class="GIBG_Table_Equip_ArtifactsVAL VAL1">
+						<ol>
+							<li>Reminiscencia de la Purificación (4)</li>
+							<li>Orquesta del Errante (4)</li>
+							<li>
+								Nómada del Invierno (2) + <i>cualquier conj. artf. ATQ+18%</i> (2) u Orquesta del Errante (2)
+							</li>
+						</ol>
+					</td>
+					<!-- MAIN STATS -->
+					<td class="GIBG_Table_ArtifactStats_MainStatsVAL VAL1">
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Arenas del Eón</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Maestría Elemental / ATQ%</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Cáliz de Eonothem</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Bono de Daño Cryo</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Tiara de Logos</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Prob. CRIT / Daño CRIT</span>
+					</td>
+					<!-- SUBSTATS -->
+					<td class="GIBG_Table_ArtifactStats_SubstatsVAL VAL1">
+						<ol>
+							<li>Prob. CRIT / Daño CRIT</li>
+							<li>ATQ%</li>
+							<li>Maestría Elemental</li>
+							<li>ATQ fijo</li>
+							<li>Recarga de Energía</li>
+						</ol>
+					</td>
+					<!-- TALENT PRIORITY -->
+					<td class="GIBG_Table_TalentsVAL VAL1">
+						<ol>
+							<li>Ataque Normal</li>
+							<li>Habilidad Elemental</li>
+							<li>Habilidad Definitiva</li>
+						</ol>
+					</td>
+					<!-- TIPS -->
+					<td class="GIBG_Table_TipsVAL VAL1">
+						<div class="GIBG_Table_TipsSectionDiv">
+
+						</div>
+					</td>
+				</tr>
+
+				<tr>
+					<!-- ROLE -->
+					<td class="GIBG_Table_Role_VAL VAL2 Rol_VAL_Ind">DPS CONGEL. ⭐</td>
+					<!-- WEAPONS -->
+					<td class="GIBG_Table_Equip_WeaponVAL VAL2">
+						<ol>
+							<li>Arco de Amos (5⭐)</li>
+							<li>Agitador del Relámpago (5⭐)</li>
+							<li>Alas Celestiales (5⭐)</li>
+							<li>Prototipo Luz de Luna (4⭐)</li>
+							<li>Arco del Peñasco Oscuro (4⭐)</li>
+							<li>Arco de la Cazadora Esmeralda (4⭐)</li>
+						</ol>
+					</td>
+					<!-- ARTIFACTS -->
+					<td class="GIBG_Table_Equip_ArtifactsVAL VAL2">
+						<ol>
+							<li>Nómada del Invierno (4)</li>
+							<li>Nómada del Invierno (2) + <i>cualquier conj. artf. ATQ+18%</i> (2)</li>
+						</ol>
+					</td>
+					<!-- MAIN STATS -->
+					<td class="GIBG_Table_ArtifactStats_MainStatsVAL VAL2">
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Arenas del Eón</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">ATQ%</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Cáliz de Eonothem</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Bono de Daño Cryo</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Tiara de Logos</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Daño CRIT</span>
+					</td>
+					<!-- SUBSTATS -->
+					<td class="GIBG_Table_ArtifactStats_SubstatsVAL VAL2">
+						<ol>
+							<li>Prob. CRIT / Daño CRIT</li>
+							<li>ATQ%</li>
+							<li>Recarga de Energía</li>
+							<li>ATQ fijo</li>
+						</ol>
+					</td>
+					<!-- TALENT PRIORITY -->
+					<td class="GIBG_Table_TalentsVAL VAL2">
+						<ol>
+							<li>
+								Ataque Normal<br>
+								Habilidad Definitiva
+							</li>
+							<li>Habilidad Elemental</li>
+						</ol>
+					</td>
+					<!-- TIPS -->
+					<td class="GIBG_Table_TipsVAL VAL2">
+						<div class="GIBG_Table_TipsSectionDiv">
+							Mientras utilizas su Habilidad Definitiva, asegúrate de estar dentro de su AdE para
+							beneficiarte del aumento de Bono de Daño Cryo.
+							<br><br>
+							Asegúrate de no sobrepasarte de Prob. CRIT (entre 25% y 45% de Prob. CRIT debido a que su
+							primer talento pasivo sólo afecta a sus Ataques Cargados).
+						</div>
+					</td>
+				</tr>
+
+				<tr>
+					<!-- ROLE -->
+					<td class="GIBG_Table_Role_VAL VAL1">DPS FUERA DE CAMPO</td>
+					<!-- WEAPONS -->
+					<td class="GIBG_Table_Equip_WeaponVAL VAL1">
+						<ol>
+							<li>
+								Agitador del Relámpago (5⭐) ~= Alas Celestiales (5⭐)
+							</li>
+							<li>Arco de Amos (5⭐)</li>
+							<li>Cazador del Callejón (4⭐)</li>
+							<li>Último Acorde (4⭐)</li>
+							<li>
+								Prototipo Luz de Luna (4⭐) ~= Arco del Peñasco Oscuro (4⭐) ~=
+								Arco de la Cazadora Esmeralda (4⭐)
+							</li>
+							<li>Elegía del Fin (5⭐)</li>
+						</ol>
+					</td>
+					<!-- ARTIFACTS -->
+					<td class="GIBG_Table_Equip_ArtifactsVAL VAL1">
+						<ol>
+							<li>Ritual Antiguo de la Nobleza (2) + Nómada del Invierno (2)</li>
+							<li>Emblema del Destino (4)</li>
+							<abbr title="Sólo elegir dos de estos conjuntos de artefactos.">
+								<li>
+									Ritual Antiguo de la Nobleza (2) / Nómada del Invierno (2) /
+									<i>cualquier conj. artf. ATQ+18</i> (2) / Emblema del Destino (2)
+								</li>
+							</abbr>
+							<li>Ritual Antiguo de la Nobleza (4)</li>
+						</ol>
+					</td>
+					<!-- MAIN STATS -->
+					<td class="GIBG_Table_ArtifactStats_MainStatsVAL VAL1">
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Arenas del Eón</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">ATQ% / Recarga de Energía</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Cáliz de Eonothem</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Bono de Daño Cryo</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Tiara de Logos</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Prob. CRIT / Daño CRIT</span>
+					</td>
+					<!-- SUBSTATS -->
+					<td class="GIBG_Table_ArtifactStats_SubstatsVAL VAL1">
+						<ol>
+							<abbr title="Sólo cuando sea necesario.">
+								<li>Recarga de Energía</li>
+							</abbr>
+							<li>Prob. CRIT / Daño CRIT</li>
+							<li>ATQ%</li>
+							<abbr title="Sólo priorizar en una composición que no sea de Congelamiento.">
+								<li>Maestría Elemental</li>
+							</abbr>
+							<li>ATQ fijo</li>
+						</ol>
+					</td>
+					<!-- TALENT PRIORITY -->
+					<td class="GIBG_Table_TalentsVAL VAL1">
+						<ol>
+							<li>Habilidad Definitiva</li>
+							<li>Habilidad Elemental</li>
+							<li>Ataque Normal</li>
+						</ol>
+					</td>
+					<!-- TIPS -->
+					<td class="GIBG_Table_TipsVAL VAL1">
+						<div class="GIBG_Table_TipsSectionDiv">
+							Mientras utilizas su Habilidad Definitiva, asegúrate de realizar su Habilidad Elemental
+							dentro del AdE para provocar a los enemigos y mantenerlos dentro de esa zona para daño
+							continuo.
+							<br><br>
+							Asegúrate de golpear a los enemigos con el daño inicial de Habilidad Elemental y el daño
+							de la explosión ya que ambos regeneran partículas de energía para su Habilidad Definitiva.
+						</div>
+					</td>
+				</tr>
+
+				<!-- DESCRIPTION -->
+				<tr>
+					<td class="GIBG_Table_Notes">NOTAS</td>
+					<td colspan="7" class="GIBG_Table_NotesVAL VAL2">
+						<div class="GIBG_Table_Notes_Role">DPS DERRETIMIENTO ⭐</div>
+						<p>
+							La segunda carga del Ataque Cargado de Ganyu aplica dos instancias Cryo ya que no comparten
+							el mismo tiempo de espera interno, lo cual te permite aplicar la reacción de Derretido dos
+							veces para ambas instancias de aplicación de daño. La gran mayoría del daño que aplicará se
+							realizará por medio de sus Ataques Cargados mientras descuida el daño de su Habilidad
+							Elemental/Definitiva en la mayoría de los escenarios.
+						</p>
+
+						<span class="GIBG_Table_Notes_Regarding">
+							Con respecto a la elección de armas:
+						</span>
+						<table class="GIBG_SubTable_Regarding">
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Arco de Amos:</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									Esta arma es excelente para Ganyu ya que el estallido de la segunda carga de su
+									Ataque Cargado extiende la duración de vuelo de la flecha y puedes obtener hasta 3
+									acumulaciones del efecto pasivo del <i>Arco de Amos</i> incluso en rango vacío.
+								</td>
+							</tr>
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Masacrademonios:</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									Debido al efecto pasivo de esta arma, no sinergizará bien con la <i>Reminiscencia
+									de la Purificación (4)</i>. En general, se recomienda utilizar el <i>Prototipo
+									Luz de Luna</i> en lugar de esta arma, pero si no sabes apuntar bien en los puntos
+									críticos del enemigo, opta por el <i>Masacrademonios</i>.
+								</td>
+							</tr>
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Prototipo Luz de Luna:</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									Con un buen tiempo de actividad y al estar en <b>[R5]</b>, puede, potencialmente,
+									superar a las <i>Alas Celestiales</i>. Sin embargo, ten en cuenta que no todos los
+									enemigos tienen puntos críticos, lo cual puede afectar a su rendimiento.
+								</td>
+							</tr>
+						</table>
+
+						<div class="GIBG_Table_Notes_Role SecondRole">DPS CONGELAMIENTO ⭐</div>
+						<p>
+							Ganyu como DPS Congelamiento proporciona una enorme cantidad de fotogramas de invencibilidad
+							(es decir, <i>i-frames</i> debido a que estarás realizando constantemente la Habilidad
+							Definitiva de todos los miembros de su equipo durante el tiempo de espera. La Habilidad
+							Definitiva de Ganyu puede hacer muchísimo daño dependiendo de cómo estén agrupados los enemigos.
+						</p>
+
+						<span class="GIBG_Table_Notes_Regarding">
+							Con respecto a la elección de armas:
+						</span>
+						<table class="GIBG_SubTable_Regarding">
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Agitador del Relámpago y Alas Celestiales:</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									Con rotaciones muy centralizadas en cambiar rápido (uno de los más conocidos siendo
+									Ganyu, Mona, Venti y Diona) donde no sueles hacer muchos Ataques Cargados, éstas
+									dos armas pueden superar al <i>Arco de Amos</i>.
+								</td>
+							</tr>
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Prototipo Luz de Luna:</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									Muy similar al build de DPS Derretimiento, esta arma puede superar a las <i>Alas
+									Celestiales</i> al tener buen tiempo de actividad y refinamientos altos debido a su
+									efecto pasivo. Sin embargo, su rendimiento puede verse afectados por enemigos que
+									no tengan puntos críticos en los que puedas golpear de forma constante.
+								</td>
+							</tr>
+						</table><br>
+
+						<span class="GIBG_Table_Notes_Regarding">
+							Con respecto a la elección de conjuntos de artefactos:
+						</span>
+
+						<table class="GIBG_SubTable_Regarding">
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Nómada del Invierno (4):</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									Este conjunto es el más común para equipos de composición Cryo, donde te centralizarás
+									en que los atributos sean de Daño CRIT y priorizar ATQ% sobre Prob. CRIT%. Esto tiene
+									una sustentabilidad de energía y un daño enorme mientras que también se utiliza fuera
+									de composiciones de Congelamiento para una Prob. CRIT de 20% contra enemigos con
+									estado Cryo. Un Auxiliar Hydro será de mucha ayuda si Ganyu tiene este conjunto.
+									<b>
+										Es extremadamente recomendado si tienes a Ganyu al [C4].
+									</b>
+								</td>
+							</tr>
+						</table>
+
+						<div class="GIBG_Table_Notes_Role SecondRole">DPS FUERA DE CAMPO</div>
+						<p>
+							Ganyu como DPS Fuera de Campo destaca mucho dentro de una composición de Congelamiento ya que
+							su Habilidad Definitiva tiene un 100% de tiempo de actividad, mientras que también aplica
+							un aumento de Daño Cryo de los miembros del equipo.
+						</p>
+
+						<span class="GIBG_Table_Notes_Regarding">
+							Con respecto a la elección de armas:
+						</span>
+						<table class="GIBG_SubTable_Regarding">
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Prototipo Luz de Luna:</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									Esta arma puede superar a varias armas si activas el aumento de daño antes de lanzar
+									su Habilidad Definitiva.
+								</td>
+							</tr>
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Arco del Peñasco Oscuro:</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									Puede ser difícil activar el efecto pasivo de esta arma y acumularlo ya que Ganyu
+									estará fuera del campo de combate la mayor parte del tiempo.
+								</td>
+							</tr>
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Elegía del Fin:</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									Ofrece un aumento de ATQ y Maestría Elemental a todos los miembros del equipo, lo
+									cual es muy útil en composiciones de equipos basados en reacciones elementales.
+								</td>
+							</tr>
+						</table><br>
+
+						<span class="GIBG_Table_Notes_Regarding">
+							Con respecto a la elección de conjuntos de artefactos:
+						</span>
+						<table class="GIBG_SubTable_Regarding">
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">
+									Ritual Antiguo de la Nobleza (2) + Nómada del Invierno (2):
+								</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									Este conjunto es el conjunto más general, centralizado en hacer daño con su
+									Habilidad Definitiva y afectar constantemente a los enemigos con Cryo para hacer
+									reacciones elementales.
+								</td>
+							</tr>
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Ritual Antiguo de la Nobleza (4):</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									Este conjunto es un conjunto puramente auxiliar para Ganyu, centralizado en lanzar
+									su Habilidad Definitiva y después cambiarla por tu DPS principal para daño extra
+									(ya que da un aumento de 20% de daño) y para activar reacciones elementales.
+									<b>
+										Utiliza este conjunto solo si utilizarás a Ganyu por su Habilidad Definitiva
+										y apoyar a tu DPS principal.
+									</b>
+								</td>
+							</tr>
+						</table><br>
+						<p>
+							Vale la pena mencionar que, en composiciones de Congelamiento, Ganyu como DPS Fuera de Campo
+							también puede equiparse el conjunto del <i>Nómada del Invierno (4)</i> ya que ofrece valores
+							de atributos muy altos. <b>Este conjunto puede superar estas otras opciones en composiciones
+							de Congelamiento.</b>
+						</p>
+					</td>
+				</tr>
+
+<!-- -------------------- EULA -------------------- -->
+				<tr>
+					<td class="GIBG_Table_CharacterName" rowspan="2">
+						<div class="GIBG_Table_CharacterContainer d-flex align-items-center justify-content-center">
+							<img src="https://paimon.moe/images/characters/eula.png">
+							<span class="GIBG_CharacterNameVAL">EULA</span>
+						</div>
+					</td>
+					<td class="GIBG_Table_Role" rowspan="2">ROL</td>
+					<td class="GIBG_Table_Equip" colspan="2">EQUIPAMIENTO</td>
+					<td class="GIBG_Table_ArtifactStats" colspan="2">ATRIBUTOS DE ARTEFACTOS</td>
+					<td class="GIBG_Table_Talents" rowspan="2">PRIORIDAD DE TALENTOS</td>
+					<td class="GIBG_Table_Tips" rowspan="2">CONSEJOS</td>
+				</tr>
+				<tr>
+					<td class="GIBG_Table_Equip GIBG_Table_EquipWeapon">ARMA</td>
+					<td class="GIBG_Table_Equip GIBG_Table_EquipArtifacts">CONJUNTO DE ARTEFACTOS</td>
+					<td class="GIBG_Table_ArtifactStats GIBG_Table_ArtifactStats_MainStats">PRINCIPALES</td>
+					<td class="GIBG_Table_ArtifactStats GIBG_Table_ArtifactStats_Substats">SECUNDARIOS</td>
+				</tr>
+				<tr>
+					<!-- CHARACTER IMAGE -->
+					<td class="GIBG_Table_CharacterImg">
+						<img src="https://paimon.moe/images/characters/full/eula.png">
+					</td>
+					<!-- ROLE -->
+					<td class="GIBG_Table_Role_VAL VAL1 Rol_VAL_Ind">DPS ⭐</td>
+					<!-- WEAPONS -->
+					<td class="GIBG_Table_Equip_WeaponVAL VAL1">
+						<ol>
+							<li>Oda de los Pinos (5⭐)</li>
+							<li>Lápida del Lobo (5⭐)</li>
+							<li>Espada de la Desidia (5⭐)</li>
+							<li>Orgullo Celestial (5⭐)</li>
+							<li>Médula de la Serpiente Marina (4⭐)</li>
+							<li>Rey de los Mares (4⭐)</li>
+							<abbr title="Con una acumulación.">
+								<li>Gran Hoja del Peñasco Oscuro (4⭐)</li>
+							</abbr>
+							<abbr title="Con una acumulación.">
+								<li>Espada Lítica (4⭐)</li>
+							</abbr>
+							<li>Prototipo Arcaico (4⭐)</li>
+							<li>Argento Estelar de las Nieves (4⭐)</li>
+							<li>Gran Espada Surcacielos <b>[R5]</b> (3⭐)</li>
+						</ol>
+					</td>
+					<!-- ARTIFACTS -->
+					<td class="GIBG_Table_Equip_ArtifactsVAL VAL1">
+						<ol>
+							<li>Llamas Albinas (4)</li>
+							<li>Llamas Albinas (2) + Caballería Sanguinaria (2)</li>
+							<abbr title="Elegir Bruja Carmesí en Llamas (2), después elegir otros de estos conjuntos de artefactos.">
+								<li>
+									Llamas Albinas (2) / Caballería Sanguinaria (2) /
+									<i>cualquier conj. artf. ATQ+18</i> (2)
+								</li>
+							</abbr>
+							<li>Final del Gladiador (4)</li>
+							<li>Final del Gladiador (2) + Reminiscencia de la Purificación (2)</li>
+
+						</ol>
+					</td>
+					<!-- MAIN STATS -->
+					<td class="GIBG_Table_ArtifactStats_MainStatsVAL VAL1">
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Arenas del Eón</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">ATQ%</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Cáliz de Eonothem</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Bono de Daño Físico</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Tiara de Logos</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Prob. CRIT / Daño CRIT</span>
+					</td>
+					<!-- SUBSTATS -->
+					<td class="GIBG_Table_ArtifactStats_SubstatsVAL VAL1">
+						<ol>
+							<li>Prob. CRIT / Daño CRIT</li>
+							<li>Recarga de Energía</li>
+							<li>ATQ%</li>
+							<li>ATQ fijo</li>
+						</ol>
+					</td>
+					<!-- TALENT PRIORITY -->
+					<td class="GIBG_Table_TalentsVAL VAL1">
+						<ol>
+							<li>Ataque Normal = Habilidad Definitiva</li>
+							<li>Habilidad Elemental</li>
+						</ol>
+					</td>
+					<!-- TIPS -->
+					<td class="GIBG_Table_TipsVAL VAL1">
+						<div class="GIBG_Table_TipsSectionDiv" style="height: 325px">
+							Donde Nx = Ataque Normal (x veces), S = Habilidad Elemental, B = Habilidad Definitiva, D = Esprintar:
+							<br><br>
+							Combo normal recomendado si no está bajo la Habilidad Definitiva:<br>
+							N constante > <abbr title="Solo pulsar una vez, no mantener pulsado.">S corto</abbr> >
+							N constante > S corto
+							<br><br>
+							Combo para su Habilidad Definitiva:<br>
+							S corto > B > N4 > S mantenido > N4
+							<br><br>
+							Combo para su Habilidad Defintiiva que permite generar más partículas de energía a costa
+							de perder un poco de daño por segundo:<br>
+							S corto > B > S corto > N4 > D > N2 > S mantenido > N2
+						</div>
+					</td>
+				</tr>
+
+				<!-- DESCRIPTION -->
+				<tr>
+					<td class="GIBG_Table_Notes">NOTAS</td>
+					<td colspan="7" class="GIBG_Table_NotesVAL VAL2">
+						<div class="GIBG_Table_Notes_Role">DPS ⭐</div>
+						<p>
+							La clasificación de armas de Eula están posicionadas de esa forma asumiendo que la tienes
+							junto con una batería Cryo (por ejemplo: Diona) en lugar de Bennett, y si tiene más de 30%
+							de Recarga de Energía a través de los atributos secundarios de sus artefactos. Aumentarlo
+							a un 40% a través de los atributos secundarios puede ayudar mucho a resolver sus problemas
+							de generación de energía.
+						</p>
+
+						<p>
+							La Habilidad Definitiva de Eula no es instantáneo. Esto significa que cualquier aumento que
+							Eula tenga después de lanzar su Habilidad Definitiva no se tomarán en cuenta si la duración
+							de la misma termina antes de que su espada luminosa golpeé.
+						</p>
+
+						<span class="GIBG_Table_Notes_Regarding">
+							Con respecto a la elección de armas:
+						</span>
+						<table class="GIBG_SubTable_Regarding">
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Médula de la Serpiente Marina:</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									Puede ser mejor que el <i>Orgullo Celestial</i> si tienes al menos un total de 130%
+									de Recarga de Energía, y si tienes a un batería Cryo. Vale la pena mencionar que, al
+									tener esta arma al <b>[R5]</b>, puede incluso superar a todas las armas de 5⭐ con
+									una buena gestión de acumulaciones.
+								</td>
+							</tr>
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Orgullo Celestial:</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									Esta arma perdona mucho los atributos secundarios de Recarga de Energía. Si tienes a
+									una unidad de batería Cryo en tu equipo (como Diona con el <i>Arco del Sacrificio</i>
+									o Kaeya con la <i>Espada de Favonius</i>), o si tu equipo ya genera suficientes
+									partículas por su cuenta, esta arma pierde efectividad en comparación a las demás.
+								</td>
+							</tr>
+						</table><br>
+
+						<span class="GIBG_Table_Notes_Regarding">
+							Con respecto a la elección de conjuntos de artefactos:
+						</span>
+						<table class="GIBG_SubTable_Regarding">
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Llamas Albinas (4):</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									Este es el conjunto de artefactos óptimo para Eula y se basa en que cumpla una
+									condición para superar a los conjuntos de <i>Llamas Albinas (2)</i> +
+									<i>Caballería Sanguinaria (2)</i>. Si eres capaz de mantener el aumento condicional,
+									podrás conseguir un 50% de Bono de Daño Físico + 18% ATQ. Sin utilizar tu Habilidad
+									Definitiva, puedes mantener la bonificación de las <i>Llamas Albinas (4)</i> puesto
+									que cada acumulación dura 7 s. y se reinicia por cada acumulación, y la Habilidad
+									Elemental de Eula es de solo 4 s. al realizarlo (no manteniendo pulsado el botón),
+									por lo que puede mantener la condición.
+									<br>
+									Al usar este conjunto, no se recomienda mantener pulsado el botón de la Habilidad
+									Elemental hasta que la espada luminosa esté a punto de terminar. Esta restricción es
+									solo para jugadores que no tienen a Eula en <b>[C2]</b> o superior. Consulta el
+									apartado de Consejos para ver combinaciones óptimas.
+								</td>
+							</tr>
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">
+									Llamas Albinas (2) + Caballería Sanguinaria (2):
+								</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									Este es un conjunto de artefactos consistente y no condicional que te proporciona
+									un Bono de Daño Físico del 50%. Si bien eso en sí mismo es asombroso, el conjunto de
+									<i>Llamas Albinas (4)</i> puede superar este conjunto porque también tiene un
+									aumento del 18% de ATQ% y se mantiene fácilmente a través del tiempo de espera de su
+									Habilidad Elemental al pulsarlo una vez.
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+
+<!-- -------------------- KAMISATO AYAKA -------------------- -->
+				<tr>
+					<td class="GIBG_Table_CharacterName" rowspan="2">
+						<div class="GIBG_Table_CharacterContainer d-flex align-items-center justify-content-center">
+							<img src="https://paimon.moe/images/characters/kamisato_ayaka.png">
+							<span class="GIBG_CharacterNameVAL">KAMISATO AYAKA</span>
+						</div>
+					</td>
+					<td class="GIBG_Table_Role" rowspan="2">ROL</td>
+					<td class="GIBG_Table_Equip" colspan="2">EQUIPAMIENTO</td>
+					<td class="GIBG_Table_ArtifactStats" colspan="2">ATRIBUTOS DE ARTEFACTOS</td>
+					<td class="GIBG_Table_Talents" rowspan="2">PRIORIDAD DE TALENTOS</td>
+					<td class="GIBG_Table_Tips" rowspan="2">CONSEJOS</td>
+				</tr>
+				<tr>
+					<td class="GIBG_Table_Equip GIBG_Table_EquipWeapon">ARMA</td>
+					<td class="GIBG_Table_Equip GIBG_Table_EquipArtifacts">CONJUNTO DE ARTEFACTOS</td>
+					<td class="GIBG_Table_ArtifactStats GIBG_Table_ArtifactStats_MainStats">PRINCIPALES</td>
+					<td class="GIBG_Table_ArtifactStats GIBG_Table_ArtifactStats_Substats">SECUNDARIOS</td>
+				</tr>
+				<tr>
+					<!-- CHARACTER IMAGE -->
+					<td class="GIBG_Table_CharacterImg">
+						<img src="https://paimon.moe/images/characters/full/kamisato_ayaka.png">
+					</td>
+					<!-- ROLE -->
+					<td class="GIBG_Table_Role_VAL VAL1 Rol_VAL_Ind">DPS ⭐</td>
+					<!-- WEAPONS -->
+					<td class="GIBG_Table_Equip_WeaponVAL VAL1">
+						<ol>
+							<li>Reflejo de las Tinieblas (5⭐)</li>
+							<abbr title="Con 5 acumulaciones.">
+								<li>Rompemontañas (5⭐)</li>
+							</abbr>
+							<li>Cortador de Jade Primordial (5⭐)</li>
+							<li>Aquila Favonia (5⭐)</li>
+							<li>
+								Hoja Afilada Celestial (5⭐) ~= Espada Larga del Peñasco Oscuro (4⭐) ~=
+								Espada Negra (4⭐) ~= Espada Amenoma Gemela (4⭐) ~= Flauta (4⭐)
+							</li>
+							<li>Espada del Alba <b>[R5]</b> (3⭐)</li>
+						</ol>
+					</td>
+					<!-- ARTIFACTS -->
+					<td class="GIBG_Table_Equip_ArtifactsVAL VAL1">
+						<ol>
+							<li>Nómada del Invierno (4)</li>
+							<li>Nómada del Invierno (2) + <i>cualquier conj. artf. ATQ+18%</i> (2)</li>
+							<li>Final del Gladiador (2) + Reminiscencia de la Purificación (2)</li>
+							<li>Nómada del Invierno (2) + Ritual Antiguo de la Nobleza (2)</li>
+						</ol>
+					</td>
+					<!-- MAIN STATS -->
+					<td class="GIBG_Table_ArtifactStats_MainStatsVAL VAL1">
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Arenas del Eón</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">ATQ%</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Cáliz de Eonothem</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Bono de Daño Cryo</span><br><br>
+
+						<abbr title="La Tiara de Logos depende de cómo estén tus atributos, si necesitas más Prob. CRIT o Daño CRIT.">
+							<span class="GIBG_Table_ArtifactStats_MainStats_Item">Tiara de Logos</span><br>
+							<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Prob. CRIT / Daño CRIT</span>
+						</abbr>
+					</td>
+					<!-- SUBSTATS -->
+					<td class="GIBG_Table_ArtifactStats_SubstatsVAL VAL1">
+						<ol>
+							<li>Daño CRIT</li>
+							<li>ATQ%</li>
+							<li>Recarga de Energía</li>
+							<abbr title="La Prob. CRIT pierde valor si tienes el conjunto del Nómada del Invierno (4). Si no es así, entonces tiene la misma prioridad que el Daño CRIT.">
+								<li>Prob. CRIT</li>
+							</abbr>
+							<li>ATQ fijo</li>
+						</ol>
+					</td>
+					<!-- TALENT PRIORITY -->
+					<td class="GIBG_Table_TalentsVAL VAL1">
+						<ol>
+							<li>Habilidad Definitiva</li>
+							<li>Ataque Normal</li>
+							<li>Habilidad Elemental</li>
+						</ol>
+					</td>
+					<!-- TIPS -->
+					<td class="GIBG_Table_TipsVAL VAL1">
+						<div class="GIBG_Table_TipsSectionDiv">
+							El Ataque Cargado, Habilidad Elemental y Habilidad Definitiva de Ayaka golpea a enemigos dentro
+							del AdE de la Habilidad Definitiva de Venti.
+							<br><br>
+							Su Habilidad Definitiva también se mantiene en su lugar con enemigos congelados, y empuja un
+							poco a los que no lo estén.
+						</div>
+					</td>
+				</tr>
+
+				<!-- DESCRIPTION -->
+				<tr>
+					<td class="GIBG_Table_Notes LastCharacter">NOTAS</td>
+					<td colspan="7" class="GIBG_Table_NotesVAL VAL2 LastCharacter">
+						<div class="GIBG_Table_Notes_Role">DPS ⭐</div>
+						<p>
+							Kamisato Ayaka es una DPS bastante sencilla que inflige la mayor parte de su daño con su
+							Habilidad Definitiva. Tiene proporciones de atributos muy altos con su Habilidad Definitiva
+							a costa de tener 80 puntos de energía. Es probable que necesite otra batería Cryo en el equipo
+							para proporcionarle energía (como Diona, Kaeya, Rosaria, etc.). Ella esprinta de forma
+							especial (como Mona) y después de esprintar, recibirá una infusión de Cryo en sus Ataques
+							Normales. Asegúrate de tener siempre activa esta bonificación para maximizar tu daño de
+							rotación.
+						</p>
+
+						<p>
+							Se puede jugar en un equipo de Congelación Permanente (junto con un activador Hydro como
+							Mona, Xingchiu o incluso Bárbara) donde podría obtener enormes beneficios del conjunto de
+							artefactos del <i>Nómada del Invierno (4)</i>. El conjunto del <i>Nómada del Invierno (4)</i>
+							ofrece una gran cantidad de atributos en un equipo de Congelación, así que intenta conseguir
+							este conjunto de artefactos lo más rápido que puedas. Su Habilidad Definitiva se mantiene
+							en su lugar en enemigos congelados, pero también tiene un área de impacto pequeño, por lo
+							que debes colocarla bien para que pueda golpear a varios enemigos más grandes.
+						</p>
+
+						<span class="GIBG_Table_Notes_Regarding">
+							Con respecto a la elección de armas:
+						</span>
+						<table class="GIBG_SubTable_Regarding">
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Aquila Favonia:</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									Si bien esta arma tiene Bono de Daño Físico como atributo principal, que es
+									básicamente inútil en Ayaka, sigue siendo bueno, ya que tiene un ATQ Base alto y un
+									aumento de ATQ% de su efecto pasivo.
+								</td>
+							</tr>
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Cortador de Jade Primordial:</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									Con el conjunto del <i>Nómada del Invierno (4)</i> y la resonancia Cryo, esta arma
+									realiza muchísimos ataques críticos, así que evita obtener atributos de Prob. CRIT.
+								</td>
+							</tr>
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">
+									Hoja Afilada Celestial, Espada Larga del Peñasco Oscuro, Espada Negra, y Espada Amenoma Gemela:
+								</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									Estas 4 armas darán un resultado similar, por lo que no vale la pena obtener o forjar
+									otra cuando ya tienes una. Depende de la cantidad de Recarga de Energía que tengas,
+									la cantidad de acumulaciones que tenga tu <i>Espada Larga del Peñasco Oscuro</i>, el
+									tiempo que pasarás haciendo ataques normales y cuánto valoras la pasiva con la
+									<i>Espada Amenoma Gemela</i>, ya que te da margen de maniobra para centrate en la
+									Recarga de Energía; uno puede ser mejor que el otro. Si tienes la <i>Hoja Afilada
+									Celestial</i> o la <i>Espada Amenoma Gemela</i> (especialmente con refinamientos
+									altos), evita obtener atributos de Recarga de Energía ya que los atributos y los
+									efectos pasivos ayudan en la generación de partículas para realizar la Habilidad
+									Definitiva de manera significativa.
+								</td>
+							</tr>
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Flauta:</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									Ofrece un potencial de daño ligeramente mayor que la <i>Espada Amenoma Gemela</i>,
+									con la compensación de perder la generación de energía de ésta última. Decide por ti
+									mismo qué es mejor para tu equipo y tus rotaciones.
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</section>
+
+		<footer class="w-100 d-flex justify-content-center">
+			<div id="footerContent" class="px-2">©2019-2021 TheAdorableOshawott. Hosted by Neocities and powered by Bootstrap.</div>
+			<div id="header_spacer"></div>
+			<img class="my-2" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/600px-Bootstrap_logo.svg.png">
+			<img class="my-2" src="https://theadorableoshawott.neocities.org/neocities.png">
+		</footer>
+    </body>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+</HTML>
