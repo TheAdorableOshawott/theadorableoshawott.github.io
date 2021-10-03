@@ -1,0 +1,1265 @@
+<!DOCTYPE HTML>
+<HTML lang="es" xmlns="http://www.w3.org/1999/html">
+	<head>
+		<!-- Required meta tags -->
+        <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Anemo - Guía de builds de Genshin Impact</title>
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+		<link rel="stylesheet" href="CSS/main.css">
+		<link rel="stylesheet" href="CSS/GenshinImpactBuildGuide.css">
+
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,700,700i" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=ABeeZee:400,400i" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i" rel="stylesheet">
+
+		<!-- Colors -->
+		<style>
+			html, table, .GIBG_Header_Element, .GIBG_Header_Discl {
+				color: black!important;
+				text-shadow: none!important;
+			}
+
+			.VAL1 {
+				background-color: #76FFC1;
+			}
+
+			.VAL2 {
+				background-color: #ACFFD6;
+				color: black;
+			}
+
+			.active, .GIBG_Header, .GIBG_CharacterRarity, .GIBG_Table_CharacterName, .GIBG_Table_Role,
+			.GIBG_Table_Equip, .GIBG_Table_ArtifactStats, .GIBG_Table_Talents, .GIBG_Table_Tips, .GIBG_Table_CharacterImg,
+			.GIBG_Table_Notes, .GIBG_Table_CharacterName {
+				background-color: #3CFFA7!important;
+				color: black;
+				text-shadow: none!important;
+			}
+
+			.active {
+				color: black!important;
+			}
+
+			#PyroPage {
+				color: #EA9999;
+			}
+
+			#PyroPage:hover {
+				background-color: #EA9999;
+				color: #C00;
+			}
+
+			#ElectroPage {
+				color: #B4A7D6;
+			}
+
+			#ElectroPage:hover {
+				background-color: #B4A7D6;
+				color: #674EA7;
+			}
+
+			#HydroPage {
+				color: #A4C2F4;
+			}
+
+			#HydroPage:hover {
+				background-color: #A4C2F4;
+				color: #3C78D8;
+			}
+
+			#CryoPage {
+				color: #7DF9FF;
+			}
+
+			#CryoPage:hover {
+				background-color: #7DF9FF;
+				color: #00E7F2;
+			}
+		</style>
+    </head>
+
+    <body>
+		<header class="container-fluid d-flex flex-row justify-content-center align-middle">
+			<div id="my_name" class="header_item bd-highlight px-2">
+				<img id="avatar" src="https://pbs.twimg.com/profile_images/1437677631311204354/S5q6owg__400x400.png">
+				TheAdorableOshawott
+			</div>
+			<div id="header_spacer" class="header_item bd-highlight px-2"></div>
+			<div class="header_item bd-highlight px-3">Pokémon</div>
+			<div class="header_item bd-highlight px-3">Kirby</div>
+			<div class="header_item bd-highlight px-3">Animal Crossing</div>
+			<div class="header_item bd-highlight px-3">Genshin Impact</div>
+			<div class="header_item bd-highlight px-3">Other stuff</div>
+			<button type="button" id="backToHome" class="btn btn-outline-light">Back to Home</button>
+		</header>
+
+		<section id="GenshinImpactBuildGuide">
+			<ul class="nav nav-tabs ElementMenu">
+				<li class="nav-item"><a id="PyroPage" class="nav-link" href="Pyro.html">Pyro</a></li>
+				<li class="nav-item"><a id="ElectroPage" class="nav-link" href="Electro.html">Electro</a></li>
+				<li class="nav-item"><a id="HydroPage" class="nav-link" href="Hydro.html">Hydro</a></li>
+				<li class="nav-item"><a id="CryoPage" class="nav-link" href="Cryo.html">Cryo</a></li>
+				<li class="nav-item"><a id="AnemoPage" class="nav-link active" aria-current="page">Anemo</a></li>
+				<li class="nav-item"><a id="GeoPage" class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Geo</a></li>
+			</ul>
+
+			<div class="GIBG_Header w-100">
+				<div class="GIBG_Header_Element">ANEMO</div>
+				<div class="GIBG_Header_Discl"><span>El rol en el que el personaje se destaque mejor estará marcado con una ⭐</span></div>
+			</div>
+
+			<div class="GIBG_CharacterRarity GIBG_LightMode w-100">
+				<span style="text-shadow: none;">4 ESTRELLAS</span>
+			</div>
+
+			<table class="GIBG_Table w-100">
+<!-- -------------------- SUCROSE -------------------- -->
+				<tr>
+					<td class="GIBG_Table_CharacterName" rowspan="2">
+						<div class="GIBG_Table_CharacterContainer d-flex align-items-center justify-content-center">
+							<img src="https://paimon.moe/images/characters/sucrose.png">
+							<span class="GIBG_LightMode GIBG_CharacterNameVAL">SACAROSA</span>
+						</div>
+					</td>
+					<td class="GIBG_LightMode GIBG_Table_Role" rowspan="2">ROL</td>
+					<td class="GIBG_LightMode GIBG_Table_Equip" colspan="2">EQUIPAMIENTO</td>
+					<td class="GIBG_LightMode GIBG_Table_ArtifactStats" colspan="2">ATRIBUTOS DE ARTEFACTOS</td>
+					<td class="GIBG_LightMode GIBG_Table_Talents" rowspan="2">PRIORIDAD DE TALENTOS</td>
+					<td class="GIBG_LightMode GIBG_Table_Tips" rowspan="2">CONSEJOS</td>
+				</tr>
+				<tr>
+					<td class="GIBG_Table_Equip GIBG_Table_EquipWeapon">ARMA</td>
+					<td class="GIBG_Table_Equip GIBG_Table_EquipArtifacts">CONJUNTO DE ARTEFACTOS</td>
+					<td class="GIBG_Table_ArtifactStats GIBG_Table_ArtifactStats_MainStats">PRINCIPALES</td>
+					<td class="GIBG_Table_ArtifactStats GIBG_Table_ArtifactStats_Substats">SECUNDARIOS</td>
+				</tr>
+				<tr>
+					<!-- CHARACTER IMAGE -->
+					<td class="GIBG_Table_CharacterImg">
+						<img src="https://paimon.moe/images/characters/full/sucrose.png">
+					</td>
+					<!-- ROLE -->
+					<td class="GIBG_Table_Role_VAL VAL1 Rol_VAL_Ind">DPS MAEST. ELEM. ⭐</td>
+					<!-- WEAPONS -->
+					<td class="GIBG_Table_Equip_WeaponVAL VAL1">
+						<ol>
+							<li>Memorias de Sacrificios (4⭐)</li>
+							<li>Guía Mágica (3⭐)</li>
+							<li>Carta Náutica (4⭐)</li>
+							<li>Sinfonía de los Merodeadores (4⭐)</li>
+							<li>Cuentos de Cazadores de Dragones (3⭐)</li>
+							<li>Códice de Favonius (4⭐)</li>
+						</ol>
+					</td>
+					<!-- ARTIFACTS -->
+					<td class="GIBG_Table_Equip_ArtifactsVAL VAL1">
+						<ol>
+							<li>Sombra Verde Esmeralda (4)</li>
+							<li>Instructor (4)</li>
+							<li>Instructor (2) + Orquesta del Errante (2)</li>
+							<li>Sombra Verde Esmeralda (2) + Orquesta del Errante (2)</li>
+						</ol>
+					</td>
+					<!-- MAIN STATS -->
+					<td class="GIBG_Table_ArtifactStats_MainStatsVAL VAL1">
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Arenas del Eón</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Maestría Elemental</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Cáliz de Eonothem</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Maestría Elemental</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Tiara de Logos</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Maestría Elemental</span>
+					</td>
+					<!-- SUBSTATS -->
+					<td class="GIBG_Table_ArtifactStats_SubstatsVAL VAL1">
+						<ol>
+							<li>Maestría Elemental</li>
+							<li>ATQ%</li>
+							<li>Prob. CRIT / Daño CRIT</li>
+							<li>Recarga de Energía</li>
+						</ol>
+					</td>
+					<!-- TALENT PRIORITY -->
+					<td class="GIBG_Table_TalentsVAL VAL1">
+						<ol>
+							<li>Habilidad Elemental</li>
+							<li>Habilidad Definitiva</li>
+						</ol>
+						<p>
+							Los niveles de talento de Sacarosa no son necesarios.
+						</p>
+					</td>
+					<!-- TIPS -->
+					<td class="GIBG_Table_TipsVAL VAL1">
+						<div class="GIBG_Table_TipsSectionDiv">
+							Cuando se utiliza el conjunto de artefactos de la <i>Sombra Verde Esmeralda (4)</i>,
+							asegúrate de no cambiar de personaje inmediatamente después de lanzar la Habilidad Elemental
+							y/o la Habilidad Definitiva, debes estar en el campo cuando ocurra la reacción de Torbellino
+							para que pueda activar el efecto pasivo del conjunto.
+						</div>
+					</td>
+				</tr>
+
+				<!-- DESCRIPTION -->
+				<tr>
+					<td class="GIBG_Table_Notes">NOTAS</td>
+					<td colspan="7" class="GIBG_Table_NotesVAL VAL2">
+						<div class="GIBG_Table_Notes_Role">DPS DE MAESTRÍA ELEMENTAL ⭐</div>
+						<p>
+							La gente suele comparar a Sacarosa con Venti por su capacidad de controlar hordas de enemigos,
+							pero eso no es lo que estamos buscando aquí. Sacarosa es un personaje que puede otorgar
+							Maestría Elemental a tus compañeros de equipo al realizar la reacción de Torbellino con los
+							elementos correctos (su primer talento pasivo), lo que mejora el daño de reacción de los
+							personajes que se benefician del aumento de Maestría Elemental. Su segundo talento pasivo
+							también aumenta la Maestría Elemental de todo el equipo en un 20% de la Maestría Elemental
+							total de Sacarosa, por lo que querrás acumular tanta Maestría Elemental como sea posible en
+							tus artefactos. Como auxiliar, la mayor parte de los valores de Sacarosa radican en sus
+							talentos pasivos, por lo que no es necesario subir de nivel sus otros talentos (Ataque Normal,
+							Habilidad Elemental y Habilidad Definitiva).
+						</p>
+
+						<span class="GIBG_Table_Notes_Regarding">
+							Con respecto a la elección de armas:
+						</span>
+						<p>
+							Es importante tener en cuenta que estas armas se clasificaron según la cantidad de Maestría
+							Elemental que ofrecen. Sin embargo, esto no tiene en cuenta cuánto beneficia cada catalizador
+							al DPS principal de todo su equipo.
+						</p>
+						<table class="GIBG_SubTable_Regarding">
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Cuentos de Cazadores de Dragones:</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									Esta arma supera a las otras armas de la lista cuando se trata de habilitar a tu equipo.
+									<b>Ofrece un aumento de 48% de ATQ a tu DPS, que es básicamente un atributo principal,
+									lo que habilita más a tu DPS más en comparación con
+									que solo da alrededor de 44 de Maestría Elemental, que son básicamente 2 atributos
+									secundarios</b>.
+								</td>
+							</tr>
+						</table><br>
+						<p>
+							Hay algunas composiciones de equipo (como Xiao) en las que la Maestría Elemental de Sacarosa
+							no es una prioridad. En tales situaciones, es mejor que Sacarosa utilice <i>Cuentos de
+							Cazadores de Dragones</i>.
+						</p>
+
+						<span class="GIBG_Table_Notes_Regarding">
+							Con respecto a la elección de prioridad de atributos secundarios:
+						</span>
+						<p>
+							La clasificación se basa suponiendo que Sacarosa tiene <i>Memorias de Sacrificios</i> y no
+							se utiliza por su Habilidad Definitiva en equipos que pueden no querer que la Habilidad
+							Definitiva de Sacarosa interfiera con las auras elementales. La Recarga de Energía podría tener
+							una mayor prioridad cuando Sacarosa se utiliza en equipos a los que realmente no les importa
+							qué elemento se aplica primero y/o al final (por ejemplo, Electrocargado).
+						</p>
+					</td>
+				</tr>
+
+<!-- -------------------- SAYU -------------------- -->
+				<tr>
+					<td class="GIBG_Table_CharacterName" rowspan="2">
+						<div class="GIBG_Table_CharacterContainer d-flex align-items-center justify-content-center">
+							<img src="https://paimon.moe/images/characters/sayu.png">
+							<span class="GIBG_CharacterNameVAL">SAYU</span>
+						</div>
+					</td>
+					<td class="GIBG_Table_Role" rowspan="2">ROL</td>
+					<td class="GIBG_Table_Equip" colspan="2">EQUIPAMIENTO</td>
+					<td class="GIBG_Table_ArtifactStats" colspan="2">ATRIBUTOS DE ARTEFACTOS</td>
+					<td class="GIBG_Table_Talents" rowspan="2">PRIORIDAD DE TALENTOS</td>
+					<td class="GIBG_Table_Tips" rowspan="2">CONSEJOS</td>
+				</tr>
+				<tr>
+					<td class="GIBG_Table_Equip GIBG_Table_EquipWeapon">ARMA</td>
+					<td class="GIBG_Table_Equip GIBG_Table_EquipArtifacts">CONJUNTO DE ARTEFACTOS</td>
+					<td class="GIBG_Table_ArtifactStats GIBG_Table_ArtifactStats_MainStats">PRINCIPALES</td>
+					<td class="GIBG_Table_ArtifactStats GIBG_Table_ArtifactStats_Substats">SECUNDARIOS</td>
+				</tr>
+				<tr>
+					<!-- CHARACTER IMAGE -->
+					<td class="GIBG_Table_CharacterImg">
+						<img src="https://paimon.moe/images/characters/full/sayu.png">
+					</td>
+					<!-- ROLE -->
+					<td class="GIBG_Table_Role_VAL VAL1 Rol_VAL_Ind">AUXILIAR ⭐</td>
+					<!-- WEAPONS -->
+					<td class="GIBG_Table_Equip_WeaponVAL VAL1">
+						<ol>
+							<li>Lápida del Lobo (5⭐)</li>
+							<li>Gran Espada de Sacrificio (4⭐)</li>
+							<li>Asesinato de Katsuragi (4⭐)</li>
+							<li>Gran Espada de Favonius (4⭐)</li>
+							<li>Segadora de la Lluvia (4⭐)</li>
+							<li>Gran Espada Sangrienta (3⭐)</li>
+						</ol>
+					</td>
+					<!-- ARTIFACTS -->
+					<td class="GIBG_Table_Equip_ArtifactsVAL VAL1">
+						<ol>
+							<li>Sombra Verde Esmeralda (4)</li>
+							<li>Ritual Antiguo de la Nobleza (4)</li>
+							<li>Emblema del Destino (2) + Doncella Amada (2)</li>
+						</ol>
+					</td>
+					<!-- MAIN STATS -->
+					<td class="GIBG_Table_ArtifactStats_MainStatsVAL VAL1">
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Arenas del Eón</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Recarga de Energía / Maestría Elemental</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Cáliz de Eonothem</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Maestría Elemental / ATQ%</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Tiara de Logos</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Bono de Curación / Maestría Elemental</span>
+					</td>
+					<!-- SUBSTATS -->
+					<td class="GIBG_Table_ArtifactStats_SubstatsVAL VAL1">
+						<ol>
+							<li>Recarga de Energía</li>
+							<li>Maestría Elemental</li>
+							<li>ATQ%</li>
+						</ol>
+					</td>
+					<!-- TALENT PRIORITY -->
+					<td class="GIBG_Table_TalentsVAL VAL1">
+						<ol>
+							<li>Habilidad Definitiva</li>
+							<li>Habilidad Elemental</li>
+						</ol>
+					</td>
+					<!-- TIPS -->
+					<td class="GIBG_Table_TipsVAL VAL1">
+						<div class="GIBG_Table_TipsSectionDiv">
+							Mantén pulsado el botón de la Habilidad Elemental, y luego, inmediatamente, vuelve a pulsarlo
+							para generar más partículas de energía.
+						</div>
+					</td>
+				</tr>
+
+				<!-- DESCRIPTION -->
+				<tr>
+					<td class="GIBG_Table_Notes LastCharacter">NOTAS</td>
+					<td colspan="7" class="GIBG_Table_NotesVAL VAL2 LastCharacter">
+						<div class="GIBG_Table_Notes_Role">AUXILIAR ⭐</div>
+						<p>
+							Sayu hace más daño con builds de Maestría Elemental y cura más con builds híbridos de ATQ,
+							la tiara con Bono de Curación se puede usar para obtener mejores curaciones mientras se
+							mantiene un daño respetable. Tenga en cuenta que Sayu requiere una gran cantidad de Recarga
+							de Energía cuando se usa como el único personaje Anemo en el equipo (aproximadamente 200%).
+						</p>
+
+						<span class="GIBG_Table_Notes_Regarding">
+							Con respecto a la elección de armas:
+						</span>
+						<table class="GIBG_SubTable_Regarding">
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Lápida del Lobo:</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									La <i>Lápida del Lobo</i> es un mandoble universal que es capaz de potenciar a tus
+									compañeros de equipo además de proporcionar un aumento de curación en el caso de Sayu.
+									Es mejor usarlo una vez que alcances el umbral de Recarga de Energía recomendado.
+								</td>
+							</tr>
+						</table><br>
+
+						<span class="GIBG_Table_Notes_Regarding">
+							Con respecto a la elección de conjuntos de artefactos:
+						</span>
+						<table class="GIBG_SubTable_Regarding">
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Sombra Verde Esmeralda (4):</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									La crema y nata de los conjuntos de artefactos para personajes Anemo, este
+									conjunto proporciona la habilidad de destruir las RES elementales del enemigo
+									mientras que aumenta el daño resultante de Torbellino de Sayu.
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+
+			<div class="GIBG_CharacterRarity GIBG_LightMode w-100">
+				<span style="text-shadow: none;">5 ESTRELLAS</span>
+			</div>
+
+			<table class="GIBG_Table w-100">
+<!-- -------------------- TRAVELER -------------------- -->
+				<tr>
+					<td class="GIBG_Table_CharacterName" rowspan="2">
+						<div class="GIBG_Table_CharacterContainer d-flex align-items-center justify-content-center">
+							<img src="https://paimon.moe/images/characters/traveler_anemo.png">
+							<span class="GIBG_CharacterNameVAL">VIAJERO o VIAJERA</span>
+						</div>
+					</td>
+					<td class="GIBG_Table_Role" rowspan="2">ROL</td>
+					<td class="GIBG_Table_Equip" colspan="2">EQUIPAMIENTO</td>
+					<td class="GIBG_Table_ArtifactStats" colspan="2">ATRIBUTOS DE ARTEFACTOS</td>
+					<td class="GIBG_Table_Talents" rowspan="2">PRIORIDAD DE TALENTOS</td>
+					<td class="GIBG_Table_Tips" rowspan="2">CONSEJOS</td>
+				</tr>
+				<tr>
+					<td class="GIBG_Table_Equip GIBG_Table_EquipWeapon">ARMA</td>
+					<td class="GIBG_Table_Equip GIBG_Table_EquipArtifacts">CONJUNTO DE ARTEFACTOS</td>
+					<td class="GIBG_Table_ArtifactStats GIBG_Table_ArtifactStats_MainStats">PRINCIPALES</td>
+					<td class="GIBG_Table_ArtifactStats GIBG_Table_ArtifactStats_Substats">SECUNDARIOS</td>
+				</tr>
+				<tr>
+					<!-- CHARACTER IMAGE -->
+					<td class="GIBG_Table_CharacterImg" rowspan="2">
+						<img src="https://paimon.moe/images/characters/full/traveler_anemo.png">
+					</td>
+					<!-- ROLE -->
+					<td class="GIBG_Table_Role_VAL VAL1 Rol_VAL_Ind">DPS ANEMO ⭐</td>
+					<!-- WEAPONS -->
+					<td class="GIBG_Table_Equip_WeaponVAL VAL1">
+						<ol>
+							<li>Cortador de Jade Primordial (5⭐)</li>
+							<li>Reflejo de las Tinieblas (5⭐)</li>
+							<li>Hoja Afilada Celestial (5⭐)</li>
+							<li>Rompemontañas (5⭐)</li>
+							<li>Aquila Favonia (5⭐)</li>
+							<li>Deseo Ponzoñoso (4⭐)</li>
+							<li>
+								Flauta (4⭐) = Rugido del León (4⭐) =<br>
+								Espada Larga del Peñasco Oscuro (4⭐)
+							</li>
+							<li>Espada de Favonius (4⭐)</li>
+							<li>Espada de Sacrificio (4⭐)</li>
+							<li>Espada del Alba (3⭐)</li>
+							<li>Espada del Descenso (4⭐)</li>
+						</ol>
+					</td>
+					<!-- ARTIFACTS -->
+					<td class="GIBG_Table_Equip_ArtifactsVAL VAL1">
+						<ol>
+							<li>Sombra Verde Esmeralda (4)</li>
+							<li>Sombra Verde Esmeralda (2) + <i>cualquier conj. artf. ATQ+18%</i> (2)</li>
+							<li>Ritual Antiguo de la Nobleza (2) + Sombra Verde Esmeralda (2)</li>
+							<li><i>Cualquier conj. artf. ATQ+18%</i> (2) + Artista Marcial (2)</li>
+						</ol>
+					</td>
+					<!-- MAIN STATS -->
+					<td class="GIBG_Table_ArtifactStats_MainStatsVAL VAL1">
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Arenas del Eón</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">ATQ% / Recarga de Energía</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Cáliz de Eonothem</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Bono de Daño Anemo</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Tiara de Logos</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Prob. CRIT / Daño CRIT</span>
+					</td>
+					<!-- SUBSTATS -->
+					<td class="GIBG_Table_ArtifactStats_SubstatsVAL VAL1">
+						<ol>
+							<li>Prob. CRIT / Daño CRIT</li>
+							<li>ATQ%</li>
+							<li>Recarga de Energía</li>
+							<li>Maestría Elemental</li>
+							<li>ATQ fijo</li>
+						</ol>
+					</td>
+					<!-- TALENT PRIORITY -->
+					<td class="GIBG_Table_TalentsVAL VAL1">
+						<ol>
+							<li>Habilidad Elemental</li>
+							<li>Habilidad Definitiva</li>
+						</ol>
+					</td>
+					<!-- TIPS -->
+					<td class="GIBG_Table_TipsVAL VAL1">
+						<div class="GIBG_Table_TipsSectionDiv"></div>
+					</td>
+				</tr>
+
+				<tr>
+					<!-- ROLE -->
+					<td class="GIBG_Table_Role_VAL VAL2">DPS FÍSICO</td>
+					<!-- WEAPONS -->
+					<td class="GIBG_Table_Equip_WeaponVAL VAL2">
+						<ol>
+							<li>Aquila Favonia (5⭐)</li>
+							<li>Rompemontañas (5⭐)</li>
+							<li>Cortador de Jade Primordial (5⭐)</li>
+							<li>Hoja Afilada Celestial (5⭐)</li>
+							<li>Espada Larga del Peñasco Oscuro (4⭐)</li>
+							<li>Espada Negra (4⭐)</li>
+							<li>Prototipo Rencor (4⭐)</li>
+							<li>Espada del Alba (3⭐)</li>
+							<li>Flauta (4⭐)</li>
+							<li>Espada Real Larga (4⭐)</li>
+							<li>Hoja de Filetear (3⭐)</li>
+						</ol>
+					</td>
+					<!-- ARTIFACTS -->
+					<td class="GIBG_Table_Equip_ArtifactsVAL VAL2">
+						<ol>
+							<li>Llamas Albinas (4)</li>
+							<li>Llamas Albinas (2) + Caballería Sanguinaria (2)</li>
+							<li>Final del Gladiador (4)</li>
+							<li><i>Cualquier conj. artf. ATQ+18%</i> (2) o Llamas Albinas (2) + Caballería Sanguinaria (2)</li>
+							<abbr title="Sólo elegir dos de estos conjuntos de artefactos.">
+								<li>
+									Corazón del Guerrero (2) / Arista Marcial (2) / Corazón del Viajero (2) / Berserker (2)
+								</li>
+							</abbr>
+						</ol>
+					</td>
+					<!-- MAIN STATS -->
+					<td class="GIBG_Table_ArtifactStats_MainStatsVAL VAL2">
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Arenas del Eón</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">ATQ%</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Cáliz de Eonothem</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Bono de Daño Físico</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Tiara de Logos</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Prob. CRIT / Daño CRIT</span>
+					</td>
+					<!-- SUBSTATS -->
+					<td class="GIBG_Table_ArtifactStats_SubstatsVAL VAL2">
+						<ol>
+							<li>Prob. CRIT / Daño CRIT</li>
+							<li>ATQ%</li>
+							<li>ATQ fijo</li>
+							<li>Recarga de Energía</li>
+						</ol>
+					</td>
+					<!-- TALENT PRIORITY -->
+					<td class="GIBG_Table_TalentsVAL VAL2">
+						<ol>
+							<li>Ataque Normal</li>
+							<li>Habilidad Elemental</li>
+							<li>Habilidad Definitiva</li>
+						</ol>
+					</td>
+					<!-- TIPS -->
+					<td class="GIBG_Table_TipsVAL VAL2">
+						<div class="GIBG_Table_TipsSectionDiv"></div>
+					</td>
+				</tr>
+
+				<!-- DESCRIPTION -->
+				<tr>
+					<td class="GIBG_Table_Notes">NOTAS</td>
+					<td colspan="7" class="GIBG_Table_NotesVAL VAL2">
+						<div class="GIBG_Table_Notes_Role">DPS ANEMO ⭐</div>
+						<p>
+							Esta sección está dedicada a utilizar la Habilidad Elemental y Habilidad Definitiva del
+							viajero Anemo. Debido al poco tiempo de campo que toma este estilo de juego, el viajero
+							también puede cumplir el papel de un Sub-DPS de estilo cambia-rápido.
+						</p>
+
+						<div class="GIBG_Table_Notes_Role">DPS FÍSICO</div>
+						<p>
+							<b>
+								No se recomienda para el contenido final del juego.
+							</b>
+						</p>
+
+						<span class="GIBG_Table_Notes_Regarding">
+							Con respecto a la elección de conjuntos de artefactos:
+						</span>
+						<table class="GIBG_SubTable_Regarding">
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Llamas Albinas (4):</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									Cuando utilices este conjunto, asegúrate de sólo pulsar el botón de la Habilidad
+									Elemental, y no mantenerlo pulsado; esto debido a que el tiempo de espera de la
+									Habilidad Definitiva al mantenerlo por mucho tiempo es muy largo para reiniciar tus
+									acumulaciones.
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+
+<!-- -------------------- JEAN -------------------- -->
+				<tr>
+					<td class="GIBG_Table_CharacterName" rowspan="2">
+						<div class="GIBG_Table_CharacterContainer d-flex align-items-center justify-content-center">
+							<img src="https://paimon.moe/images/characters/jean.png">
+							<span class="GIBG_CharacterNameVAL">JEAN</span>
+						</div>
+					</td>
+					<td class="GIBG_Table_Role" rowspan="2">ROL</td>
+					<td class="GIBG_Table_Equip" colspan="2">EQUIPAMIENTO</td>
+					<td class="GIBG_Table_ArtifactStats" colspan="2">ATRIBUTOS DE ARTEFACTOS</td>
+					<td class="GIBG_Table_Talents" rowspan="2">PRIORIDAD DE TALENTOS</td>
+					<td class="GIBG_Table_Tips" rowspan="2">CONSEJOS</td>
+				</tr>
+				<tr>
+					<td class="GIBG_Table_Equip GIBG_Table_EquipWeapon">ARMA</td>
+					<td class="GIBG_Table_Equip GIBG_Table_EquipArtifacts">CONJUNTO DE ARTEFACTOS</td>
+					<td class="GIBG_Table_ArtifactStats GIBG_Table_ArtifactStats_MainStats">PRINCIPALES</td>
+					<td class="GIBG_Table_ArtifactStats GIBG_Table_ArtifactStats_Substats">SECUNDARIOS</td>
+				</tr>
+				<tr>
+					<!-- CHARACTER IMAGE -->
+					<td class="GIBG_Table_CharacterImg" rowspan="2">
+						<img src="https://paimon.moe/images/characters/full/jean.png">
+					</td>
+					<!-- ROLE -->
+					<td class="GIBG_Table_Role_VAL VAL1">DPS</td>
+					<!-- WEAPONS -->
+					<td class="GIBG_Table_Equip_WeaponVAL VAL1">
+						<ol>
+							<li>Aquila Favonia (5⭐)</li>
+							<li>Rompemontañas (5⭐)</li>
+							<li>Cortador de Jade Primordial (5⭐)</li>
+							<li>Hoja Afilada Celestial (5⭐)</li>
+							<li>Espada Larga del Peñasco Oscuro (4⭐)</li>
+							<li>Espada Negra (4⭐)</li>
+							<li>Prototipo Rencor (4⭐)</li>
+						</ol>
+					</td>
+					<!-- ARTIFACTS -->
+					<td class="GIBG_Table_Equip_ArtifactsVAL VAL1">
+						<ol>
+							<li>Llamas Albinas (2) + Caballería Sanguinaria (2)</li>
+							<li>Final del Gladiador (4)</li>
+							<li>Llamas Albinas (2) o Caballería Sanguinaria (2) + <i>cualquier conj. artf. ATQ+18%</i> (2)</li>
+							<li><i>Cualquier conj. artf. ATQ+18%</i> + Sombra Verde Esmeralda (2)</li>
+						</ol>
+					</td>
+					<!-- MAIN STATS -->
+					<td class="GIBG_Table_ArtifactStats_MainStatsVAL VAL1">
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Arenas del Eón</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">ATQ%</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Cáliz de Eonothem</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Bono de Daño Físico</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Tiara de Logos</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Prob. CRIT / Daño CRIT</span>
+					</td>
+					<!-- SUBSTATS -->
+					<td class="GIBG_Table_ArtifactStats_SubstatsVAL VAL1">
+						<ol>
+							<li>Prob. CRIT / Daño CRIT</li>
+							<li>ATQ%</li>
+							<li>Recarga de Energía</li>
+							<li>Maestría Elemental</li>
+							<li>ATQ fijo</li>
+						</ol>
+					</td>
+					<!-- TALENT PRIORITY -->
+					<td class="GIBG_Table_TalentsVAL VAL1">
+						<ol>
+							<li>Ataque Normal</li>
+							<li>Habilidad Elemental</li>
+							<li>Habilidad Definitiva</li>
+						</ol>
+					</td>
+					<!-- TIPS -->
+					<td class="GIBG_Table_TipsVAL VAL1">
+						<div class="GIBG_Table_TipsSectionDiv">
+							La Habilidad Definitiva de Jean imbuye continuamente a los personajes de la zona con estado
+							Anemo, lo que significa que puede limpiar todos los estados elementales a excepción de
+							Dendro.
+						</div>
+					</td>
+				</tr>
+
+				<tr>
+					<!-- ROLE -->
+					<td class="GIBG_Table_Role_VAL VAL2 Rol_VAL_Ind">AUXILIAR HAB. DEF. ⭐</td>
+					<!-- WEAPONS -->
+					<td class="GIBG_Table_Equip_WeaponVAL VAL2">
+						<ol>
+							<li>Cortador de Jade Primordial (5⭐)</li>
+							<abbr title="Con 5 acumulaciones.">
+								<li>Rompemontañas (5⭐)</li>
+							</abbr>
+							<li>Espada Amenoma Gemela (4⭐)</li>
+							<li>Hoja Afilada Celestial (5⭐)</li>
+							<li>Deseo Ponzoñoso <b>[R5]</b> (4⭐)</li>
+							<li>Juramento por la Libertad (5⭐)</li>
+							<li>Aquila Favonia (5⭐)</li>
+							<li>Espada de Favonius (4⭐)</li>
+							<li>
+								Flauta (4⭐) = Rugido del León (4⭐) =<br>
+								Espada Larga del Peñasco Oscuro (4⭐)
+							</li>
+							<li>Hoja de Filetear (3⭐)</li>
+						</ol>
+					</td>
+					<!-- ARTIFACTS -->
+					<td class="GIBG_Table_Equip_ArtifactsVAL VAL2">
+						<ol>
+							<li>Sombra Verde Esmeralda (4)</li>
+							<li>Ritual Antiguo de la Nobleza (4)</li>
+							<li>Sombra Verde Esmeralda (2) + <i>cualquier conj. artf. ATQ+18%</i> (2)</li>
+							<li>Sombra Verde Esmeralda (2) + Emblema del Destino (2)</li>
+							<li>Emblema del Destino (4)</li>
+							<li>Ritual Antiguo de la Nobleza (2) o Sombra Verde Esmeralda (2) + <i>cualquier conj. artf. ATQ+18%</i> (2)</li>
+						</ol>
+					</td>
+					<!-- MAIN STATS -->
+					<td class="GIBG_Table_ArtifactStats_MainStatsVAL VAL2">
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Arenas del Eón</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">ATQ% / Recarga de Energía</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Cáliz de Eonothem</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Bono de Daño Anemo / ATQ%</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Tiara de Logos</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Prob. CRIT / Daño CRIT / ATQ%</span>
+					</td>
+					<!-- SUBSTATS -->
+					<td class="GIBG_Table_ArtifactStats_SubstatsVAL VAL2">
+						<ol>
+							<li>Prob. CRIT / Daño CRIT</li>
+							<li>ATQ%</li>
+							<li>Recarga de Energía</li>
+							<li>Maestría Elemental</li>
+							<li>ATQ fijo</li>
+						</ol>
+					</td>
+					<!-- TALENT PRIORITY -->
+					<td class="GIBG_Table_TalentsVAL VAL2">
+						<ol>
+							<li>
+								Habilidad Elemental /<br>
+								Habilidad Definitiva
+							</li>
+							<li>
+								Habilidad Definitiva /<br>
+								Habilidad Elemental
+							</li>
+						</ol>
+					</td>
+					<!-- TIPS -->
+					<td class="GIBG_Table_TipsVAL VAL2">
+						<div class="GIBG_Table_TipsSectionDiv"></div>
+					</td>
+				</tr>
+
+				<!-- DESCRIPTION -->
+				<tr>
+					<td class="GIBG_Table_Notes">NOTAS</td>
+					<td colspan="7" class="GIBG_Table_NotesVAL VAL2">
+						<div class="GIBG_Table_Notes_Role">DPS</div>
+						<p>
+							La Habilidad Elemental de Jean puede causar daño por caída basado en la Vida Máx. del enemigo
+							y la velocidad de caída si apuntas hacia arriba. Ten en cuenta que algunos personajes de 4⭐
+							pueden superar a Jean en daño, por lo que Jean es mejor como auxiliar.
+						</p>
+
+						<div class="GIBG_Table_Notes_Role SecondRole">AUXILIAR HABILIDAD DEFINITIVA ⭐</div>
+						<p>
+							La Habilidad Elemental de Jean se puede utilizar para empujar a enemigos pequeños y aturdir
+							a los más grandes. <b>La curación de Jean está en proporción con su ATQ</b>.
+						</p>
+
+						<span class="GIBG_Table_Notes_Regarding">
+							Con respecto a la elección de armas:
+						</span>
+						<table class="GIBG_SubTable_Regarding">
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Juramento por la Libertad:</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									La clasificación aquí solo <b>asume el daño personal de Jean y no la utilidad que le
+									da.</b> Si quieres mejorar aún más a tu DPS principal, puedes darle esta espada a Jean,
+									ya que <b>puede activar la habilidad del <i>Juramento por la Libertad</i> con relativa
+									facilidad, ya que Anemo siempre sirve de activador</b>.
+								</td>
+							</tr>
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Rugido del León:</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									Dependiendo del tiempo de actividad del efecto pasivo de esta arma, puede posicionarse
+									por encima de la <i>Espada de Favonius</i> (con un tiempo de actividad del 50%), o
+									incluso la <i>Aquila Favonia</i> (con un tiempo de actividad del 100%).
+								</td>
+							</tr>
+						</table><br>
+
+						<span class="GIBG_Table_Notes_Regarding">
+							Con respecto a la elección de conjuntos de artefactos:
+						</span>
+
+						<table class="GIBG_SubTable_Regarding">
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Sombra Verde Esmeralda (4):</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									La crema y nata de los conjuntos de artefactos para personajes Anemo en general, ya
+									que <b>es comúnmente utilizado para la reducción del 40% de la RES elemental del
+									enemigo</b>.
+								</td>
+							</tr>
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Ritual Antiguo de la Nobleza (4):</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									Es otra opción que sirve para proporcionar utilidad a tu equipo. Este conjunto
+									otorga un aumento del 20% de ATQ a todo el equipo después de que Jean lance su
+									Habilidad Definitiva.
+								</td>
+							</tr>
+						</table><br>
+
+						<span class="GIBG_Table_Notes_Regarding">
+							Con respecto a la elección de prioridad de talentos:
+						</span>
+						<p>
+							Si prefieres hacer más daño que curar más, prioriza la Habilidad Elemental en lugar de la
+							Habilidad Definitiva.
+						</p>
+
+						<p>
+							Para una Jean auxiliar, puedes optar por <b>más ATQ para curaciones más altas, pero con un
+							tiempo de actividad de la Habilidad Definitiva relativamente menor</b>; o <b>más Recarga de
+							Energía para curaciones más bajas, pero un tiempo de actividad de la Habilidad Definitiva
+							más alto</b>. La elección entre estos dos depende de tus preferencias personales, aunque
+							<b>si Venti está en el equipo, Jean no tendrá mucho problema con la generación de energía</b>
+							y puede tener potencial para un build Sub-DPS completo.
+						</p>
+					</td>
+				</tr>
+
+<!-- -------------------- VENTI -------------------- -->
+				<tr>
+					<td class="GIBG_Table_CharacterName" rowspan="2">
+						<div class="GIBG_Table_CharacterContainer d-flex align-items-center justify-content-center">
+							<img src="https://paimon.moe/images/characters/venti.png">
+							<span class="GIBG_CharacterNameVAL">VENTI</span>
+						</div>
+					</td>
+					<td class="GIBG_Table_Role" rowspan="2">ROL</td>
+					<td class="GIBG_Table_Equip" colspan="2">EQUIPAMIENTO</td>
+					<td class="GIBG_Table_ArtifactStats" colspan="2">ATRIBUTOS DE ARTEFACTOS</td>
+					<td class="GIBG_Table_Talents" rowspan="2">PRIORIDAD DE TALENTOS</td>
+					<td class="GIBG_Table_Tips" rowspan="2">CONSEJOS</td>
+				</tr>
+				<tr>
+					<td class="GIBG_Table_Equip GIBG_Table_EquipWeapon">ARMA</td>
+					<td class="GIBG_Table_Equip GIBG_Table_EquipArtifacts">CONJUNTO DE ARTEFACTOS</td>
+					<td class="GIBG_Table_ArtifactStats GIBG_Table_ArtifactStats_MainStats">PRINCIPALES</td>
+					<td class="GIBG_Table_ArtifactStats GIBG_Table_ArtifactStats_Substats">SECUNDARIOS</td>
+				</tr>
+				<tr>
+					<!-- CHARACTER IMAGE -->
+					<td class="GIBG_Table_CharacterImg">
+						<img src="https://paimon.moe/images/characters/full/venti.png">
+					</td>
+					<!-- ROLE -->
+					<td class="GIBG_Table_Role_VAL VAL1 Rol_VAL_Ind">DPS FUERA DE CAMPO ⭐</td>
+					<!-- WEAPONS -->
+					<td class="GIBG_Table_Equip_WeaponVAL VAL1">
+						<ol>
+							<li>Último Acorde (4⭐)</li>
+							<li>Oda a las Flores de Viento <b>[R5]</b> (4⭐)</li>
+							<li>Cazador del Callejón <b>[R5]</b> (4⭐)</li>
+							<li>Elegía del Fin (5⭐)</li>
+							<li>Arco de Cuervo <b>[R5]</b> (3⭐)</li>
+							<li>Cazador del Callejón (4⭐)</li>
+							<li>Alas Celestiales (5⭐)</li>
+						</ol>
+					</td>
+					<!-- ARTIFACTS -->
+					<td class="GIBG_Table_Equip_ArtifactsVAL VAL1">
+						<ol>
+							<li>Sombra Verde Esmeralda (4)</li>
+							<li>Ritual Antiguo de la Nobleza (4)</li>
+							<li>Sombra Verde Esmeralda (2) + Ritual Antiguo de la Nobleza (2)</li>
+							<li>Sombra Verde Esmeralda (2) + <i>cualquier conj. artf. ATQ+18%</i> (2)</li>
+						</ol>
+					</td>
+					<!-- MAIN STATS -->
+					<td class="GIBG_Table_ArtifactStats_MainStatsVAL VAL1">
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Arenas del Eón</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Maestría Elemental / ATQ%</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Cáliz de Eonothem</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Maestría Elemental / Bono de Daño Anemo</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Tiara de Logos</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Maestría Elemental / Prob. CRIT / Daño CRIT</span>
+					</td>
+					<!-- SUBSTATS -->
+					<td class="GIBG_Table_ArtifactStats_SubstatsVAL VAL1">
+						<ol>
+							<li>Maestría Elemental</li>
+							<li>Recarga de Energía</li>
+							<li>ATQ%</li>
+							<abbr title="Asumiendo que tienes un build de artefactos de triple Maestría Elemental, por lo tanto, se encuentra en esta posición.">
+								<li>Prob. CRIT / Daño CRIT</li>
+							</abbr>
+							<li>ATQ fijo</li>
+						</ol>
+					</td>
+					<!-- TALENT PRIORITY -->
+					<td class="GIBG_Table_TalentsVAL VAL1">
+						<ol>
+							<li>Habilidad Definitiva</li>
+							<li>Habilidad Elemental</li>
+						</ol>
+					</td>
+					<!-- TIPS -->
+					<td class="GIBG_Table_TipsVAL VAL1">
+						<div class="GIBG_Table_TipsSectionDiv">
+							Asegúrate de no cambiar inmediatamente después de lanzar la Habilidad Definitiva, debes estar
+							en el campo para que el conjunto de la <i>Sombra Verde Esmeralda (4)</i> se active primero
+							(S > B para evitar este problema).<br>
+							<i>donde</i> S <i>= Habilidad Elemental</i>, B <i>= Habilidad Definitiva</i>.
+							<br><br>
+							Puedes imbuir elementos dentro de la Habilidad Definitiva de Venti si entras con un estado
+							imbuido en ti (por ejemplo: Habilidad Definitiva de Bennett > Habilidad Definitiva de Venti
+							> caminar para inbuir Pyro).
+						</div>
+					</td>
+				</tr>
+
+				<!-- DESCRIPTION -->
+				<tr>
+					<td class="GIBG_Table_Notes">NOTAS</td>
+					<td colspan="7" class="GIBG_Table_NotesVAL VAL2">
+						<div class="GIBG_Table_Notes_Role">DPS FUERA DE CAMPO ⭐</div>
+						<p>
+							Este build se centra en daño sobre Recarga de Energía debido a que el atributo de Recarga de
+							Energía sube por cada ascensión de Venti. <b>La clasificación de armas está asumido por
+							Venti con Maestría Elemental, ya que el potencial de Daño CRIT de Venti se limita a una
+							inversión extremadamente alta, o en situaciones de un solo enemigo</b>.
+						</p>
+
+						<span class="GIBG_Table_Notes_Regarding">
+							Con respecto a la elección de armas:
+						</span>
+						<table class="GIBG_SubTable_Regarding">
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Alas Celestiales:</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									Debido a la suposición del build de Maestría Elemental, el atributo ofrecido por esta
+									arma no proporciona mucho valor.
+								</td>
+							</tr>
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Elegía del Fin:</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									Si Venti es el que tiene equipado esta arma, entonces el aumento de ATQ de la
+									<i>Elegía del Fin</i> no potenciará la Habilidad Definitiva de Venti, pero sí el
+									aumento de Maestría Elemental en las reacciones de Torbellino de Venti. Esto se debe
+									a que la Habilidad Definitiva de Venti capturó sus atributos (excluyendo la Maestría
+									Elemental hacia reacciones transformadoras como Torbellino) en el momento del lanzamiento.
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+
+<!-- -------------------- XIAO -------------------- -->
+				<tr>
+					<td class="GIBG_Table_CharacterName" rowspan="2">
+						<div class="GIBG_Table_CharacterContainer d-flex align-items-center justify-content-center">
+							<img src="https://paimon.moe/images/characters/xiao.png">
+							<span class="GIBG_CharacterNameVAL">XIAO</span>
+						</div>
+					</td>
+					<td class="GIBG_Table_Role" rowspan="2">ROL</td>
+					<td class="GIBG_Table_Equip" colspan="2">EQUIPAMIENTO</td>
+					<td class="GIBG_Table_ArtifactStats" colspan="2">ATRIBUTOS DE ARTEFACTOS</td>
+					<td class="GIBG_Table_Talents" rowspan="2">PRIORIDAD DE TALENTOS</td>
+					<td class="GIBG_Table_Tips" rowspan="2">CONSEJOS</td>
+				</tr>
+				<tr>
+					<td class="GIBG_Table_Equip GIBG_Table_EquipWeapon">ARMA</td>
+					<td class="GIBG_Table_Equip GIBG_Table_EquipArtifacts">CONJUNTO DE ARTEFACTOS</td>
+					<td class="GIBG_Table_ArtifactStats GIBG_Table_ArtifactStats_MainStats">PRINCIPALES</td>
+					<td class="GIBG_Table_ArtifactStats GIBG_Table_ArtifactStats_Substats">SECUNDARIOS</td>
+				</tr>
+				<tr>
+					<!-- CHARACTER IMAGE -->
+					<td class="GIBG_Table_CharacterImg">
+						<img src="https://paimon.moe/images/characters/full/xiao.png">
+					</td>
+					<!-- ROLE -->
+					<td class="GIBG_Table_Role_VAL VAL1 Rol_VAL_Ind">DPS ⭐</td>
+					<!-- WEAPONS -->
+					<td class="GIBG_Table_Equip_WeaponVAL VAL1">
+						<ol>
+							<li>Halcón de Jade (5⭐)</li>
+							<li>Báculo de Homa (5⭐)</li>
+							<li>Lanza Perforanubes (5⭐)</li>
+							<abbr title="Con dos acumulaciones.">
+								<li>Lanza Lítica (4⭐)</li>
+							</abbr>
+							<li>Lanza del Duelo (4⭐)</li>
+							<li>Lanza del Peñasco Oscuro (4⭐)</li>
+							<li>Púa Celestial (5⭐)</li>
+							<li>Lanza de Favonius (4⭐)</li>
+							<li>Prototipo Estelar (4⭐)</li>
+							<li>Borla Blanca (3⭐)</li>
+							<li>Alabarda (3⭐)</li>
+						</ol>
+					</td>
+					<!-- ARTIFACTS -->
+					<td class="GIBG_Table_Equip_ArtifactsVAL VAL1">
+						<ol>
+							<li>Sombra Verde Esmeralda (2) / Final del Gladiador (2) / Reminiscencia de la Purificación (2)</li>
+						</ol>
+
+						<p>
+							<b>
+								Vale la pena señalar que las bonificaciones de los conjuntos de artefactos no aumentan
+								mucho el daño de Xiao, debido a una sobresaturación en los Bonos de Daño elemental y de
+								ATQ% de varias fuentes. Por esta razón, es mejor optar por artefactos que tengan atributos
+								secundarios de mayor calidad en lugar de intentar mantener una bonificación de conjunto
+								de artefactos.
+							</b>
+						</p>
+					</td>
+					<!-- MAIN STATS -->
+					<td class="GIBG_Table_ArtifactStats_MainStatsVAL VAL1">
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Arenas del Eón</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">ATQ%</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Cáliz de Eonothem</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Bono de Daño Anemo</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Tiara de Logos</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Prob. CRIT / Daño CRIT</span>
+					</td>
+					<!-- SUBSTATS -->
+					<td class="GIBG_Table_ArtifactStats_SubstatsVAL VAL1">
+						<ol>
+							<li>Prob. CRIT / Daño CRIT</li>
+							<li>ATQ%</li>
+							<li>Recarga de Energía</li>
+							<li>Maestría Elemental</li>
+							<li>ATQ fijo</li>
+						</ol>
+					</td>
+					<!-- TALENT PRIORITY -->
+					<td class="GIBG_Table_TalentsVAL VAL1">
+						<ol>
+							<li>Ataque Normal</li>
+							<li>Habilidad Definitiva</li>
+							<li>Habilidad Elemental</li>
+						</ol>
+					</td>
+					<!-- TIPS -->
+					<td class="GIBG_Table_TipsVAL VAL1">
+						<div class="GIBG_Table_TipsSectionDiv" style="height: 325px">
+							<b>Con respecto a la rotación óptima de la Habilidad Elemental de Xiao:</b><br>
+							<i>donde</i> N = <i>Ataque Normal</i>, D = <i>Ataque Descendente</i>,<br>
+							C = <i>Ataque Cargado, </i>S = <i>Habilidad Elemental</i>, B = <i>Habilidad Definitiva</i>.<br>
+							S > S > B > D
+							<br><br>
+							<b>Con respecto al combo de Ataques Descendentes de Xiao:</b><br>
+							El mejor combo para Xiao al combatir con un solo objetivo:<br>
+							D > N > C > D
+							<br><br>
+							El mejor combo para Xiao al combatir con múltiples objetivos:<br>
+							D > N > D
+						</div>
+					</td>
+				</tr>
+
+				<!-- DESCRIPTION -->
+				<tr>
+					<td class="GIBG_Table_Notes">NOTAS</td>
+					<td colspan="7" class="GIBG_Table_NotesVAL VAL2">
+						<div class="GIBG_Table_Notes_Role">DPS ⭐</div>
+						<p>
+							Xiao tiene problemas con la regeneración de energía porque <b>él no puede generar partículas
+							con su Habilidad Elemental mientras su Habilidad Definitiva está activa</b>, por lo que no
+							se sugiere usar su Habilidad Elemental durante la Habilidad Definitiva.
+						</p>
+
+						<p>
+							Comienza un combate lanzando la Habilidad Elemental de tu batería Anemo, después cambia a Xiao
+							y luego lanza su Habilidad Elemental dos veces, y por último lanza tu Habilidad Definitiva de
+							inmediato. Deberás estar a la mitad de la animación de su Habilidad Definitiva antes de que
+							obtengas las partículas, de esta manera puedes comenzar tu Habilidad Definitiva con una parte
+							del indicador de energía ya llena. Lo mismo ocurre con cualquier otra batería Anemo (recomendado
+							a continuación), lanzar Habilidad Definitiva y después cambiar a Xiao para lanzar su Habilidad
+							Definitiva antes de que obtengas las partículas.
+						</p>
+
+						<p>
+							<b>Se recomienda mucho tener a Xiao con otro personaje Anemo</b> (como Venti, Sacarosa,
+							Jean, o el viajero Anemo) para ayudarle a obtener energía mientras su Habilidad Definitiva
+							está en tiempo de espera. La Habilidad Definitiva de Xiao termina cuando cambias a otro
+							personaje. Aunque él tiene dos cargas de su Habilidad Elemental, sólo UNA carga se regenera
+							por tiempo de espera.
+						</p>
+
+						<span class="GIBG_Table_Notes_Regarding">
+							Con respecto a la elección de armas:
+						</span>
+						<p>
+							Con una batería Anemo adecuada (por ejemplo, Sacarosa), Xiao necesita tan solo entre 120% o
+							130% de Recarga de Energía para mantener un alto tiempo de actividad de su Habilidad Definitiva.
+							En estos escenarios, a menos que no hayan atributos secundarios de Recarga de Energía, siempre
+							debe optar por un arma que no sea de Recarga de Energía para que resulte en más daño.
+						</p>
+
+						<span class="GIBG_Table_Notes_Regarding">
+							Con respecto a la elección de conjuntos de artefactos:
+						</span>
+						<p>
+							Prioriza el conjunto de la <i>Sombra Verde Esmeralda (4)</i> por encima de los otros conjuntos
+							de artefactos de +18% ATQ si ya tienes fuentes externas de aumento de ATQ en tu equipo.
+						</p>
+					</td>
+				</tr>
+
+<!-- -------------------- KAEDEHARA KAZUHA -------------------- -->
+				<tr>
+					<td class="GIBG_Table_CharacterName" rowspan="2">
+						<div class="GIBG_Table_CharacterContainer d-flex align-items-center justify-content-center">
+							<img src="https://paimon.moe/images/characters/kaedehara_kazuha.png">
+							<span class="GIBG_CharacterNameVAL">KAEDEHARA KAZUHA</span>
+						</div>
+					</td>
+					<td class="GIBG_Table_Role" rowspan="2">ROL</td>
+					<td class="GIBG_Table_Equip" colspan="2">EQUIPAMIENTO</td>
+					<td class="GIBG_Table_ArtifactStats" colspan="2">ATRIBUTOS DE ARTEFACTOS</td>
+					<td class="GIBG_Table_Talents" rowspan="2">PRIORIDAD DE TALENTOS</td>
+					<td class="GIBG_Table_Tips" rowspan="2">CONSEJOS</td>
+				</tr>
+				<tr>
+					<td class="GIBG_Table_Equip GIBG_Table_EquipWeapon">ARMA</td>
+					<td class="GIBG_Table_Equip GIBG_Table_EquipArtifacts">CONJUNTO DE ARTEFACTOS</td>
+					<td class="GIBG_Table_ArtifactStats GIBG_Table_ArtifactStats_MainStats">PRINCIPALES</td>
+					<td class="GIBG_Table_ArtifactStats GIBG_Table_ArtifactStats_Substats">SECUNDARIOS</td>
+				</tr>
+				<tr>
+					<!-- CHARACTER IMAGE -->
+					<td class="GIBG_Table_CharacterImg">
+						<img src="https://paimon.moe/images/characters/full/kaedehara_kazuha.png">
+					</td>
+					<!-- ROLE -->
+					<td class="GIBG_Table_Role_VAL VAL1 Rol_VAL_Ind">DPS MAEST. ELEM. ⭐</td>
+					<!-- WEAPONS -->
+					<td class="GIBG_Table_Equip_WeaponVAL VAL1">
+						<ol>
+							<li>Juramento por la Libertad (5⭐)</li>
+							<li>
+								Espada de Sacrificio (4⭐) ~= Espada de Favonius (4⭐) ~= Hoja Afilada Celestial (5⭐)
+							</li>
+							<li>Espada Amenoma Gemela (4⭐)</li>
+							<li>Espina de Hierro (4⭐)</li>
+							<li>Espada de Hierro Oscuro (3⭐)</li>
+						</ol>
+					</td>
+					<!-- ARTIFACTS -->
+					<td class="GIBG_Table_Equip_ArtifactsVAL VAL1">
+						<ol>
+							<li>Sombra Verde Esmeralda (4)</li>
+							<li>Instructor (4)</li>
+						</ol>
+					</td>
+					<!-- MAIN STATS -->
+					<td class="GIBG_Table_ArtifactStats_MainStatsVAL VAL1">
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Arenas del Eón</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Maestría Elemental / Recarga de Energía</span><br><br>
+
+						<span class="GIBG_Table_ArtifactStats_MainStats_Item">Cáliz de Eonothem</span><br>
+						<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Maestría Elemental</span><br><br>
+
+						<abbr title="La Tiara de Logos depende de cómo estén tus atributos, si necesitas más Prob. CRIT o Daño CRIT.">
+							<span class="GIBG_Table_ArtifactStats_MainStats_Item">Tiara de Logos</span><br>
+							<span class="GIBG_Table_ArtifactStats_MainStats_ItemVAL">Maestría Elemental</span>
+						</abbr>
+					</td>
+					<!-- SUBSTATS -->
+					<td class="GIBG_Table_ArtifactStats_SubstatsVAL VAL1">
+						<ol>
+							<li>Maestría Elemental</li>
+							<li>Recarga de Energía</li>
+							<li>ATQ%</li>
+							<li>Prob. CRIT / Daño CRIT</li>
+						</ol>
+					</td>
+					<!-- TALENT PRIORITY -->
+					<td class="GIBG_Table_TalentsVAL VAL1">
+						<ol>
+							<li>Habilidad Definitiva</li>
+							<li>Habilidad Elemental</li>
+							<li>Ataque Normal</li>
+						</ol>
+					</td>
+					<!-- TIPS -->
+					<td class="GIBG_Table_TipsVAL VAL1">
+						<div class="GIBG_Table_TipsSectionDiv">
+							El elemento que es absorbido por la Habilidad Definitiva de Kazuha sigue una prioridad que
+							se determina así:<br>
+							Pyro > Hydro > Electro > Cryo<br><br>
+							Puede ser absorbido de los personajes activos, o los enemigos. (<b>por ejemplo: pararte
+							dentro del AdE de la Habilidad Definitiva de Bennett resultará en la Habilidad Definitiva
+							de Kazuha imbuida en Pyro debido a que Bennett aplica Pyro al personaje activo</b>).
+						</div>
+					</td>
+				</tr>
+
+				<!-- DESCRIPTION -->
+				<tr>
+					<td class="GIBG_Table_Notes LastCharacter">NOTAS</td>
+					<td colspan="7" class="GIBG_Table_NotesVAL VAL2 LastCharacter">
+						<div class="GIBG_Table_Notes_Role">DPS DE MAESTRÍA ELEMENTAL ⭐</div>
+						<p>
+							El segundo talento pasivo de Kazuha (su cuarta ascensión) motiva a los jugadores a maximizar
+							la Maestría Elemental para poder maximizar su utilidad.
+						</p>
+
+						<p>
+							<b>
+								Al igual que Venti, debido a los aumentos de Maestría Elemental, un build de triple
+								Maestría Elemental resultará en mucho más daño que un build de ATQ o Maestría Elemental
+								(Arenas)/Bono de Daño Anemo (Cáliz)/CRIT (Tiara), siempre y cuando hayan al menos dos
+								enemigos debido a la cantidad de Torbellinos involucrados. Debido a esto, un build de
+								ADC (Ataque / Daño / CRIT) no se recomienda a menos de que esté en un equipo donde él
+								no pueda hacer uso de su segundo talento pasivo o de sus Torbellinos (por ejemplo: equipos
+								de monotipo Anemo/Geo).
+							</b>
+						</p>
+
+						<span class="GIBG_Table_Notes_Regarding">
+							Con respecto a la elección de armas:
+						</span>
+						<p>
+							La meta principal es <b>acumular la mayor cantidad de Maestría Elemental posible mientras
+							consigues suficiente Recarga de Energía (entre 160% y 180%) para un tiempo de actividad
+							consistente de su Habilidad Definitiva</b>. Al tener la <i>Espada de Sacrificio</i> o un
+							segundo personaje Anemo en el equipo, te ayudará a reducir las necesidades de Recarga de
+							Energía y priorizar más la Maestría Elemental como atributo secundario.
+						</p>
+						<table class="GIBG_SubTable_Regarding">
+							<tr>
+								<td class="GIBG_SubTable_Regarding_ItemName">Espina de Hierro:</td>
+								<td class="GIBG_SubTable_Regarding_ItemDesc">
+									Esta arma producirá el mayor beneficio inicial de Maestría Elemental y de todos los
+									miembros del equipo en comparación con las otras armas de 4⭐. <b>Si logras satisfacer
+									las necesidades de Recarga de Energía, o si simplemente no necesitas más de una
+									rotación, esta sería la mejor opción en comparación con las otras armas de Recarga
+									de Energía</b>.
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</section>
+
+		<footer class="w-100 d-flex justify-content-center">
+			<div id="footerContent" class="px-2">©2019-2021 TheAdorableOshawott. Hosted by Neocities and powered by Bootstrap.</div>
+			<div id="header_spacer"></div>
+			<img class="my-2" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/600px-Bootstrap_logo.svg.png">
+			<img class="my-2" src="https://theadorableoshawott.neocities.org/neocities.png">
+		</footer>
+    </body>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+</HTML>
