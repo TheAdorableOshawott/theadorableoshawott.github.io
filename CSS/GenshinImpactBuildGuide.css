@@ -11,6 +11,20 @@
     transition-timing-function: ease-in-out;
 }
 
+.GIBG_CurrentVersion {
+    font-family: "HYWenHei-85W";
+    margin-top: 20px;
+}
+
+.GIBG_Updates {
+    font-family: "HYWenHei-85W";
+    font-size: 20px;
+}
+
+.GIBG_Updates_Latest, .GIBG_CurrentVersion {
+    font-size: 28px;
+}
+
 .GIBG_Header, .GIBG_CharacterRarity {
     border-radius: 8px;
     margin-top: 15px;
@@ -198,6 +212,16 @@ ol {
 
 .Tips_XL {
     overflow-y: scroll;
+}
+
+.SingleRoleChar {
+    height: 460px;
+}
+
+@media screen and (width < 1920px) {
+    .Tips_XL {
+        overflow-y: hidden;
+    }
 }
 
 .GIBG_Table_NotesVAL {

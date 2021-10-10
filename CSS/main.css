@@ -49,7 +49,10 @@ header {
 }
 
 /* ------ SECTION ------ */
-
+hr {
+	border-color: darkgrey;
+	margin-bottom: 5px;
+}
 
 /* ------ FOOTER ------ */
 footer {
